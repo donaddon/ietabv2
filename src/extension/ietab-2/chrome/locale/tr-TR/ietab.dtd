@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab Seçenekleri">
+<!ENTITY toolsmenu.label "IE Tab Seçenekleri">
+<!ENTITY toolbar.button.label "IE Sekmesi">
+<!ENTITY toolbar.button.display "IE Tab Butonu">
+<!ENTITY toolbar.button.tooltip0 "Sol Tıklama: Sunuş Motorunu Değiştirir.">
+<!ENTITY toolbar.button.tooltip1 "Orta Tıklama:Sunuş motorunu Yeni Sekmede değiştirir.">
+<!ENTITY toolbar.button.tooltip2 "Sağ Tıklama: IE Tab Site Filitresini Gosterir.">
+<!ENTITY popup.viewpage "Sayfayı IE Sekmesinde Göster">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Linki IE Sekmesinde Aç.">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "IE Sekmesinde Aç">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Sunuş Motorunu Değiştir.">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Sayfayı Harici Uygulamada Göster">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Linki Harici Uygulamada Aç">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Harici Uygulamada aç">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Harici Uygulamada aç">
+<!ENTITY popup.tabbar.extapp.key "C">
+<!ENTITY filter.label "Site Filitresi">
+<!ENTITY filter.enabled "Burada listelenen Siteler Dâima Gömülü IE ile Gösterilecek">
+<!ENTITY filter.column.rule "Site">
+<!ENTITY filter.column.enabled "Aktif">
+<!ENTITY filter.url.label "Adres:">
+<!ENTITY filter.button.add "Ekle">
+<!ENTITY filter.button.delete "SiL">
+<!ENTITY general.label "Genel Ayarlar">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Arabirimde Göster:">
+<!ENTITY interface.toolsmenu "Araçlar\&apos;a Ekle">
+<!ENTITY interface.toolsmenu.icon "Araçlarda Simge">
+<!ENTITY interface.statusbar "Durum Çubuğunda Simge">
+<!ENTITY switch.caption "Sunuş Motoru Değiştiğinde:">
+<!ENTITY switch.handleurl "Yeni Adresleri Daima Şimdiki Sunuş Motoru ile Aç">
+<!ENTITY switch.alwaysnew "Sunuş Motorunu değişmek için Daima Yeni Sekme Kullan">
+<!ENTITY switch.focustab "Yeni Sekmede Odakla">
+<!ENTITY context.label "Tuş Menüsü">
+<!ENTITY context.caption.tabsmenu "Sekme Cubuğu menusu (Sağ Tıklama) Şunları Göstersin:">
+<!ENTITY context.caption.pagelink "İçerik menusu (Sağ Tıklama) Şunları Göstersin:">
+<!ENTITY context.caption.bookmark "Kişisel Yerimleri menusu (Sağ Tıklama) Şunları Göstersin:">
+<!ENTITY context.embed "Gömülü Motor">
+<!ENTITY context.extapp "Harici Uygulama">
+<!ENTITY context.icon "Simge">
+<!ENTITY external.label "Harici Uygulama">
+<!ENTITY external.caption "Harici Uygulama Ayarları">
+<!ENTITY external.path.label "Yol:">
+<!ENTITY external.param.label "Parametreler:">
+<!ENTITY external.button.browse "Gözat..">
+<!ENTITY external.ctrlclick "Adresi Harici Uygulamada açmak için IE Tab Butonunu Ctrl+Tıklayın">
+<!ENTITY external.button.reset "Internet Explorer Kullan">
+<!ENTITY apply.label "Kabul">
+<!ENTITY settings.label "Ayarlar">
+<!ENTITY settings.default "Varsayılana Dön">
+<!ENTITY settings.import "Ayarları Al..">
+<!ENTITY settings.export "ayarları Ver..">

@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab - opcje">
+<!ENTITY toolsmenu.label "Opcje IE Tab">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "Przycisk IE Tab">
+<!ENTITY toolbar.button.tooltip0 "Kliknięcie l.p.m. zmienia moduł renderujący aktywnej strony">
+<!ENTITY toolbar.button.tooltip1 "Kliknięcie ś.p.m. zmienia moduł renderujący aktywnej strony otwierając ją w nowej karcie">
+<!ENTITY toolbar.button.tooltip2 "Kliknięcie ś.p.m. wyświetla filtr stron IE Tab">
+<!ENTITY popup.viewpage "Otwórz tę stronę w IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Otwórz odnośnik w IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Otwórz w IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Zmień moduł renderujący">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Otwórz stronę w zewnętrznej przeglądarce">
+<!ENTITY popup.viewpage.extapp.key "Z">
+<!ENTITY popup.viewlink.extapp "Otwórz odnośnik w zewnętrznej przeglądarce">
+<!ENTITY popup.viewlink.extapp.key "Z">
+<!ENTITY popup.bookmark.extapp "Otwórz w zewnętrznej przeglądarce">
+<!ENTITY popup.bookmark.extapp.key "Z">
+<!ENTITY popup.tabbar.extapp "Otwórz w zewnętrznej przeglądarce">
+<!ENTITY popup.tabbar.extapp.key "Z">
+<!ENTITY filter.label "Filtr stron">
+<!ENTITY filter.enabled "Witryny z poniższej listy otwieraj zawsze używając silnika renderującego IE">
+<!ENTITY filter.column.rule "Reguła">
+<!ENTITY filter.column.enabled "Włączono">
+<!ENTITY filter.url.label "Adres URL:">
+<!ENTITY filter.button.add "Dodaj">
+<!ENTITY filter.button.delete "Usuń">
+<!ENTITY general.label "Ogólne">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Wyświetlaj:">
+<!ENTITY interface.toolsmenu "Element &quot;Opcje IE Tab&quot; w menu &quot;Narzędzia&quot;">
+<!ENTITY interface.toolsmenu.icon "Ikonę dla elementu &quot;Opcje IE Tab&quot; w menu &quot;Narzędzia&quot;">
+<!ENTITY interface.statusbar "Ikonę przeglądarki na pasku stanu">
+<!ENTITY switch.caption "Gdy jest zmieniany moduł renderujący:">
+<!ENTITY switch.handleurl "Otwieraj nowe witryny używając aktywnego modułu renderującego">
+<!ENTITY switch.alwaysnew "Otwieraj witryny w nowych kartach">
+<!ENTITY switch.focustab "Nowe karty otwieraj na pierwszym planie">
+<!ENTITY context.label "Menu kontekstowe">
+<!ENTITY context.caption.tabsmenu "Wyświetlaj w menu kontekstowym paska kart następujące elementy:">
+<!ENTITY context.caption.pagelink "Wyświetlaj w głównym menu kontekstowym następujące elementy:">
+<!ENTITY context.caption.bookmark "Wyświetlaj w menu kontekstowym zakładek osobistych następujące elementy:">
+<!ENTITY context.embed "Zmień moduł renderujący">
+<!ENTITY context.extapp "Otwórz w przeglądarce zewnętrznej">
+<!ENTITY context.icon "Ikony">
+<!ENTITY external.label "Przeglądarka zewnętrzna">
+<!ENTITY external.caption "Ustawienia przeglądarki zewnętrznej">
+<!ENTITY external.path.label "Lokalizacja:">
+<!ENTITY external.param.label "Parametry:">
+<!ENTITY external.button.browse "Szukaj">
+<!ENTITY external.ctrlclick "Skrót [Ctrl]+kliknięcie na ikonie &quot;IE Tab&quot; powoduje otwarcie URL w zewnętrznej przeglądarce">
+<!ENTITY external.button.reset "Użyj Internet Explorera">
+<!ENTITY apply.label "Zastosuj">
+<!ENTITY settings.label "Ustawienia">
+<!ENTITY settings.default "Przywróć domyślne">
+<!ENTITY settings.import "Importuj ustawienia">
+<!ENTITY settings.export "Eksportuj ustawienia">

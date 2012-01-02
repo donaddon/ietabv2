@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab-opsies">
+<!ENTITY toolsmenu.label "IE Tab-opsies">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab-knoppie">
+<!ENTITY toolbar.button.tooltip0 "Linksklik: Verwissel wysmetode van huidige bladsy.">
+<!ENTITY toolbar.button.tooltip1 "Middelklik: Wys nuwe wysmetode in nuwe oortjie.">
+<!ENTITY toolbar.button.tooltip2 "Regsklik: Wys IE Tab-werwefilter.">
+<!ENTITY popup.viewpage "Bekyk bladsy in IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Open skakel in IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Open in IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Verwissel wysmetode">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Bekyk bladsy in buiteprogram">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Open skakel in buiteprogram.">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Open in buiteprogram.">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Open in buiteprogram.">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Werwefilter">
+<!ENTITY filter.enabled "Aktiveer werwefilter">
+<!ENTITY filter.column.rule "Reël">
+<!ENTITY filter.column.enabled "Geaktiveer">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Byvoeg">
+<!ENTITY filter.button.delete "Skrap">
+<!ENTITY general.label "Algemene instellings">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Wys op koppelvlak:">
+<!ENTITY interface.toolsmenu "Nuts-kieslysitem">
+<!ENTITY interface.toolsmenu.icon "Nuts-kieslysikoon">
+<!ENTITY interface.statusbar "Statusbalk-ikoon">
+<!ENTITY switch.caption "Wanneer wysmetode verwissel:">
+<!ENTITY switch.handleurl "Gebruik altyd huidige metode om nuwe URL te open">
+<!ENTITY switch.alwaysnew "Open in &apos;n nuwe oortjie wanneer wysmetodes verwissel">
+<!ENTITY switch.focustab "Fokus op die nuwe oortjie wanneer wysmetodes verwissel">
+<!ENTITY context.label "Kontekskieslys">
+<!ENTITY context.caption.tabsmenu "Tabbar Tabs-kontekskieslys wys die volgende items:">
+<!ENTITY context.caption.pagelink "Content Area-kieslysitems wys die volgende items:">
+<!ENTITY context.caption.bookmark "Personal Bookmarks-kontekskieslys wys die volgende items:">
+<!ENTITY context.embed "Ingebedde wysmetode">
+<!ENTITY context.extapp "Buiteprogram">
+<!ENTITY context.icon "Ikoon">
+<!ENTITY external.label "Buiteprogram">
+<!ENTITY external.caption "Buiteprogram-instellings">
+<!ENTITY external.path.label "Pad:">
+<!ENTITY external.param.label "Parameters:">
+<!ENTITY external.button.browse "Blaai">
+<!ENTITY external.ctrlclick "Ctrl+klik op IE Tab-knoppie om URL in buiteprogram te open.">
+<!ENTITY external.button.reset "Gebruik Internet Explorer">
+<!ENTITY apply.label "Toepas">
+<!ENTITY settings.label "Instellings">
+<!ENTITY settings.default "Laai verstek terug">
+<!ENTITY settings.import "Voer instellings in">
+<!ENTITY settings.export "Voer instellings uit">

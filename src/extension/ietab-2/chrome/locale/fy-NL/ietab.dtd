@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Ljepblêd Opsjes">
+<!ENTITY toolsmenu.label "IE Ljepblêd Opsjes">
+<!ENTITY toolbar.button.label "IE Ljepblêd">
+<!ENTITY toolbar.button.display "IE Ljepblêd Knop">
+<!ENTITY toolbar.button.tooltip0 "Linker-Klik: Skeakel render masine fan aktuele side.">
+<!ENTITY toolbar.button.tooltip1 "Middel-Klik: Brûk nij ljepblêd om render masine te skeakeljen.">
+<!ENTITY toolbar.button.tooltip2 "Rjochter-Klik: Toan IE Ljepblêd Sides Filter">
+<!ENTITY popup.viewpage "Toan Side yn IE Ljepblêd">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Iepenje Keppeling yn IE Ljepblêd">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Iepenje yn IE Ljepblêd">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Skeakel render masine">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Toan Side yn Eksterne Applikaasje">
+<!ENTITY popup.viewpage.extapp.key "k">
+<!ENTITY popup.viewlink.extapp "Iepenje Keppeling yn Eksterne Applikaasje">
+<!ENTITY popup.viewlink.extapp.key "k">
+<!ENTITY popup.bookmark.extapp "Iepenje yn Eksterne Applikaasje">
+<!ENTITY popup.bookmark.extapp.key "k">
+<!ENTITY popup.tabbar.extapp "Iepenje yn Eksterne Applikaasje">
+<!ENTITY popup.tabbar.extapp.key "k">
+<!ENTITY filter.label "Sides Filter">
+<!ENTITY filter.enabled "Sides yn dizze list sille altiid gebrûk meitsje fan IE">
+<!ENTITY filter.column.rule "Regel">
+<!ENTITY filter.column.enabled "Ynskeakele">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Foech ta">
+<!ENTITY filter.button.delete "Fuortsmite">
+<!ENTITY general.label "Algemiene Ynstellings">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Toan yn úterlik">
+<!ENTITY interface.toolsmenu "ArkMenu Underdiel">
+<!ENTITY interface.toolsmenu.icon "ArkMenu Ikoan">
+<!ENTITY interface.statusbar "SteatBalke Ikoan">
+<!ENTITY switch.caption "As render masine skeakelt">
+<!ENTITY switch.handleurl "Brûk altiid aktuele render masine om nije URL te iepenjen">
+<!ENTITY switch.alwaysnew "Brûk altiid nij ljepblêd om rendermasine te skeakeljen">
+<!ENTITY switch.focustab "Fokus op it nije ljepblêd">
+<!ENTITY context.label "Kontekstmenu">
+<!ENTITY context.caption.tabsmenu "Ljepblêdbalke Ljepblêden kontekstmenu toant folgjende ûnderdielen:">
+<!ENTITY context.caption.pagelink "Ynhâldgebiet kontekstmenu toant folgjende ûnderdielen:">
+<!ENTITY context.caption.bookmark "Persoanlike Blêdwizers kontekstmenu toant folgjende ûnderdielen:">
+<!ENTITY context.embed "Ynboude Masine">
+<!ENTITY context.extapp "Eksterne Applikaasje">
+<!ENTITY context.icon "Ikoan">
+<!ENTITY external.label "Eksterne Applikaasje">
+<!ENTITY external.caption "Eksterne Applikaasje Ynstellings">
+<!ENTITY external.path.label "Paad:">
+<!ENTITY external.param.label "Parameters:">
+<!ENTITY external.button.browse "Blêdzje">
+<!ENTITY external.ctrlclick "Ctrl+klik op IE Ljepblêd knop om URL yn Eksterne Applikaasje te iepenjen">
+<!ENTITY external.button.reset "Brûk Internet Explorer">
+<!ENTITY apply.label "Tapasse">
+<!ENTITY settings.label "Ynstellings">
+<!ENTITY settings.default "Werstel Standert">
+<!ENTITY settings.import "Ymport Ynstellings">
+<!ENTITY settings.export "Eksport Ynstellings">

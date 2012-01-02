@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "Opcions de IE Tab">
+<!ENTITY toolsmenu.label "Opcions de IE Tab">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "Botó IE Tab">
+<!ENTITY toolbar.button.tooltip0 "Botó esquerra: Canvia el motor de render de la pàgina actual.">
+<!ENTITY toolbar.button.tooltip1 "Botó central: Canvia el motor de render en una nova pestanya.">
+<!ENTITY toolbar.button.tooltip2 "Botó dret: Mostra els filtres de pàgina.">
+<!ENTITY popup.viewpage "Veure pàgina al IE Tab">
+<!ENTITY popup.viewpage.key "V">
+<!ENTITY popup.viewlink "Obrir enllaç amb IE Tab">
+<!ENTITY popup.viewlink.key "O">
+<!ENTITY popup.bookmark "Obrir amb IE Tab">
+<!ENTITY popup.bookmark.key "b">
+<!ENTITY popup.tabbar.switch "Canvia el motor de renderitzat">
+<!ENTITY popup.tabbar.switch.key "C">
+<!ENTITY popup.viewpage.extapp "Veure pàgina en aplicació externa">
+<!ENTITY popup.viewpage.extapp.key "x">
+<!ENTITY popup.viewlink.extapp "Obrir enllaç en aplicació externa">
+<!ENTITY popup.viewlink.extapp.key "x">
+<!ENTITY popup.bookmark.extapp "Obrir en aplicació externa">
+<!ENTITY popup.bookmark.extapp.key "x">
+<!ENTITY popup.tabbar.extapp "Obrir en aplicació externa">
+<!ENTITY popup.tabbar.extapp.key "x">
+<!ENTITY filter.label "Filtres de pàgina">
+<!ENTITY filter.enabled "Les pàgines d&apos;aquesta llista s&apos;obriran amb el motor del Internet Explorer">
+<!ENTITY filter.column.rule "Regla">
+<!ENTITY filter.column.enabled "Habilitat">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Afegir">
+<!ENTITY filter.button.delete "Eliminar">
+<!ENTITY general.label "Opcions generals">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Mostrar a l&apos;interfície:">
+<!ENTITY interface.toolsmenu "Menú d&apos;eines">
+<!ENTITY interface.toolsmenu.icon "Icona del menú d&apos; eines">
+<!ENTITY interface.statusbar "Icona a la barra d&apos;estat">
+<!ENTITY switch.caption "Quan es canviï el motor de renderitzat:">
+<!ENTITY switch.handleurl "Fer servir sempre el motor actual quan s&apos;obri una nova pàgina">
+<!ENTITY switch.alwaysnew "Fer servir una nova pestanya quan es canvia de motor">
+<!ENTITY switch.focustab "Anar a la nova pestanya en obrir-la">
+<!ENTITY context.label "Menú contextual">
+<!ENTITY context.caption.tabsmenu "El menú contextual del menú de pestanyes mostra els següents items:">
+<!ENTITY context.caption.pagelink "El menú contextual del àrea de contingut mostra els següents items:">
+<!ENTITY context.caption.bookmark "El menú contextual dels marcadors personals mostra els següents items:">
+<!ENTITY context.embed "Motor incrustat">
+<!ENTITY context.extapp "Aplicació Externa">
+<!ENTITY context.icon "Icona">
+<!ENTITY external.label "Aplicació externa">
+<!ENTITY external.caption "Opcions d&apos;aplicació externa">
+<!ENTITY external.path.label "Ruta">
+<!ENTITY external.param.label "Paràmetres">
+<!ENTITY external.button.browse "Explorar">
+<!ENTITY external.ctrlclick "Fer servir Ctrl+Click en el botó IE Tab per obrir l&apos;adreça a una aplicació externa">
+<!ENTITY external.button.reset "Fer servir Internet Explorer">
+<!ENTITY apply.label "Aplica">
+<!ENTITY settings.label "Opcions">
+<!ENTITY settings.default "Valors per defecte">
+<!ENTITY settings.import "Importar opcions">
+<!ENTITY settings.export "Exportar opcions">

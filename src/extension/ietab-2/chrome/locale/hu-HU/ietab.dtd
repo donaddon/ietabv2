@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab beállítások">
+<!ENTITY toolsmenu.label "IE Tab beállítások">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab gomb">
+<!ENTITY toolbar.button.tooltip0 "Bal egérgomb: megjelenítő motor váltása az aktuális oldalon.">
+<!ENTITY toolbar.button.tooltip1 "Középső egérgomb: megnyitás új fülön másik megjelenítő motorral.">
+<!ENTITY toolbar.button.tooltip2 "Jobb egérgomb: IE Tab oldalszűrő megjelenítése.">
+<!ENTITY popup.viewpage "Oldal megtekintése IE motorral">
+<!ENTITY popup.viewpage.key "m">
+<!ENTITY popup.viewlink "Hivatkozás megnyitása IE motorral">
+<!ENTITY popup.viewlink.key "m">
+<!ENTITY popup.bookmark "Megnyitás IE motorral">
+<!ENTITY popup.bookmark.key "m">
+<!ENTITY popup.tabbar.switch "Megjelenítő motor váltása">
+<!ENTITY popup.tabbar.switch.key "m">
+<!ENTITY popup.viewpage.extapp "Oldal megtekintése külső alkalmazásban">
+<!ENTITY popup.viewpage.extapp.key "k">
+<!ENTITY popup.viewlink.extapp "Hivatkozás megnyitása külső alkalmazásban">
+<!ENTITY popup.viewlink.extapp.key "k">
+<!ENTITY popup.bookmark.extapp "Megnyitás külső alkalmazásban">
+<!ENTITY popup.bookmark.extapp.key "k">
+<!ENTITY popup.tabbar.extapp "Megnyitás külső alkalmazásban">
+<!ENTITY popup.tabbar.extapp.key "k">
+<!ENTITY filter.label "Oldalszűrő">
+<!ENTITY filter.enabled "Az itt felsorolt oldalak mindig az IE motorjával jelenjenek meg">
+<!ENTITY filter.column.rule "URL">
+<!ENTITY filter.column.enabled "Engedélyezve">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Hozzáad">
+<!ENTITY filter.button.delete "Töröl">
+<!ENTITY general.label "Általános">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Megjelenítés:">
+<!ENTITY interface.toolsmenu "Az Eszközök menüben">
+<!ENTITY interface.toolsmenu.icon "Az eszköztáron">
+<!ENTITY interface.statusbar "Az állapotsoron">
+<!ENTITY switch.caption "Megjelenítő motor váltásnál:">
+<!ENTITY switch.handleurl "Mindig az aktuális megjelenítő motorral nyíljon meg új URL">
+<!ENTITY switch.alwaysnew "Mindig új fülön nyíljon meg másik megjelenítő motorral egy URL">
+<!ENTITY switch.focustab "Új fül előtérbe hozása">
+<!ENTITY context.label "Menüelemek">
+<!ENTITY context.caption.tabsmenu "A fülek sávjának környezeti menüjében:">
+<!ENTITY context.caption.pagelink "Az oldalak környezeti menüjében:">
+<!ENTITY context.caption.bookmark "A könyvjelzők környezeti menüjében:">
+<!ENTITY context.embed "Beépített motor">
+<!ENTITY context.extapp "Külső alkalmazás">
+<!ENTITY context.icon "Ikon">
+<!ENTITY external.label "Külső alkalmazás">
+<!ENTITY external.caption "Külső alkalmazás beállítások">
+<!ENTITY external.path.label "Útvonal:">
+<!ENTITY external.param.label "Paraméterek:">
+<!ENTITY external.button.browse "Tallózás">
+<!ENTITY external.ctrlclick "Ctrl+kattintás egy IE fülön külső alkalmazásban való megnyitáshoz">
+<!ENTITY external.button.reset "Internet Explorer használata">
+<!ENTITY apply.label "Alkalmaz">
+<!ENTITY settings.label "Beállítások">
+<!ENTITY settings.default "Alapértelmezett">
+<!ENTITY settings.import "Importálás">
+<!ENTITY settings.export "Exportálás">

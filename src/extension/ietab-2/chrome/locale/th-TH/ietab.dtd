@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "ตั้งค่า IE Tab">
+<!ENTITY toolsmenu.label "ตั้งค่า IE Tab">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "ปุ่ม IE Tab">
+<!ENTITY toolbar.button.tooltip0 "คลิกซ้าย: เปลี่ยน Engine แสดงผลหน้านี้">
+<!ENTITY toolbar.button.tooltip1 "คลิกกลาง: เปลี่ยน Engine แสดงผลโดยเปิดแท็บใหม่">
+<!ENTITY toolbar.button.tooltip2 "คลิกขวา: แสดงรายชื่อเว็บไซท์ที่กำหนดให้ใช้ IE Tab">
+<!ENTITY popup.viewpage "เปิดใน IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "เปิดลิงค์ใน IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "เปิดใน IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "เปลี่ยน Engine แสดงผล">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "เปิดในโปรแกรมภายนอก">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "เปิดลิงค์ในโปรแกรมภายนอก">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "เปิดในโปรแกรมภายนอก">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "เปิดในโปรแกรมภายนอก">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "รายชื่อเว็บไซท์">
+<!ENTITY filter.enabled "เว็บไซท์ในรายการต่อไปนี้จะแสดงผลด้วย IE Engine เสมอ">
+<!ENTITY filter.column.rule "รูปแบบ URL (Rule)">
+<!ENTITY filter.column.enabled "ใช้">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "เพิ่ม">
+<!ENTITY filter.button.delete "ลบ">
+<!ENTITY general.label "ทั่วไป">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "แสดง IE Tab ใน">
+<!ENTITY interface.toolsmenu "หัวข้อในเมนู Tools">
+<!ENTITY interface.toolsmenu.icon "ไอคอนในเมนู Tools">
+<!ENTITY interface.statusbar "ไอคอนใน Status Bar">
+<!ENTITY switch.caption "เมื่อเปลี่ยน Engine ที่ใช้แสดงผล">
+<!ENTITY switch.handleurl "ใช้ Engine แสดงผลเดิมเสมอเวลาเปิด URL ใหม่">
+<!ENTITY switch.alwaysnew "ใช้หน้าใหม่เสมอเวลาเปลี่ยน Engine แสดงผล">
+<!ENTITY switch.focustab "โฟกัสไปยังแท็บใหม่">
+<!ENTITY context.label "เมนูคลิกขวา">
+<!ENTITY context.caption.tabsmenu "เมื่อคลิกขวาที่แท็บจะแสดงหัวข้อต่อไปนี้">
+<!ENTITY context.caption.pagelink "เมื่อคลิกขวาในหน้่า่เว็บจะแสดงหัวข้อต่อไปนี้">
+<!ENTITY context.caption.bookmark "เมื่อคลิกขวาในรายการ Bookmark จะแสดงหัวข้อต่อไปนี้">
+<!ENTITY context.embed "Engine ภายใน">
+<!ENTITY context.extapp "โปรแกรมภายนอก">
+<!ENTITY context.icon "ไอคอน">
+<!ENTITY external.label "โปรแกรมภายนอก">
+<!ENTITY external.caption "การตั้งค่าโปรแกรมภายนอก">
+<!ENTITY external.path.label "Path:">
+<!ENTITY external.param.label "Parameters:">
+<!ENTITY external.button.browse "เลือก">
+<!ENTITY external.ctrlclick "Ctrl+Click บนปุ่ม IE Tab เพื่อเปิด URL ในโปรแกรมภายนอก">
+<!ENTITY external.button.reset "ใช้ Internet Explorer">
+<!ENTITY apply.label "Apply">
+<!ENTITY settings.label "ตั้งค่า">
+<!ENTITY settings.default "รีเซ็ทการตั้งค่า">
+<!ENTITY settings.import "นำเข้าการตั้งค่าจากไฟล์">
+<!ENTITY settings.export "บันทึกการตั้งค่าไว้ในไฟล์">

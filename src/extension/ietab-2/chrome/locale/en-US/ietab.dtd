@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab 2 Options">
+<!ENTITY toolsmenu.label "IE Tab 2 Options">
+<!ENTITY toolbar.button.label "IE Tab 2">
+<!ENTITY toolbar.button.display "IE Tab 2 Button">
+<!ENTITY toolbar.button.tooltip0 "Left-Click: Switch rendering engine of current page.">
+<!ENTITY toolbar.button.tooltip1 "Middle-Click: Use new tab to switch rendering engine.">
+<!ENTITY toolbar.button.tooltip2 "Right-Click: Show IE Tab 2 Sites Filter.">
+<!ENTITY popup.viewpage "View Page in IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Open Link in IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Open in IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Switch rendering engine">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "View Page in Ext.App.">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Open Link in Ext.App.">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Open in Ext.App.">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Open in Ext.App.">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Sites Filter">
+<!ENTITY filter.enabled "Enable Sites Filter">
+<!ENTITY filter.column.rule "Rule">
+<!ENTITY filter.column.enabled "Enabled">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Add">
+<!ENTITY filter.button.delete "Delete">
+<!ENTITY general.label "General Settings">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Show on interface:">
+<!ENTITY interface.toolsmenu "Tools Menu Item">
+<!ENTITY interface.toolsmenu.icon "Tools Menu Icon">
+<!ENTITY interface.statusbar "Status Bar Icon">
+<!ENTITY switch.caption "When switch rendering engine:">
+<!ENTITY switch.handleurl "Always use current engine to open a new URL">
+<!ENTITY switch.alwaysnew "Open in a new tab when switching engines">
+<!ENTITY switch.focustab "Focus on the new tab when switching engines">
+<!ENTITY context.label "Context Menu">
+<!ENTITY context.caption.tabsmenu "Tabbar Tabs context menu shows following items:">
+<!ENTITY context.caption.pagelink "Content Area context menu shows following items:">
+<!ENTITY context.caption.bookmark "Personal Bookmarks context menu shows following items:">
+<!ENTITY context.embed "Embedded Engine">
+<!ENTITY context.extapp "External Application">
+<!ENTITY context.icon "Icon">
+<!ENTITY external.label "External Application">
+<!ENTITY external.caption "External Application Settings">
+<!ENTITY external.path.label "Path:">
+<!ENTITY external.param.label "Parameters:">
+<!ENTITY external.button.browse "Browse">
+<!ENTITY external.ctrlclick "Ctrl+Click on IE Tab button to open URL in Ext.App.">
+<!ENTITY external.button.reset "Use Internet Explorer">
+<!ENTITY apply.label "Apply">
+<!ENTITY settings.label "Settings">
+<!ENTITY settings.default "Restore Default">
+<!ENTITY settings.import "Import Settings">
+<!ENTITY settings.export "Export Settings">

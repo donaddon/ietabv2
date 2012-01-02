@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab Opcije">
+<!ENTITY toolsmenu.label "IE Tab Opcije">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab Gumb">
+<!ENTITY toolbar.button.tooltip0 "Lijevi klik: Prebacuje pogon za prikazivanje trenutne stranice.">
+<!ENTITY toolbar.button.tooltip1 "Srednji klik: Koristi novu karticu za promjenu pogona za prikazivanje.">
+<!ENTITY toolbar.button.tooltip2 "Desni klik: Prikaži IE Tab filter stranica.">
+<!ENTITY popup.viewpage "Pogledaj stranicu u IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Otvori poveznicu u IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Otvori u IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Promijeni pogon za prikazivanje">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Pogledaj stranicu u vanjskom programu">
+<!ENTITY popup.viewpage.extapp.key "v">
+<!ENTITY popup.viewlink.extapp "Otvori poveznicu u vanjskom programu">
+<!ENTITY popup.viewlink.extapp.key "v">
+<!ENTITY popup.bookmark.extapp "Otvori u vanjskom programu">
+<!ENTITY popup.bookmark.extapp.key "v">
+<!ENTITY popup.tabbar.extapp "Otvori u vanjskom programu">
+<!ENTITY popup.tabbar.extapp.key "v">
+<!ENTITY filter.label "Filter stranica">
+<!ENTITY filter.enabled "Stranice koje su ovdje na popisu će uvijek biti prikazane  koristeći ugrađeni IE">
+<!ENTITY filter.column.rule "Pravilo">
+<!ENTITY filter.column.enabled "Omogućeno">
+<!ENTITY filter.url.label "Web adresa:">
+<!ENTITY filter.button.add "Dodaj">
+<!ENTITY filter.button.delete "Obriši">
+<!ENTITY general.label "Općenite postavke">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Prikaži na sučelju:">
+<!ENTITY interface.toolsmenu "Stavku izbornika alata">
+<!ENTITY interface.toolsmenu.icon "Ikonu alatnog izbornika">
+<!ENTITY interface.statusbar "Ikonu u statusnoj traci">
+<!ENTITY switch.caption "Prilikom promjene pogona prikazivanja:">
+<!ENTITY switch.handleurl "Za otvaranje nove web adrese uvijek koristi trenutni pogon za prikazivanje">
+<!ENTITY switch.alwaysnew "Uvijek koristi novu karticu za promjenu pogona prikazivanja">
+<!ENTITY switch.focustab "Fokusiraj na novu karticu">
+<!ENTITY context.label "Kontekstni izbornik">
+<!ENTITY context.caption.tabsmenu "Kontekstni izbornik kartice alatne trake kartica prikazuje slijedeće stavke:">
+<!ENTITY context.caption.pagelink "Kontekstni izbornik kontekstnog područja prikazuje slijedeće stavke:">
+<!ENTITY context.caption.bookmark "Kontekstni izbornik osobnih Zabilješki prikazuje slijedeće stavke:">
+<!ENTITY context.embed "Ugrađeni pogon">
+<!ENTITY context.extapp "Vanjski program">
+<!ENTITY context.icon "Ikona">
+<!ENTITY external.label "Vanjski program">
+<!ENTITY external.caption "Postavke vanjskog programa">
+<!ENTITY external.path.label "Putanja:">
+<!ENTITY external.param.label "Parametri:">
+<!ENTITY external.button.browse "Potraži">
+<!ENTITY external.ctrlclick "Ctrl+Click na IE Tab gumb da biste otvorili web adresu sa vanjskim programom">
+<!ENTITY external.button.reset "Koristi Internet Explorer">
+<!ENTITY apply.label "Primijeni">
+<!ENTITY settings.label "Postavke">
+<!ENTITY settings.default "Vrati zadane">
+<!ENTITY settings.import "Uvezi postavke">
+<!ENTITY settings.export "Izvezi postavke">

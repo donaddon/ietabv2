@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab אפשרויות">
+<!ENTITY toolsmenu.label "IE Tab אפשרויות">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab כפתור">
+<!ENTITY toolbar.button.tooltip0 "לחצן שמאלי: משנה את המנוע של הדף הנוכחי">
+<!ENTITY toolbar.button.tooltip1 "לחצן אמצעי: משתמש בתג חדש לשינוי המנוע">
+<!ENTITY toolbar.button.tooltip2 "IE Tab לחצן ימני: מראה את אפשרויות המסנן של">
+<!ENTITY popup.viewpage "IE Tabהראה דף ב">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "IE Tabפתח קישור ב">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "IE Tabפתח ב">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "שנה מנוע">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "הראה דף ביישום חיצוני">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "פתח קישור ביישום חיצוני">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "פתח ביישום חיצוני">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "פתח ביישום חיצוני">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "מסנן אתרים">
+<!ENTITY filter.enabled "אתרים המוצגים כאן תמיד יפתחו במנוע האקפלורר">
+<!ENTITY filter.column.rule "חוק">
+<!ENTITY filter.column.enabled "מאופשר">
+<!ENTITY filter.url.label "קישור:">
+<!ENTITY filter.button.add "הוסף">
+<!ENTITY filter.button.delete "מחק">
+<!ENTITY general.label "הגדרות כלליות">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "הראה בממשק">
+<!ENTITY interface.toolsmenu "פריט אפשריות כלים">
+<!ENTITY interface.toolsmenu.icon "צלמית אפשרויות כלים">
+<!ENTITY interface.statusbar "צלמית שורת מצב">
+<!ENTITY switch.caption "כאשר משנה מנועים">
+<!ENTITY switch.handleurl "תמיד השתמש במנוע הנוכחי לפתיחת קישור חדש">
+<!ENTITY switch.alwaysnew "תמיד השתמש בטאב חדש לשינוי המנוע">
+<!ENTITY switch.focustab "התרכז בתג החדש">
+<!ENTITY context.label "תפריט הקשר">
+<!ENTITY context.caption.tabsmenu ":טאבים בשורת הטאבים בתפריט ההקשר יראו את הפריטים הבאים">
+<!ENTITY context.caption.pagelink "אזור התוכן בתפריט ההקשר יראו את הפריטים הבאים:">
+<!ENTITY context.caption.bookmark "סימניות אישיות בתפריט ההקשר יראו את הפריטים הבאים:">
+<!ENTITY context.embed "מנוע">
+<!ENTITY context.extapp "יישום חיצוני">
+<!ENTITY context.icon "צלמית">
+<!ENTITY external.label "יישום חיצוני">
+<!ENTITY external.caption "אפשרויות יישום חיצוני">
+<!ENTITY external.path.label "נתיב">
+<!ENTITY external.param.label "משתנים">
+<!ENTITY external.button.browse "עיון">
+<!ENTITY external.ctrlclick "כדי לפתוח קישור ביישום חיצוני IE Tabלחיצה על כפתור ה + Ctrl">
+<!ENTITY external.button.reset "השתמש באינטרנט אקספלורר">
+<!ENTITY apply.label "החל">
+<!ENTITY settings.label "אפשרויות">
+<!ENTITY settings.default "שחזר לברירת מחדל">
+<!ENTITY settings.import "ייבא אפשרויות">
+<!ENTITY settings.export "ייצא אפשרויות">

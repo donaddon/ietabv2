@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE-välilehden asetukset">
+<!ENTITY toolsmenu.label "IE-välilehden asetukset">
+<!ENTITY toolbar.button.label "IE-välilehti">
+<!ENTITY toolbar.button.display "IE-välilehden painike">
+<!ENTITY toolbar.button.tooltip0 "Napsautus: Vaihda tämänhetkisen sivun mallinnusmoottoria.">
+<!ENTITY toolbar.button.tooltip1 "Keskinapsautus: Käytä uutta välilehteä mallinnusmoottorin vaihtamiseen.">
+<!ENTITY toolbar.button.tooltip2 "Oikea napsautus: Näytä IE-välilehden sivustosuodatin">
+<!ENTITY popup.viewpage "Näytä sivu IE-välilehdessä">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Avaa linkki IE-välilehteen">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Avaa IE-välilehteen">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Vaihda mallinnusmoottoria">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Näytä sivu erillisessä ohjelmassa">
+<!ENTITY popup.viewpage.extapp.key "R">
+<!ENTITY popup.viewlink.extapp "Avaa linkki erillisessä ohjelmassa">
+<!ENTITY popup.viewlink.extapp.key "R">
+<!ENTITY popup.bookmark.extapp "Avaa erillisessä ohjelmassa">
+<!ENTITY popup.bookmark.extapp.key "R">
+<!ENTITY popup.tabbar.extapp "Avaa erillisessä ohjelmassa">
+<!ENTITY popup.tabbar.extapp.key "R">
+<!ENTITY filter.label "Sivustosuodatin">
+<!ENTITY filter.enabled "Tässä listatut sivustot mallinnetaan aina käyttämällä sisäistä IE:tä">
+<!ENTITY filter.column.rule "Sääntö">
+<!ENTITY filter.column.enabled "Käytössä">
+<!ENTITY filter.url.label "Osoite:">
+<!ENTITY filter.button.add "Lisää">
+<!ENTITY filter.button.delete "Poista">
+<!ENTITY general.label "Yleisasetukset">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Näytä käyttöliittymässä:">
+<!ENTITY interface.toolsmenu "Työkalut-valikon komento">
+<!ENTITY interface.toolsmenu.icon "Työkalut-valikon kuvake">
+<!ENTITY interface.statusbar "Tilarivin kuvake">
+<!ENTITY switch.caption "Kun vaihdetaan mallinnusmoottori:">
+<!ENTITY switch.handleurl "Käytä aina samaa mallinnusmoottoria uuden osoitteen avaamiseen">
+<!ENTITY switch.alwaysnew "Vaihda mallinnusmoottori aina kun avataan uusi välilehti">
+<!ENTITY switch.focustab "Tarkenna uuteen välilehteen mallinnusmoottoria vaihdettaessa">
+<!ENTITY context.label "Ponnahdusvalikko">
+<!ENTITY context.caption.tabsmenu "Välilehtipalkin välilehtien ponnahdusvalikko näyttää seuraavat komennot:">
+<!ENTITY context.caption.pagelink "Sisältöalueen ponnahdusvalikko näyttää seuraavat komennot:">
+<!ENTITY context.caption.bookmark "Henkilökohtaisten kirjanmerkkien ponnahdusvalikko näyttää seuraavat komennot:">
+<!ENTITY context.embed "Sisäinen moottori">
+<!ENTITY context.extapp "Erillinen ohjelma">
+<!ENTITY context.icon "Kuvake">
+<!ENTITY external.label "Erillinen ohjelma">
+<!ENTITY external.caption "Erillisen ohjelman asetukset">
+<!ENTITY external.path.label "Polku:">
+<!ENTITY external.param.label "Parametrit:">
+<!ENTITY external.button.browse "Selaa">
+<!ENTITY external.ctrlclick "Ctrl+napsautus IE-välilehtipainikkeen päällä avaa osoitteen erillisessä ohjelmassa">
+<!ENTITY external.button.reset "Käytä Internet Exploreria">
+<!ENTITY apply.label "Käytä">
+<!ENTITY settings.label "Asetukset">
+<!ENTITY settings.default "Palauta oletukset">
+<!ENTITY settings.import "Tuo asetukset">
+<!ENTITY settings.export "Vie asetukset">

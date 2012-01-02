@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab – Možnosti">
+<!ENTITY toolsmenu.label "IE Tab – Možnosti">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "Tlačidlo IE Tab">
+<!ENTITY toolbar.button.tooltip0 "Kliknutie ľavým: prepnúť prostredie aktuálnej stránky">
+<!ENTITY toolbar.button.tooltip1 "Kliknutie stredným: použiť na prepnutie prostredia novú kartu">
+<!ENTITY toolbar.button.tooltip2 "Kliknutie pravým: zobraziť filter stránok IE Tab.">
+<!ENTITY popup.viewpage "Zobraziť stránku v IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Otvoriť prepojenie v IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Otvoriť v IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Prepnúť prostredie">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Zobraziť stránku v externej aplikácii">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Otvoriť prepojenie v exter. aplikácii">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Otvoriť v externej aplikácii">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Otvoriť v externej aplikácii">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Filter stránok">
+<!ENTITY filter.enabled "Stránky z tohto zoznamu vždy otvoriť vo vnorenom IE">
+<!ENTITY filter.column.rule "Pravidlo">
+<!ENTITY filter.column.enabled "Povolené">
+<!ENTITY filter.url.label "Adresa:">
+<!ENTITY filter.button.add "Pridať">
+<!ENTITY filter.button.delete "Odstrániť">
+<!ENTITY general.label "Všeobecné nastavenie">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Zobraziť:">
+<!ENTITY interface.toolsmenu "Položka ponuky Nástroje">
+<!ENTITY interface.toolsmenu.icon "Ikona ponuky Nástroje">
+<!ENTITY interface.statusbar "Ikona v stavovom riadku">
+<!ENTITY switch.caption "Pri prepnutí prostredia:">
+<!ENTITY switch.handleurl "Vždy otvoriť novú adresu pomocou aktuálneho prostredia">
+<!ENTITY switch.alwaysnew "Vždy prepnúť prostredie pomocou novej karty">
+<!ENTITY switch.focustab "Novú kartu preniesť do popredia">
+<!ENTITY context.label "Kontextová ponuka">
+<!ENTITY context.caption.tabsmenu "Kontextová ponuka na paneli kariet zobrazuje nasledujúce položky:">
+<!ENTITY context.caption.pagelink "Kontextová ponuka na stránke zobrazuje nasledujúce položky:">
+<!ENTITY context.caption.bookmark "Kontextová ponuka na paneli záložiek zobrazuje nasledujúce položky:">
+<!ENTITY context.embed "Vnorené prostredie">
+<!ENTITY context.extapp "Externá aplikácia">
+<!ENTITY context.icon "Ikona">
+<!ENTITY external.label "Externá aplikácia">
+<!ENTITY external.caption "Nastavenie externej aplikácie">
+<!ENTITY external.path.label "Cesta:">
+<!ENTITY external.param.label "Parametre:">
+<!ENTITY external.button.browse "Prehľadávať">
+<!ENTITY external.ctrlclick "Otvoriť adresu pomocou Ctrl+kliknutie na tlačidlo IE Tab">
+<!ENTITY external.button.reset "Použiť Internet Explorer">
+<!ENTITY apply.label "Použiť">
+<!ENTITY settings.label "Nastavenie">
+<!ENTITY settings.default "Obnoviť predvolené">
+<!ENTITY settings.import "Importovať nastavenie">
+<!ENTITY settings.export "Exportovať nastavenie">

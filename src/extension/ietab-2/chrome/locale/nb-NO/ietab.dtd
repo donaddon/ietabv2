@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE-fanevalg">
+<!ENTITY toolsmenu.label "IE-fanevalg">
+<!ENTITY toolbar.button.label "IE-fane">
+<!ENTITY toolbar.button.display "IE-faneknapp">
+<!ENTITY toolbar.button.tooltip0 "Venstre-klikk: Bytt visningsmotor for gjeldende side.">
+<!ENTITY toolbar.button.tooltip1 "Midt-klikk: Bruk ny fane for å bytte visningsmotor.">
+<!ENTITY toolbar.button.tooltip2 "Høyre-klikk: Vis IE-fanes sidefiltre.">
+<!ENTITY popup.viewpage "Vis side i IE-fane">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Åpne lenke i IE-fane">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Åpne i IE-fane">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Bytt visningsmotor">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Vis side i eksternt program">
+<!ENTITY popup.viewpage.extapp.key "k">
+<!ENTITY popup.viewlink.extapp "Åpne lenke i eksternt program">
+<!ENTITY popup.viewlink.extapp.key "k">
+<!ENTITY popup.bookmark.extapp "Åpne i eksternt program">
+<!ENTITY popup.bookmark.extapp.key "k">
+<!ENTITY popup.tabbar.extapp "Åpne i eksternt program">
+<!ENTITY popup.tabbar.extapp.key "k">
+<!ENTITY filter.label "Sidefilter">
+<!ENTITY filter.enabled "Sider listet her vil alltid åpnes i innebygd IE">
+<!ENTITY filter.column.rule "Regel">
+<!ENTITY filter.column.enabled "Aktivert">
+<!ENTITY filter.url.label "Lenke:">
+<!ENTITY filter.button.add "Legg til">
+<!ENTITY filter.button.delete "Slett">
+<!ENTITY general.label "Generelle innstillinger">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Vis på grensesnitt:">
+<!ENTITY interface.toolsmenu "Verktøymenyelement">
+<!ENTITY interface.toolsmenu.icon "Verktøymenyikon">
+<!ENTITY interface.statusbar "Statuslinjeikon">
+<!ENTITY switch.caption "Ved bytte av visningsmotor:">
+<!ENTITY switch.handleurl "Bruk alltid gjeldende visningsmotor for å åpne ny lenke">
+<!ENTITY switch.alwaysnew "Bruk alltid ny fane for å bytte visningsmotor">
+<!ENTITY switch.focustab "Fokuser på ny fane">
+<!ENTITY context.label "Kontekstmeny">
+<!ENTITY context.caption.tabsmenu "Faner på fanelinjens kontekstmeny viser følgende elementer:">
+<!ENTITY context.caption.pagelink "Innholdområdets kontekstmeny viser følgende elementer:">
+<!ENTITY context.caption.bookmark "Personlige bokmerkers kontekstmeny viser følgende elementer:">
+<!ENTITY context.embed "Innebygd motor">
+<!ENTITY context.extapp "Eksternt program">
+<!ENTITY context.icon "Ikon">
+<!ENTITY external.label "Eksternt program">
+<!ENTITY external.caption "Innstillinger for eksternt program">
+<!ENTITY external.path.label "Sti:">
+<!ENTITY external.param.label "Parametre:">
+<!ENTITY external.button.browse "Bla gjennom">
+<!ENTITY external.ctrlclick "Ctrl + Klikk på IE-faneknapp for å åpne lenke i eksternt program">
+<!ENTITY external.button.reset "Bruk Internet Explorer">
+<!ENTITY apply.label "Bruk">
+<!ENTITY settings.label "Innstillinger">
+<!ENTITY settings.default "Gjenopprett standard">
+<!ENTITY settings.import "Importer innstillinger">
+<!ENTITY settings.export "Eksporter innstillinger">

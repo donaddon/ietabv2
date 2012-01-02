@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE kortelės nustatymai">
+<!ENTITY toolsmenu.label "IE kortelės nustatymai">
+<!ENTITY toolbar.button.label "IE kortelė">
+<!ENTITY toolbar.button.display "IE kortelės mygtukas">
+<!ENTITY toolbar.button.tooltip0 "Kairysis paspaudimas: Perjungti esamo puslapio atvaizdavimo variklį.">
+<!ENTITY toolbar.button.tooltip1 "Vidurinysis paspaudimas: Naudoti naują kortelę su kitu atvaizdavimo varikliu.">
+<!ENTITY toolbar.button.tooltip2 "Dešinysis paspaudimas: Rodyti IE kortelės svetainių filtrą.">
+<!ENTITY popup.viewpage "Rodyti puslapį IE kortelėje">
+<!ENTITY popup.viewpage.key "k">
+<!ENTITY popup.viewlink "Atverti nuorodą IE kortelėje">
+<!ENTITY popup.viewlink.key "n">
+<!ENTITY popup.bookmark "Atverti IE kortelėje">
+<!ENTITY popup.bookmark.key "I">
+<!ENTITY popup.tabbar.switch "Perjungti atvaizdavimo variklį">
+<!ENTITY popup.tabbar.switch.key "v">
+<!ENTITY popup.viewpage.extapp "Rodyti puslapį išorinėje programoje">
+<!ENTITY popup.viewpage.extapp.key "R">
+<!ENTITY popup.viewlink.extapp "Atverti nuorodą išorinėje programoje">
+<!ENTITY popup.viewlink.extapp.key "v">
+<!ENTITY popup.bookmark.extapp "Atverti išorinėje programoje">
+<!ENTITY popup.bookmark.extapp.key "o">
+<!ENTITY popup.tabbar.extapp "Atverti išorinėje programoje">
+<!ENTITY popup.tabbar.extapp.key "o">
+<!ENTITY filter.label "Svetainių filtras">
+<!ENTITY filter.enabled "Įjungti svetainių filtrą">
+<!ENTITY filter.column.rule "Taisyklė">
+<!ENTITY filter.column.enabled "Įjungta">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Pridėti">
+<!ENTITY filter.button.delete "Ištrinti">
+<!ENTITY general.label "Bendrieji nustatymai">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Sąsajoje rodyti:">
+<!ENTITY interface.toolsmenu "Priemonių meniu elementą">
+<!ENTITY interface.toolsmenu.icon "Priemonių meniu piktogramą">
+<!ENTITY interface.statusbar "Būsenos juostos piktogramą">
+<!ENTITY switch.caption "Kada perjungti atvaizdavimo variklį:">
+<!ENTITY switch.handleurl "Visada naudoti esamą variklį atveriant naują adresą">
+<!ENTITY switch.alwaysnew "Atverti naujoje kortelėje, kai perjungiami varikliai">
+<!ENTITY switch.focustab "Aktyvuoti naują kortelę, kai perjungiami varikliai">
+<!ENTITY context.label "Kontekstinis meniu">
+<!ENTITY context.caption.tabsmenu "Kortelių juostos kontekstiniame meniu rodyti šiuos elementus:">
+<!ENTITY context.caption.pagelink "Turinio zonos kontekstiniame meniu rodyti šiuos elementus:">
+<!ENTITY context.caption.bookmark "Asmeninių žymelių kontekstiniame meniu rodyti šiuos elementus:">
+<!ENTITY context.embed "Įtaisytasis variklis">
+<!ENTITY context.extapp "Išorinė programa">
+<!ENTITY context.icon "Piktograma">
+<!ENTITY external.label "Išorinė programa">
+<!ENTITY external.caption "Išorinė programos nustatymai">
+<!ENTITY external.path.label "Kelias:">
+<!ENTITY external.param.label "Parametrai:">
+<!ENTITY external.button.browse "Parinkti">
+<!ENTITY external.ctrlclick "Vald+paspaudimas ant IE kortelės atveria adresą išorinėje programoje">
+<!ENTITY external.button.reset "Naudoti Internet Explorer">
+<!ENTITY apply.label "Taikyti">
+<!ENTITY settings.label "Nustatymai">
+<!ENTITY settings.default "Atstatyti numatytuosius">
+<!ENTITY settings.import "Importuoti nustatymus">
+<!ENTITY settings.export "Eksportuoti nustatymus">

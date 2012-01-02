@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab 选项">
+<!ENTITY toolsmenu.label "IE Tab 选项">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab 按钮">
+<!ENTITY toolbar.button.tooltip0 "左键: 立即切换此页面的浏览引擎。">
+<!ENTITY toolbar.button.tooltip1 "中键: 使用新标签页查看切换结果。">
+<!ENTITY toolbar.button.tooltip2 "右键: 显示 IE Tab 网址过滤列表。">
+<!ENTITY popup.viewpage "使用 IE Tab 浏览此页面">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "使用 IE Tab 打开此链接">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "使用 IE Tab 打开">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "切换此页面的浏览引擎">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "使用外部程序浏览此页面">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "使用外部程序打开此链接">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "使用外部程序打开">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "使用外部程序打开">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "网址过滤">
+<!ENTITY filter.enabled "总是使用 IE Tab 浏览以下网址">
+<!ENTITY filter.column.rule "规则">
+<!ENTITY filter.column.enabled "激活">
+<!ENTITY filter.url.label "加入网址:">
+<!ENTITY filter.button.add "添加">
+<!ENTITY filter.button.delete "删除">
+<!ENTITY general.label "功能设置">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "显示界面:">
+<!ENTITY interface.toolsmenu "工具菜单项">
+<!ENTITY interface.toolsmenu.icon "工具菜单图标">
+<!ENTITY interface.statusbar "状态栏图标">
+<!ENTITY switch.caption "浏览引擎切换时:">
+<!ENTITY switch.handleurl "总是以当前浏览引擎打开地址栏的新网址">
+<!ENTITY switch.alwaysnew "总是使用新标签页查看切换结果">
+<!ENTITY switch.focustab "打开新标签页时自动切换至该标签页">
+<!ENTITY context.label "右键菜单">
+<!ENTITY context.caption.tabsmenu "在标签栏的标签右键菜单显示以下项目：">
+<!ENTITY context.caption.pagelink "在内容区域的右键菜单显示以下项目：">
+<!ENTITY context.caption.bookmark "个人收藏夹的右键菜单显示以下项目：">
+<!ENTITY context.embed "嵌入的引擎">
+<!ENTITY context.extapp "外部程序">
+<!ENTITY context.icon "图标">
+<!ENTITY external.label "外部程序">
+<!ENTITY external.caption "外部程序设置">
+<!ENTITY external.path.label "路径:">
+<!ENTITY external.param.label "参数:">
+<!ENTITY external.button.browse "浏览">
+<!ENTITY external.ctrlclick "使用 [CTRL]+[左键] 点击 IE Tab 按钮时，以外部程序打开网址">
+<!ENTITY external.button.reset "使用 Internet Explorer">
+<!ENTITY apply.label "应用">
+<!ENTITY settings.label "设置">
+<!ENTITY settings.default "还原默认">
+<!ENTITY settings.import "导入设置">
+<!ENTITY settings.export "导出设置">

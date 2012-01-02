@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "Налаштування IE Tab">
+<!ENTITY toolsmenu.label "Налаштування IE Tab">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "Кнопка IE Tab">
+<!ENTITY toolbar.button.tooltip0 "LeftClick: Відобразити іншим способом">
+<!ENTITY toolbar.button.tooltip1 "MiddleClick: Відобразити іншим способом в новій вкладці">
+<!ENTITY toolbar.button.tooltip2 "RightClick: Налаштувати правила відображення сайтів у IE Tab">
+<!ENTITY popup.viewpage "Відобразити сторінку у IE Tab">
+<!ENTITY popup.viewpage.key "і">
+<!ENTITY popup.viewlink "Відкрити посилання в новій вкладці IE Tab">
+<!ENTITY popup.viewlink.key "і">
+<!ENTITY popup.bookmark "Відкрити в новій вкладці IE Tab">
+<!ENTITY popup.bookmark.key "і">
+<!ENTITY popup.tabbar.switch "Змінити спосіб відображення">
+<!ENTITY popup.tabbar.switch.key "і">
+<!ENTITY popup.viewpage.extapp "Відобразити в іншому застосуванні">
+<!ENTITY popup.viewpage.extapp.key "і">
+<!ENTITY popup.viewlink.extapp "Завантажити посилання в інше застосування">
+<!ENTITY popup.viewlink.extapp.key "а">
+<!ENTITY popup.bookmark.extapp "Завантажити в інше застосування">
+<!ENTITY popup.bookmark.extapp.key "а">
+<!ENTITY popup.tabbar.extapp "Завантажити вкладку в інше застосування">
+<!ENTITY popup.tabbar.extapp.key "а">
+<!ENTITY filter.label "Правила відображення">
+<!ENTITY filter.enabled "Для перерахованих тут сайтів завжди використовувати &quot;вбудований&quot; IE">
+<!ENTITY filter.column.rule "Правило">
+<!ENTITY filter.column.enabled "Включено">
+<!ENTITY filter.url.label "Сайт:">
+<!ENTITY filter.button.add "Додати">
+<!ENTITY filter.button.delete "Видалити">
+<!ENTITY general.label "Основні налаштування">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Інтерфейс користувача:">
+<!ENTITY interface.toolsmenu "Включити &quot;Налаштування IE Tab&quot; в меню &quot;Інстументи&quot;">
+<!ENTITY interface.toolsmenu.icon "Значок на панелі інструментів">
+<!ENTITY interface.statusbar "Додати іконку в рядок стану">
+<!ENTITY switch.caption "При зміні способу відображення сторінки:">
+<!ENTITY switch.handleurl "Використовувати поточний спосіб для відображення нових URL">
+<!ENTITY switch.alwaysnew "Використовувати нову вкладку">
+<!ENTITY switch.focustab "Робити нову вкладку активної">
+<!ENTITY context.label "Контекстне меню">
+<!ENTITY context.caption.tabsmenu "В контекстному меню панелі вкладок відобразити елементи:">
+<!ENTITY context.caption.pagelink "В області контекстного меню відобразити елементи:">
+<!ENTITY context.caption.bookmark "В контекстному меню панелі закладок відобразити елементи:">
+<!ENTITY context.embed "Вбудований браузер">
+<!ENTITY context.extapp "Інша програма">
+<!ENTITY context.icon "Іконка">
+<!ENTITY external.label "Інший додаток">
+<!ENTITY external.caption "Налаштування запуску іншого (зовнішнього) додатка:">
+<!ENTITY external.path.label "Місцеположення:">
+<!ENTITY external.param.label "Параметри:">
+<!ENTITY external.button.browse "Огляд...">
+<!ENTITY external.ctrlclick "Запускати додаток при натисненні Ctrl+LeftClick на кнопку &quot;IE Tab&quot; у панелі інструментів">
+<!ENTITY external.button.reset "Використовувати Internet Explorer">
+<!ENTITY apply.label "Застосувати">
+<!ENTITY settings.label "Налаштування">
+<!ENTITY settings.default "Відновити по-умовчанню">
+<!ENTITY settings.import "Імпортувати з файлу">
+<!ENTITY settings.export "Експортувати у файл">

@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "Options de IE Tab">
+<!ENTITY toolsmenu.label "Options de IE Tab">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "Bouton IE Tab">
+<!ENTITY toolbar.button.tooltip0 "Clic-gauche : Change le moteur web de la page en cours.">
+<!ENTITY toolbar.button.tooltip1 "Clic-milieu : Ouvre un nouvel onglet en changeant de moteur web.">
+<!ENTITY toolbar.button.tooltip2 "Clic-droit : Affiche les sites du filtre de IE Tab.">
+<!ENTITY popup.viewpage "Afficher cette page avec IE Tab">
+<!ENTITY popup.viewpage.key "A">
+<!ENTITY popup.viewlink "Ouvrir le lien avec IE Tab">
+<!ENTITY popup.viewlink.key "O">
+<!ENTITY popup.bookmark "Ouvrir avec IE Tab">
+<!ENTITY popup.bookmark.key "O">
+<!ENTITY popup.tabbar.switch "Changer de moteur web">
+<!ENTITY popup.tabbar.switch.key "C">
+<!ENTITY popup.viewpage.extapp "Afficher cette page via le programme externe de IE Tab">
+<!ENTITY popup.viewpage.extapp.key "A">
+<!ENTITY popup.viewlink.extapp "Ouvrir le lien via le programme externe de IE Tab">
+<!ENTITY popup.viewlink.extapp.key "O">
+<!ENTITY popup.bookmark.extapp "Ouvrir via le programme externe de IE Tab">
+<!ENTITY popup.bookmark.extapp.key "O">
+<!ENTITY popup.tabbar.extapp "Ouvrir via le programme externe de IE Tab">
+<!ENTITY popup.tabbar.extapp.key "O">
+<!ENTITY filter.label "Sites à ouvrir dans IE">
+<!ENTITY filter.enabled "Les sites suivants seront toujours ouverts avec IE Tab">
+<!ENTITY filter.column.rule "Adresse">
+<!ENTITY filter.column.enabled "Active">
+<!ENTITY filter.url.label "URL :">
+<!ENTITY filter.button.add "Ajouter ce site">
+<!ENTITY filter.button.delete "Supprimer ce site">
+<!ENTITY general.label "Options générales">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Apparence :">
+<!ENTITY interface.toolsmenu "Ajouter « Options de IE Tab » dans le menu Outils...">
+<!ENTITY interface.toolsmenu.icon "...et y afficher également une icône">
+<!ENTITY interface.statusbar "Afficher une icône dans la barre d&apos;état">
+<!ENTITY switch.caption "Lors du changement du moteur web :">
+<!ENTITY switch.handleurl "Conserver le moteur web pendant la navigation">
+<!ENTITY switch.alwaysnew "Ouvrir un nouvel onglet lors du changement de moteur web">
+<!ENTITY switch.focustab "Nouvel onglet au premier plan">
+<!ENTITY context.label "Menus contextuels">
+<!ENTITY context.caption.tabsmenu "Ajouter au menu contextuel des onglets les éléments suivants :">
+<!ENTITY context.caption.pagelink "Ajouter au menu contextuel de la page les éléments suivants :">
+<!ENTITY context.caption.bookmark "Ajouter au menu contextuel des marque-pages les éléments suivants :">
+<!ENTITY context.embed "« Afficher avec IE Tab »">
+<!ENTITY context.extapp "« Afficher avec le programme externe d&apos;IE Tab »">
+<!ENTITY context.icon "Icônes">
+<!ENTITY external.label "Programme externe">
+<!ENTITY external.caption "Options du programme externe">
+<!ENTITY external.path.label "Chemin :">
+<!ENTITY external.param.label "Paramètres :">
+<!ENTITY external.button.browse "Parcourir">
+<!ENTITY external.ctrlclick "Ctrl+clic gauche sur l&apos;icône de IE Tab afin d&apos;ouvrir la page dans le programme externe">
+<!ENTITY external.button.reset "Utiliser Internet Explorer">
+<!ENTITY apply.label "Appliquer">
+<!ENTITY settings.label "Préférences">
+<!ENTITY settings.default "Options par défaut">
+<!ENTITY settings.import "Importer des options">
+<!ENTITY settings.export "Exporter vos options">

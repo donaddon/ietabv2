@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "Opciones de IE Tab">
+<!ENTITY toolsmenu.label "Opciones de IE Tab">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "Botón IE Tab">
+<!ENTITY toolbar.button.tooltip0 "Click-Izquierdo: Cambia de motor de renderizado para la página actual.">
+<!ENTITY toolbar.button.tooltip1 "Click-Central: Utiliza una nueva pestaña para cambiar de motor de renderizado.">
+<!ENTITY toolbar.button.tooltip2 "Click-Derecho: Muestra el Filtro de Sitios para IE Tab.">
+<!ENTITY popup.viewpage "Mostrar la Página con IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Abrir un Vínculo con IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Abrir con IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Cambiar de motor de renderizado">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Ver la Página con una Aplicación Externa">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Abrir un Vínculo con una Aplicación Externa">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Abrir con una Aplicación Externa">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Abrir con una Aplicación Externa">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Filtro de Sitios">
+<!ENTITY filter.enabled "Los Sitios listados aquí serán abiertos siempre utilizando IE empotrado">
+<!ENTITY filter.column.rule "Regla">
+<!ENTITY filter.column.enabled "Habilitada">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Agregar">
+<!ENTITY filter.button.delete "Eliminar">
+<!ENTITY general.label "Configuración General">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Mostrar en la interfase:">
+<!ENTITY interface.toolsmenu "Ítem del Menú de Herramientas">
+<!ENTITY interface.toolsmenu.icon "Ícono del Menú de Herramientas">
+<!ENTITY interface.statusbar "Ícono de la Barra de Estado">
+<!ENTITY switch.caption "Cuando cambia el motor de renderizado:">
+<!ENTITY switch.handleurl "Utilizar siempre el actual motor de renderizado para abrir una nueva URL">
+<!ENTITY switch.alwaysnew "Utilizar siempre una nueva pestaña para cambiar de motor de renderizado">
+<!ENTITY switch.focustab "Enfocar en la nueva pestaña">
+<!ENTITY context.label "Menú de contexto">
+<!ENTITY context.caption.tabsmenu "El Menú Contextual de la Barra de Pestañas muestra los siguientes elementos:">
+<!ENTITY context.caption.pagelink "El Menú Contextual del Área de Contenido muestra los siguientes elementos:">
+<!ENTITY context.caption.bookmark "El Menú Contextual de los Marcadores Personales muestra los siguientes elementos:">
+<!ENTITY context.embed "Motor Embebido">
+<!ENTITY context.extapp "Aplicación Externa">
+<!ENTITY context.icon "Ícono">
+<!ENTITY external.label "Aplicación Externa">
+<!ENTITY external.caption "Configuración de la Aplicación Externa">
+<!ENTITY external.path.label "Ruta:">
+<!ENTITY external.param.label "Parámetros:">
+<!ENTITY external.button.browse "Navegar">
+<!ENTITY external.ctrlclick "Ctrl+Click en el boton de IE Tab para abrir en una Aplicación Externa">
+<!ENTITY external.button.reset "Utilizar Internet Explorer">
+<!ENTITY apply.label "Aplicar">
+<!ENTITY settings.label "Configuración">
+<!ENTITY settings.default "Restablecer valores iniciales">
+<!ENTITY settings.import "Importar Configuración">
+<!ENTITY settings.export "Exportar Configuración">

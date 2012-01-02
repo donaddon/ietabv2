@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab のオプション">
+<!ENTITY toolsmenu.label "IE Tab のオプション">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab ボタン">
+<!ENTITY toolbar.button.tooltip0 "左クリック: 表示中のページのレンダリングエンジンを切り替えます。">
+<!ENTITY toolbar.button.tooltip1 "中クリック: レンダリングエンジンの切り替えを新しいタブで行います。">
+<!ENTITY toolbar.button.tooltip2 "右クリック: IE Tab のオプションを表示します。">
+<!ENTITY popup.viewpage "ページを IE に切り替えて表示">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "リンクを IE に切り替えて開く">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "IE に切り替えて開く">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "レンダリングエンジンの切り替え">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "ページを外部アプリケーションで表示">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "リンクを外部アプリケーションで開く">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "外部アプリケーションで開く">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "外部アプリケーションで開く">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "サイトフィルタ">
+<!ENTITY filter.enabled "この一覧に表示されているサイトは常に IE のレンダリングエンジンで表示されます。">
+<!ENTITY filter.column.rule "フィルタ">
+<!ENTITY filter.column.enabled "有効">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "追加">
+<!ENTITY filter.button.delete "削除">
+<!ENTITY general.label "全般">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "インターフェイス:">
+<!ENTITY interface.toolsmenu "ツールメニューにオプションを表示">
+<!ENTITY interface.toolsmenu.icon "ツールメニューにアイコンを表示">
+<!ENTITY interface.statusbar "ステータスバーにアイコンを表示">
+<!ENTITY switch.caption "レンダリングエンジンを切り替えた時の動作:">
+<!ENTITY switch.handleurl "新しい URL を開く場合、使用中のレンダリングエンジンを維持">
+<!ENTITY switch.alwaysnew "レンダリングエンジンを切り替える時は常に新しいタブを使用">
+<!ENTITY switch.focustab "新しいタブを優先的に表示">
+<!ENTITY context.label "表示">
+<!ENTITY context.caption.tabsmenu "タブバーのコンテキストメニューに表示する項目：">
+<!ENTITY context.caption.pagelink "コンテキストメニューに表示する項目:">
+<!ENTITY context.caption.bookmark "ブックマークのコンテキストメニューに表示する項目:">
+<!ENTITY context.embed "レンダリングエンジンの切り替え">
+<!ENTITY context.extapp "外部アプリケーション">
+<!ENTITY context.icon "アイコン">
+<!ENTITY external.label "外部アプリケーション">
+<!ENTITY external.caption "外部アプリケーションの設定">
+<!ENTITY external.path.label "パス:">
+<!ENTITY external.param.label "変数:">
+<!ENTITY external.button.browse "参照">
+<!ENTITY external.ctrlclick "IE Tab のボタンを Ctrl+クリック すると外部アプリケーションで URL を開きます。">
+<!ENTITY external.button.reset "Internet Explorer を使用">
+<!ENTITY apply.label "適用">
+<!ENTITY settings.label "設定">
+<!ENTITY settings.default "初期状態に戻す">
+<!ENTITY settings.import "インポート">
+<!ENTITY settings.export "エクスポート">

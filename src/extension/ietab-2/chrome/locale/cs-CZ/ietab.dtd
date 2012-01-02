@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab Nastavení">
+<!ENTITY toolsmenu.label "IE Tab Nastavení">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "Tlačítko IE Tab">
+<!ENTITY toolbar.button.tooltip0 "Levé tlačítko: Přepnout zobrazovací jádro pro tuto stránku">
+<!ENTITY toolbar.button.tooltip1 "Prostřední tlačítko: Přepnout zobrazovací jádro a zobrazit stránku v novém panelu">
+<!ENTITY toolbar.button.tooltip2 "Pravé tlačítko: Zobrazit seznam stránek IE Tab">
+<!ENTITY popup.viewpage "Zobrazit stránku v IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Otevřít odkaz v IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Otevřít v IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Přepnout zobrazovací jádro prohlížeče">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Zobrazit stránku v externí aplikaci">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Otevřít odkaz v externí aplikaci">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Otevřít v externí aplikaci">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Otevřít v externí aplikaci">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Seznam stránek">
+<!ENTITY filter.enabled "Stránky v tomto seznamu budou vždy zobrazeny ve vnořeném IE">
+<!ENTITY filter.column.rule "Pravidlo">
+<!ENTITY filter.column.enabled "Povoleno">
+<!ENTITY filter.url.label "Adresa:">
+<!ENTITY filter.button.add "Přidat">
+<!ENTITY filter.button.delete "Smazat">
+<!ENTITY general.label "Obecné nastavení">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Zobrazit v uživatelském rozhraní">
+<!ENTITY interface.toolsmenu "Položka Nástroje">
+<!ENTITY interface.toolsmenu.icon "Ikona Nástroje">
+<!ENTITY interface.statusbar "Ikona ve stavovém řádku">
+<!ENTITY switch.caption "Kdy přepnout zobrazovací jádro:">
+<!ENTITY switch.handleurl "Vždy použít aktuální zobrazovací jádro pro nové adresy">
+<!ENTITY switch.alwaysnew "Vždy použít nový panel při přepínání zobrazovacího jádra">
+<!ENTITY switch.focustab "Přepnout na nový panel">
+<!ENTITY context.label "Kontextové menu">
+<!ENTITY context.caption.tabsmenu "Kontextové menu panelu obsahuje následující položky:">
+<!ENTITY context.caption.pagelink "Kontextové menu stránky obsahuje následující položky:">
+<!ENTITY context.caption.bookmark "Kontextové menu v záložkách obsahuje následující položky:">
+<!ENTITY context.embed "Zapouzdřené jádro">
+<!ENTITY context.extapp "Externí aplikace">
+<!ENTITY context.icon "Ikona">
+<!ENTITY external.label "Externí aplikace">
+<!ENTITY external.caption "Nastavení externí aplikace">
+<!ENTITY external.path.label "Cesta:">
+<!ENTITY external.param.label "Parametry:">
+<!ENTITY external.button.browse "Prohlížet:">
+<!ENTITY external.ctrlclick "Ctrl+Poklepání na tlačítko IE Tab otevře adresu v externí aplikaci">
+<!ENTITY external.button.reset "Použít Internet Explorer">
+<!ENTITY apply.label "Použít">
+<!ENTITY settings.label "Nastavení">
+<!ENTITY settings.default "Vrátit standardní nastavení">
+<!ENTITY settings.import "Importovat nastavení">
+<!ENTITY settings.export "Exportovat nastavení">

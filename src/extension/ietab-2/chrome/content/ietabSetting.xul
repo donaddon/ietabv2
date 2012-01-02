@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<!--
+// Updates:
+//
+// 2/24/10: ietab.net: Converted to new ietab2 namespace.
+//
+-->
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://ietab2/skin/ietab.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://ietab2/locale/ietab.dtd">
+
+<dialog id="ietab2-dialog"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      autosize="true"
+      resizable="no"
+      persist="screenX screenY"
+      buttons="accept,cancel,extra1,extra2"
+      onload="gIeTab2.init();"
+      onunload="gIeTab2.destory();"
+      ondialogaccept="gIeTab2.setOptions();"
+      ondialogextra1="gIeTab2.setOptions();"
+      title="&dialog.title;">
+
+   <script type="application/x-javascript" src="chrome://ietab2/content/ietabExtApp.js"/>
+   <script type="application/x-javascript" src="chrome://ietab2/content/ietabSetting.js"/>
+   <script type="application/x-javascript" src="chrome://ietab2/content/ietabUtils.js"/>
+
+   <tabbox>
+      <tabs>
+         <tab label="&filter.label;"/>
+         <tab label="&general.label;"/>
+         <tab label="&context.label;"/>
+         <tab label="&external.label;"/>
+	     <tab label="IE Compatibility Mode" />
+      </tabs>
+
+      <tabpanels>
+         <tabpanel>
+            <vbox flex="1">
+               <hbox align="center">
+                  <checkbox id="filtercbx" label="&filter.enabled;"
+                     oncommand="gIeTab2.updateDialogAllStatus();"/>
+                  <spacer flex="1"/>
+                  <button id="delbtn"
+                     label="&filter.button.delete;"
+                     disabled="true"
+                     oncommand="gIeTab2.delSelected();"/>
+               </hbox>
+
+               <hbox align="center" flex="1">
+         		<tree id="filterList" flex="1" width="375" height="170" seltype="multiple"
+         		      enableColumnDrag="true" disableKeyNavigation="true" editable="true"
+         		      onselect="gIeTab2.updateDelButtonStatus();">
+         			<treecols>
+         				<treecol id="columnRule" label="&filter.column.rule;" flex="1" persist="width ordinal hidden"/>
+         				<splitter class="tree-splitter"/>
+         				<treecol id="columnEnabled" label="&filter.column.enabled;" flex="0" persist="width ordinal hidden" type="checkbox" editable="true"/>
+         			</treecols>
+         			<treechildren id="filterChilds" ondblclick="gIeTab2.onClickFilterList(event);"/>
+         		</tree>
+               </hbox>
+
+               <hbox align="center">
+               <label id="urllabel" value="&filter.url.label;"/>
+                  <textbox id="urlbox" flex="1"
+                     oninput="gIeTab2.updateAddButtonStatus();"/>
+                  <button id="addbtn"
+                     label="&filter.button.add;"
+                     disabled="true"
+                     oncommand="gIeTab2.addNewURL();"/>
+               </hbox>
+            </vbox>
+         </tabpanel>
+
+         <tabpanel>
+            <vbox flex="1">
+               <groupbox><caption label="&interface.caption;"/>
+                  <hbox align="center">
+                  <checkbox label="&interface.toolsmenu;" id="toolsmenu"/>
+                  <checkbox label="&interface.toolsmenu.icon;" id="toolsmenu.icon" class="indent"/>
+                  </hbox>
+                  <hbox align="center">
+                  <checkbox label="&interface.statusbar;" id="statusbar"/>
+                  </hbox>
+               </groupbox>
+
+               <groupbox><caption label="&switch.caption;"/>
+                  <hbox align="center">
+                  <checkbox label="&switch.handleurl;" id="handleurl"/>
+                  </hbox>
+                  <hbox align="center">
+                  <checkbox label="&switch.alwaysnew;" id="alwaysnew"/>
+                  </hbox>
+                  <hbox align="center">
+                  <checkbox label="&switch.focustab;" id="focustab"/>
+                  </hbox>
+               </groupbox>
+               <groupbox>
+                  <caption label="&processmode.caption;"/>
+                  <hbox align="center">
+                    <checkbox label="&processmode.runinprocess;" id="runinprocess"/>
+                  </hbox>
+                 <hbox align="left">
+                   <p style="margin-left:25px">
+                     <label value="&processmode.roboformtip;"></label>
+                   </p>
+                 </hbox>
+               </groupbox>
+            </vbox>
+         </tabpanel>
+
+         <tabpanel>
+            <vbox flex="1">
+               <groupbox><caption label="&context.caption.tabsmenu;"/>
+                  <hbox align="center">
+                     <checkbox label="&popup.tabbar.switch;" id="tabsmenu.embed"/>
+                     <checkbox label="&popup.tabbar.extapp;" id="tabsmenu.extapp"/>
+                     <checkbox label="&context.icon;" id="tabsmenu.icon"/>
+                  </hbox>
+               </groupbox>
+               <groupbox><caption label="&context.caption.pagelink;"/>
+                  <hbox align="center">
+                     <checkbox label="&popup.viewpage;" id="pagelink.embed"/>
+                     <checkbox label="&popup.viewpage.extapp;" id="pagelink.extapp"/>
+                     <checkbox label="&context.icon;" id="pagelink.icon"/>
+                  </hbox>
+               </groupbox>
+               <groupbox><caption label="&context.caption.bookmark;"/>
+                  <hbox align="center">
+                     <checkbox label="&popup.bookmark;" id="bookmark.embed"/>
+                     <checkbox label="&popup.bookmark.extapp;" id="bookmark.extapp"/>
+                     <checkbox label="&context.icon;" id="bookmark.icon"/>
+                  </hbox>
+               </groupbox>
+            </vbox>
+         </tabpanel>
+
+         <tabpanel>
+            <vbox flex="1">
+               <groupbox><caption label="&external.caption;"/>
+                  <hbox align="center">
+                     <label value="&external.path.label;"/>
+                     <textbox id="pathbox" flex="1" readonly="true"/>
+                     <button id="browsebtn" label="&external.button.browse;"
+                        oncommand="gIeTab2.browseAppPath();"/>
+                  </hbox>
+                  <hbox align="center">
+                     <label value="&external.param.label;"/>
+                     <textbox id="parambox" flex="1"/>
+                  </hbox>
+                  <hbox align="center">
+                     <checkbox label="&external.ctrlclick;" id="ctrlclick"/>
+                  </hbox>
+               </groupbox>
+               <spacer flex="1"/>
+                  <hbox align="center">
+                     <spacer flex="1"/>
+                     <button id="resetbtn" label="&external.button.reset;" flex="1"
+                        oncommand="gIeTab2.resetAppPath();"/>
+                     <spacer flex="1"/>
+                  </hbox>
+               <spacer flex="1"/>
+            </vbox>
+         </tabpanel>
+
+		  <tabpanel>
+			  <vbox flex="1">
+				  <groupbox>
+					  <caption label="IE Tab Compatibility Mode"/>
+					  <vbox>
+						  <radiogroup id="iemode">
+							  <radio id="ie7mode" label="IE7 Standards Mode" />
+							  <radio id="ie8mode" label="IE8 Standards Mode" />
+							  <radio id="ie8forced" label="IE8 Forced Standards Mode" />
+							  <radio id="ie9mode" label="IE9 Standards Mode" />
+							  <radio id="ie9forced" label="IE9 Forced Standards Mode" />
+						  </radiogroup>
+						  <label style="margin-top:20px">* This feature only works if you have IE8+ installed</label>
+						  <label>* You must re-start firefox for changes to take effect</label>
+						  <label class="text-link" href="http://blogs.msdn.com/b/ie/archive/2009/03/10/more-ie8-extensibility-improvements.aspx">Read more about the above options at the IE Team Blog</label>
+					  </vbox>
+				  </groupbox>
+			  </vbox>
+		  </tabpanel>
+	  </tabpanels>
+   </tabbox>
+
+   <hbox>
+      <button dlgtype="extra2" id="myExtra2" label="&settings.label;" popup="settings"/>
+      <spacer flex="1"/>
+      <button dlgtype="accept" id="myAccept"/>
+      <button dlgtype="extra1" id="myExtra1" label="&apply.label;"/>
+      <button dlgtype="cancel" id="myCancel"/>
+   </hbox>
+
+   <popupset>
+      <popup id="settings" position="before_start">
+         <menuitem id="default" label="&settings.default;" oncommand="gIeTab2.restoreDefault();"/>
+         <menuitem id="import"  label="&settings.import;"  oncommand="gIeTab2.importSettings();"/>
+         <menuitem id="export"  label="&settings.export;"  oncommand="gIeTab2.exportSettings();"/>
+      </popup>
+   </popupset>
+
+</dialog>

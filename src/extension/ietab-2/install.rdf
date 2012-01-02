@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+ <Description about="urn:mozilla:install-manifest">
+
+   <em:id>{1BC9BA34-1EED-42ca-A505-6D2F1A935BBB}</em:id>
+   <em:name>IE Tab 2 (FF 3.6+)</em:name>
+   <em:version>3.10.7.2</em:version>
+   <em:description>Enhanced version of the classic IE Tab that includes support for FireFox 3.6 and beyond.</em:description>
+   <em:creator>Hong Jen Yee (PCMan)</em:creator>
+   <em:developer>ietab.net</em:developer>
+   <em:type>2</em:type>
+   <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+   <em:optionsURL>chrome://ietab2/content/ietabSetting.xul</em:optionsURL>
+   <em:iconURL>chrome://ietab2/skin/ietab-icon.png</em:iconURL>
+   <em:unpack>true</em:unpack>
+   
+   <!-- Firefox -->
+   <em:targetApplication>
+     <Description>
+       <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+       <em:minVersion>3.0</em:minVersion>
+       <em:maxVersion>9.0a2</em:maxVersion>
+     </Description>
+   </em:targetApplication>
+
+   <em:localized>
+     <Description>
+       <em:locale>af-ZA</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Stel jou in staat om die ingebedde IE-wysmetode binne-in Mozilla/Firefox te gebruik.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>ar</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>يمكنك من إستخدام محرك IE المضمن داخل موزيلا فيرفوكس.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>be-BY</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Адлюстраванне сайтаў з выкарыстаннем "убудаванага" Internet Explorer.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>bg-BG</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Дава Ви възможност да използвате вграден IE чрез Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>ca-AD</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Et permet fer servir el motor del IE dintre de Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>cs-CZ</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Umožní používat jádro Internet Exploreru v Mozille/Firefoxu.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>da-DK</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Lader dig bruge Internet Explorer-browserens motor indeni Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>de-DE</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Wahlweise die Browser-Engine des Internet Explorers benutzen</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>es-AR</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Lo habilita a utilizar el motor del IE embebido dentro de Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>es-ES</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Te permite ver páginas con el motor de Internet Explorer dentro de tu navegador Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>et-EE</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Võimaldab kasutada IE mootorit Mozilla/Firefoxi aknas.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>eu-ES</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Mozilla/Firefox-en barnean IE-ren motorea erabiltzea ahalbidetzen du.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>fa-IR</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>توانائي استفاده از موتور IE در موزيلا فايرفاکس را فراهم مي‌کند.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>fi-FI</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Antaa sinun käyttää Internet Exploreria Mozillan tai Firefoxin sisällä.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>fr-FR</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Permet d'ouvrir une page avec Internet Explorer dans un onglet de Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>fy-NL</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Jout jo de mooglikheid om de ynboude IE masine te brûken yn Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>he-IL</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>מאפשר לך להשתמש במנוע של אינטרנט אקספלורר בתוך פיירפוקס/מוזילה</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>hr-HR</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Omogućava Vam da koristite ugrađeni IE pogon unutar Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>hu-HU</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Lehetővé teszi az IE megjelenítő motorjának használatát Mozilla/Firefox böngészőben.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>id-ID</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Mengijinkan Anda menggunakan mesin Internet Explorer terintegrasi dalam Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>it-IT</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Vi consente di utilizzare il motore di Internet Explorer dentro Mozilla e Firefox</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>ja-JP</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Mozilla/Firefox に IE のレンダリングエンジンを組み込みます。</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>km-KH</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>អនុញ្ញាតអោយអ្នកប្រើម៉ាស៊ីន IE ដែលបង្កប់នៅក្នុង Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>ko-KR</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Mozilla/Firefox에 내장된 Internet Explorer 엔진을 사용합니다.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>lt-LT</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Leidžia jums naudoti įtaisytąjį IE variklį Mozilla Firefox naršyklėje.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>mn-MN</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Mozilla/Firefox-д нэгтгэгдсэн IE хөдөлгүүрийг хэрэглэхийг нээх</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>nb-NO</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Muliggjør bruk av den innebygde IE-motoren i Mozilla/Firefox</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>nl-NL</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Sites in een "IE-omgeving" in een Firefox-tab openen !!!</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>pl-PL</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Otwiera witryny internetowe w Firefoksie za pomocą modułu IE</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>pt-BR</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Habilita o uso do mecanismo de exibição do Internet Explorer dentro do Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>pt-PT</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Permite-o usar o motor do IE incorporado dentro do Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>ro-RO</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Permite folosirea motorului IE incapsulat in Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>ru-RU</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Отображение сайтов через Internet Explorer, "встроенный" в Microsoft Windows.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>sk-SK</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Umožňuje používať prostredie Internet Explorera priamo vo Firefoxe a Flocku.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>sl-SI</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Omogoča uporabo vgnezdenega Internet Explorerja znotraj Mozille/Firefoxa</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>sr-RS</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Омогућава ти коришћење ИЕ унутар Мозилиног Фајерфокса.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>sv-SE</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Nu kan du köra Microsofts Internet Explorer inuti Mozilla Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>th-TH</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>ทำให้สามารถเปิดเว็บใน Mozilla/Firefox ด้วย Engine ของ Internet Explorer ได้</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>tr-TR</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>IE motorunu Firefox icinde gömülü olarak kullanmanızı sağlar.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>uk-UA</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Відображення сайтів з використанням "вбудованого" Internet Explorer.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>vi-VN</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>Cho phép bạn dùng phần nhân IE được nhúng trong Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>zh-CN</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>让 Firefox 也能内嵌 IE 用双核心!!!</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>zh-TW</em:locale>
+       <em:name>IE Tab 2 (FF 3.6+)</em:name>
+       <em:creator>Hong Jen Yee (PCMan)</em:creator>
+       <em:developer>ietab.net</em:developer>
+       <em:homepageURL>http://www.ietab.net/ffietab</em:homepageURL>
+       <em:description>讓 Firefox 也能內嵌 IE 用雙核心!!!</em:description>
+     </Description>
+   </em:localized>
+
+ </Description>
+</RDF>

@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://ietab2/skin/ietab.css" type="text/css"?>
+<!--
+// Updates:
+//
+// 2/24/10: ietab.net: Converted to new ietab2 namespace.
+//
+-->
+<!DOCTYPE window [
+<!ENTITY % ietabDTD SYSTEM "chrome://ietab2/locale/ietab.dtd" >
+%ietabDTD;
+]>
+
+<overlay id="ietabOverlay"
+   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript">
+<![CDATA[function IeTab2() {}]]>
+</script>
+
+<script type="application/x-javascript" src="chrome://ietab2/content/ietabUtils.js"/>
+<script type="application/x-javascript" src="chrome://ietab2/content/ietabDrag.js"/>
+<script type="application/x-javascript" src="chrome://ietab2/content/ietabExtApp.js"/>
+<script type="application/x-javascript" src="chrome://ietab2/content/ietabOverlay.js"/>
+
+<!-- contentArea context menu -->
+<popup id="contentAreaContextMenu">
+   <menuitem id="ietab2-viewpage" insertbefore="context-bookmarkpage"
+      label="&popup.viewpage;" accesskey="&popup.viewpage.key;"
+      tooltip="ietab2-toolbar-tooltip"
+      iconic="menuitem-iconic ietab2-icon-viewpage"
+      onclick="gIeTab2.viewPage(event);"
+      oncommand="gIeTab2.viewPage(event);"/>
+
+   <menuitem id="ietab2-viewpage-extapp" insertbefore="context-bookmarkpage"
+      label="&popup.viewpage.extapp;" accesskey="&popup.viewpage.extapp.key;"
+      iconic="menuitem-iconic ietab2-icon-viewpage-extapp"
+      oncommand="gIeTab2.viewPageInExtApp();"/>
+
+   <menuseparator id="ietab2-viewpage-sep" insertbefore="context-bookmarkpage"/>
+
+   <menuitem id="ietab2-viewlink-extapp" insertafter="context-openlinkintab"
+      label="&popup.viewlink.extapp;" accesskey="&popup.viewlink.extapp.key;"
+      iconic="menuitem-iconic ietab2-icon-viewlink-extapp"
+      oncommand="gIeTab2.viewLinkInExtApp();"/>
+
+   <menuitem id="ietab2-viewlink" insertafter="context-openlinkintab"
+      label="&popup.viewlink;" accesskey="&popup.viewlink.key;"
+      iconic="menuitem-iconic ietab2-icon-viewlink"
+      onclick="gIeTab2.viewLink(event);"
+      oncommand="gIeTab2.viewLink(event);"/>
+</popup>
+
+<!-- statusbar -->
+<statusbar id="status-bar">
+   <deck id="ietab2-status-deck" persist="insertbefore insertafter"
+          ondraggesture="nsDragAndDrop.startDrag(event,ietab_statObserver);">
+   <statusbarpanel id="ietab2-status" hidden="true"
+         tooltip="ietab2-toolbar-tooltip"
+         onclick="gIeTab2.clickStatusButton(event);">
+      <image id="ietab2-status-image" engine="fx"/>
+   </statusbarpanel>
+   </deck>
+</statusbar>
+
+<!-- bookmark context menu -->
+<popup id="placesContext">
+   <menuitem id="ietab2-bookmark"
+      label="&popup.bookmark;" accesskey="&popup.bookmark.key;"
+      insertbefore="placesContext_openSeparator"
+      iconic="menuitem-iconic ietab2-icon-bookmark"/>
+   <menuitem id="ietab2-bookmark-extapp"
+      label="&popup.bookmark.extapp;" accesskey="&popup.bookmark.extapp.key;"
+      insertbefore="placesContext_openSeparator"
+      iconic="menuitem-iconic ietab2-icon-bookmark-extapp"/>
+</popup>
+
+<window id="main-window">
+   <!-- tabbar context menu -->
+   <popup id="ietabTabbarContextMenu">
+      <menuseparator id="ietab2-tabbar-sep"/>
+      <menuitem id="ietab2-tabbar-switch"
+         label="&popup.tabbar.switch;" accesskey="&popup.tabbar.switch.key;"
+         tooltip="ietab2-toolbar-tooltip"
+         iconic="menuitem-iconic ietab2-icon-tabbar-switch" engine="fx"
+         onclick="gIeTab2.viewPage(event);"
+         oncommand="gIeTab2.viewPage(event);"/>
+      <menuitem id="ietab2-tabbar-extapp"
+         label="&popup.tabbar.extapp;" accesskey="&popup.tabbar.extapp.key;"
+         iconic="menuitem-iconic ietab2-icon-tabbar-extapp"
+         oncommand="gIeTab2.viewPageInExtApp(gBrowser.mContextTab);"/>
+   </popup>
+
+   <!-- tooltips -->
+	<tooltip id="ietab2-toolbar-tooltip" noautohide="true" orient="vertical" position="before_start" style="padding:2px;">
+		<vbox>
+			<label value="&toolbar.button.tooltip0;" style="margin:2px;"/>
+			<label value="&toolbar.button.tooltip1;" style="margin:2px;"/>
+			<label value="&toolbar.button.tooltip2;" style="margin:2px;"/>
+		</vbox>
+	</tooltip>
+</window>
+
+<!-- firefox toolbar -->
+<toolbarpalette id="BrowserToolbarPalette">
+   <toolbarbutton id="ietab2-button" engine="fx"
+      class="toolbarbutton-1"
+      label="&toolbar.button.label;"
+      tooltip="ietab2-toolbar-tooltip"
+      onclick="gIeTab2.clickButton(event);"/>
+</toolbarpalette>
+
+<!-- firefox toolsmenu -->
+<menupopup id="menu_ToolsPopup">
+   <menuitem id="ietab2-toolsmenu" hidden="true"
+      label="&toolsmenu.label;" insertbefore="prefSep"
+      iconic="menuitem-iconic ietab2-icon-toolsmenu"
+      oncommand="gIeTab2.openPrefDialog();"/>
+</menupopup>
+
+</overlay>

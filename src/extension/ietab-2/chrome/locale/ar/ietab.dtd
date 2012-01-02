@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "خيارات لسان IE">
+<!ENTITY toolsmenu.label "خيارات لسان IE">
+<!ENTITY toolbar.button.label "لسان IE">
+<!ENTITY toolbar.button.display "زر لسان IE">
+<!ENTITY toolbar.button.tooltip0 "نقرة-بالأيسر: تبدل المحرك المستخدم في الصفحة الحالية.">
+<!ENTITY toolbar.button.tooltip1 "نقرة-بالأوسط: إستعمل لسانا جديدا لتبديل المحرك.">
+<!ENTITY toolbar.button.tooltip2 "نقرة-بالأيمن: عرض مرشح مواقع لسان IE">
+<!ENTITY popup.viewpage "إعرض الصفحة في لسان IE">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "إفتح الوصلة في لسان IE">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "فتح في لسان IE">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "تغيير محرك">
+<!ENTITY popup.tabbar.switch.key "ُُُر">
+<!ENTITY popup.viewpage.extapp "إعرض الصفحة في تطبيق خارجي.">
+<!ENTITY popup.viewpage.extapp.key "ق">
+<!ENTITY popup.viewlink.extapp "إفتح الوصلة في تطبيق خارجي.">
+<!ENTITY popup.viewlink.extapp.key "و">
+<!ENTITY popup.bookmark.extapp "فتح في تطبيق خارجي.">
+<!ENTITY popup.bookmark.extapp.key "و">
+<!ENTITY popup.tabbar.extapp "فتج في تطبيق خارجي.">
+<!ENTITY popup.tabbar.extapp.key "و">
+<!ENTITY filter.label "مرشح المواقع">
+<!ENTITY filter.enabled "تمكين مرشح المواقع">
+<!ENTITY filter.column.rule "القاعدة">
+<!ENTITY filter.column.enabled "تمكين">
+<!ENTITY filter.url.label "العنوان:">
+<!ENTITY filter.button.add "إضافة">
+<!ENTITY filter.button.delete "حذف">
+<!ENTITY general.label "الإعدادات العامة">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "إعرض في الواجهة:">
+<!ENTITY interface.toolsmenu "عنصر قائمة الأدوات">
+<!ENTITY interface.toolsmenu.icon "رمز قائمة الأدوات">
+<!ENTITY interface.statusbar "رمز شريط الحالة">
+<!ENTITY switch.caption "عند تبديل المحرك:">
+<!ENTITY switch.handleurl "إستعمل المحرك الحالي دائماً لفتح العناوين الجديدة">
+<!ENTITY switch.alwaysnew "إفتح في لسان جديد عند تبديل المحرك">
+<!ENTITY switch.focustab "الإنتقال للسان الجديد عند تبديل المحرك">
+<!ENTITY context.label "قائمة السياق">
+<!ENTITY context.caption.tabsmenu "قائمة سياق الألسنة تقرض العناصر التالية:">
+<!ENTITY context.caption.pagelink "قائمة سياق مكان المحتوى تعرض العناصر التالية:">
+<!ENTITY context.caption.bookmark "قائمة السياق للعلامات الشخصية تعرض العناصر التالية:">
+<!ENTITY context.embed "المحرك المضمن">
+<!ENTITY context.extapp "التطبيق الخارجي">
+<!ENTITY context.icon "الرمز">
+<!ENTITY external.label "التطبيق الخارجي">
+<!ENTITY external.caption "إعدادات التطبيق الخارجي">
+<!ENTITY external.path.label "المسار:">
+<!ENTITY external.param.label "المعرفات:">
+<!ENTITY external.button.browse "إستعراض">
+<!ENTITY external.ctrlclick "Ctrl+نقرة على زر لسان IE لفتح العنوان في تطبيق خارجي.">
+<!ENTITY external.button.reset "إستعمل Internet Explorer">
+<!ENTITY apply.label "تطبيق">
+<!ENTITY settings.label "الإعدادات">
+<!ENTITY settings.default "إستعادة الإفتراضية">
+<!ENTITY settings.import "إستيراد الإعدادات">
+<!ENTITY settings.export "تصدير الإعدادات">

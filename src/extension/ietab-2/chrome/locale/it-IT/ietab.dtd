@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "Opzioni di IE Tab">
+<!ENTITY toolsmenu.label "Opzioni di IE Tab">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "Pulsante di IE Tab">
+<!ENTITY toolbar.button.tooltip0 "Clic sinistro: Modifica il motore di visualizzazione della pagina attuale">
+<!ENTITY toolbar.button.tooltip1 "Clic centrale: Usa una nuova scheda per modificare il motore di visualizzazione">
+<!ENTITY toolbar.button.tooltip2 "Clic destro: Visualizza il filtro dei siti di IE Tab">
+<!ENTITY popup.viewpage "Visualizza la pagina con IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Apri collegamento con IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Apri con IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Modifica motore di visualizzazione">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Visualizza la pagina in un programma esterno">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Apri il collegamento con un programma esterno">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Apri con un programma esterno">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Apri con un programma esterno">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Filtro dei siti">
+<!ENTITY filter.enabled "I siti in questo elenco verranno sempre visualizzati con il motore di IE">
+<!ENTITY filter.column.rule "Regola">
+<!ENTITY filter.column.enabled "Abilitata">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Aggiungi">
+<!ENTITY filter.button.delete "Elimina">
+<!ENTITY general.label "Impostazioni generali">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Visualizza nell&apos;interfaccia:">
+<!ENTITY interface.toolsmenu "Elemento del menu Strumenti">
+<!ENTITY interface.toolsmenu.icon "Icona del menu Strumenti">
+<!ENTITY interface.statusbar "Icona della Barra di Stato">
+<!ENTITY switch.caption "Quando si modifica il motore di visualizzazione:">
+<!ENTITY switch.handleurl "Usa sempre il motore attuale per aprire i nuovi indirizzi:">
+<!ENTITY switch.alwaysnew "Usa sempre una nuova scheda per modificare il motore di visualizzazione">
+<!ENTITY switch.focustab "Attenzione su una nuova scheda">
+<!ENTITY context.label "Menu contestuale">
+<!ENTITY context.caption.tabsmenu "Il menu contestuale delle schede della barra delle schede mostra i seguenti elementi:">
+<!ENTITY context.caption.pagelink "Il menu contestuale dell&apos;area dei contenuti mostra i segeuenti contenuti:">
+<!ENTITY context.caption.bookmark "Il menu contestuale dei segnalibri personali mostra i segeuenti elementi:">
+<!ENTITY context.embed "Motore incorporato">
+<!ENTITY context.extapp "Programma esterno">
+<!ENTITY context.icon "Icona">
+<!ENTITY external.label "Programma esterno">
+<!ENTITY external.caption "Impostazioni del programma esterno">
+<!ENTITY external.path.label "Percorso:">
+<!ENTITY external.param.label "Parametri:">
+<!ENTITY external.button.browse "Sfoglia">
+<!ENTITY external.ctrlclick "Premere Ctrl+click con il mouse per aprire l&apos;indirizzo nel programma esterno">
+<!ENTITY external.button.reset "Utilizza Internet Explorer">
+<!ENTITY apply.label "Applica">
+<!ENTITY settings.label "Impostazioni">
+<!ENTITY settings.default "Ripristina le predefinite">
+<!ENTITY settings.import "Importa impostazioni">
+<!ENTITY settings.export "Esporta impostazioni">

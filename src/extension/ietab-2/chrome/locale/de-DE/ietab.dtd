@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab - Einstellungen">
+<!ENTITY toolsmenu.label "IE-Tab-Einstellungen">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE-Tab-Schaltfläche">
+<!ENTITY toolbar.button.tooltip0 "Linksklick: Browser-Engine für die aktuelle Seite wechseln">
+<!ENTITY toolbar.button.tooltip1 "Mittelklick: Browser-Engine in einem neuen Tab wechseln">
+<!ENTITY toolbar.button.tooltip2 "Rechtsklick: Website-Filter für IE Tab anzeigen">
+<!ENTITY popup.viewpage "Seite in IE Tab anzeigen">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Link in IE Tab öffnen">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "In IE Tab öffnen">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Browser-Engine wechseln">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Seite in externer Anwendung anzeigen">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Link mit externer Anwendung öffnen">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Mit externer Anwendung öffnen">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Mit externer Anwendung öffnen">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Website-Filter">
+<!ENTITY filter.enabled "Hier eingetragene Websites immer in IE Tab öffnen">
+<!ENTITY filter.column.rule "Regel">
+<!ENTITY filter.column.enabled "aktiviert">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Hinzufügen">
+<!ENTITY filter.button.delete "Entfernen">
+<!ENTITY general.label "Allgemeine Einstellungen">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Anzeigen:">
+<!ENTITY interface.toolsmenu "Eintrag im Menü &quot;Extras&quot;">
+<!ENTITY interface.toolsmenu.icon "Symbol im Menü &quot;Extras&quot;">
+<!ENTITY interface.statusbar "Symbol in der Statusleiste">
+<!ENTITY switch.caption "Beim Wechseln der Browser-Engine:">
+<!ENTITY switch.handleurl "Immer die aktuelle Browser-Engine zum Öffnen einer neuen URL benutzen">
+<!ENTITY switch.alwaysnew "Immer einen neuen Tab beim Wechseln der Browser-Engine benutzen">
+<!ENTITY switch.focustab "Neuen Tab im Vordergrund öffnen">
+<!ENTITY context.label "Kontextmenü">
+<!ENTITY context.caption.tabsmenu "Das Kontextmenü der Tabs zeigt folgende Einträge:">
+<!ENTITY context.caption.pagelink "Das Kontextmenü des Inhaltsbereiches zeigt folgende Einträge:">
+<!ENTITY context.caption.bookmark "Das Kontextmenü der Lesezeichen zeigt folgende Einträge:">
+<!ENTITY context.embed "Eingebettete Browser-Engine">
+<!ENTITY context.extapp "Externe Anwendung">
+<!ENTITY context.icon "Symbol">
+<!ENTITY external.label "Externe Anwendung">
+<!ENTITY external.caption "Einstellungen für die externe Anwendung">
+<!ENTITY external.path.label "Pfad:">
+<!ENTITY external.param.label "Parameter:">
+<!ENTITY external.button.browse "Durchsuchen...">
+<!ENTITY external.ctrlclick "Mit STRG+Linksklick auf die Schaltfläche URL mit externer Anwendung öffnen">
+<!ENTITY external.button.reset "Internet Explorer benutzen">
+<!ENTITY apply.label "Anwenden">
+<!ENTITY settings.label "Einstellungen">
+<!ENTITY settings.default "Standardeinstellungen">
+<!ENTITY settings.import "Einstellungen importieren...">
+<!ENTITY settings.export "Einstellungen exportieren...">

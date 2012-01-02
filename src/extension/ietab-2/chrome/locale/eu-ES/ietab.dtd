@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab Aukerak">
+<!ENTITY toolsmenu.label "IE Tab Aukerak">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab Botoia">
+<!ENTITY toolbar.button.tooltip0 "Ezker-Klika: Aldatu uneko orria ikusteko motorra.">
+<!ENTITY toolbar.button.tooltip1 "Erdiko-Klika: Erabili fitxa berri bat errendatze motorra aldatzeko.">
+<!ENTITY toolbar.button.tooltip2 "Eskuin-Klika: Erakutsi IE Tab-en Toki Iragazkia.">
+<!ENTITY popup.viewpage "Ikusi Orria IE Tab-en">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Ireki Lotura IE Tab-en">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Ireki IE Tab-en">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Aldatu errendatze motorra">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Ikusi Orria Kanpoko Aplikazioan">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Ireki Lotura Kanpoko Aplikazioan">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Ireki Kanpoko Aplikazioan">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Ireki Kanpoko Aplikazioan">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Toki Iragazkia">
+<!ENTITY filter.enabled "Gaitu Toki Iragazkia">
+<!ENTITY filter.column.rule "Araua">
+<!ENTITY filter.column.enabled "Gaituta">
+<!ENTITY filter.url.label "URL-a:">
+<!ENTITY filter.button.add "Gehitu">
+<!ENTITY filter.button.delete "Ezabatu">
+<!ENTITY general.label "Ezarpen Orokorrak">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Erakutsi interfazean:">
+<!ENTITY interface.toolsmenu "Tresnak Menuko Elementua">
+<!ENTITY interface.toolsmenu.icon "Tresnak Menuko Ikonoa">
+<!ENTITY interface.statusbar "Egoera-Barrako Ikonoa">
+<!ENTITY switch.caption "Motorra aldatzean:">
+<!ENTITY switch.handleurl "Erabili beti uneko motorra URL berri bat irekitzeko">
+<!ENTITY switch.alwaysnew "Ireki fitxa berri baten motorra aldatzean">
+<!ENTITY switch.focustab "Ezarri fokua fitxa berrian motorra aldatzean">
+<!ENTITY context.label "Testuinguru Menua">
+<!ENTITY context.caption.tabsmenu "Fitxa-barrako Fitxen testuinguru-menuak ondoko elementuak erakusten ditu:">
+<!ENTITY context.caption.pagelink "Eduki-Guneko testuinguru-menuak ondoko elementuak erakusten ditu:">
+<!ENTITY context.caption.bookmark "Lastermarka Pertsonalen testuinguru-menuak ondoko elementuak erakusten ditu:">
+<!ENTITY context.embed "Kapsulatutako Motorra">
+<!ENTITY context.extapp "Kanpoko Aplikazioa">
+<!ENTITY context.icon "Ikonoa">
+<!ENTITY external.label "Kanpoko Aplikazioa">
+<!ENTITY external.caption "Kanpoko Aplikazioaren Ezarpenak">
+<!ENTITY external.path.label "Bidea:">
+<!ENTITY external.param.label "Parametroak:">
+<!ENTITY external.button.browse "Arakatu">
+<!ENTITY external.ctrlclick "Ctrl+Klik IE Tab botoian URL Kanpoko Aplikazioan irekitzeko">
+<!ENTITY external.button.reset "Erabili Internet Explorer">
+<!ENTITY apply.label "Aplikatu">
+<!ENTITY settings.label "Ezarpenak">
+<!ENTITY settings.default "Lehenetsitakora Itzuli">
+<!ENTITY settings.import "Ezarpenak Inportatu">
+<!ENTITY settings.export "Ezarpenak Exportatu">

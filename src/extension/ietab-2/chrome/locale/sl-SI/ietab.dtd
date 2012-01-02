@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab Možnosti">
+<!ENTITY toolsmenu.label "IE Tab Možnosti">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab Gumb">
+<!ENTITY toolbar.button.tooltip0 "Levi miškin klik: spremeni brskalnega ponudnika za trenutno stran.">
+<!ENTITY toolbar.button.tooltip1 "Srednji miškin klik: uporabi nov zavihek za spremembo brskalnega ponudnika.">
+<!ENTITY toolbar.button.tooltip2 "Desni miškin klik: prikaži filter IE Tab spletišč.">
+<!ENTITY popup.viewpage "Prikaži stran v IE Tab-u">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Odpri povezavo v IE Tab-u">
+<!ENTITY popup.viewlink.key "O">
+<!ENTITY popup.bookmark "Odpri v IE Tab-u">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Preklopi brskalnega ponudnika">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Prikaži stran v zunanjem programu">
+<!ENTITY popup.viewpage.extapp.key "z">
+<!ENTITY popup.viewlink.extapp "Odpri povezavo v zunanjem programu">
+<!ENTITY popup.viewlink.extapp.key "O">
+<!ENTITY popup.bookmark.extapp "Odpri v zunanjem programu">
+<!ENTITY popup.bookmark.extapp.key "O">
+<!ENTITY popup.tabbar.extapp "Odpri v zunanjem programu">
+<!ENTITY popup.tabbar.extapp.key "z">
+<!ENTITY filter.label "Filter spletišč">
+<!ENTITY filter.enabled "Tu navedena spletišča se bodo vedno odprla v vgnezdenem IE-ju">
+<!ENTITY filter.column.rule "Pravilo">
+<!ENTITY filter.column.enabled "Omogočeno">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Dodaj">
+<!ENTITY filter.button.delete "Briši">
+<!ENTITY general.label "Splošne nastavitve">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Prikaži v vmesniku:">
+<!ENTITY interface.toolsmenu "Ikono v orodni vrstici">
+<!ENTITY interface.toolsmenu.icon "Ikona orodne vrstice">
+<!ENTITY interface.statusbar "Ikono v statusni vrstici">
+<!ENTITY switch.caption "Pri preklopu brskalnega ponudnika:">
+<!ENTITY switch.handleurl "Vedno uporabi trenutni brskalni ponudnik za odpiranje novih URL-jev">
+<!ENTITY switch.alwaysnew "Vedno uporabi nov zavihek pri preklopu brskalnega ponudnika">
+<!ENTITY switch.focustab "Postavi nov zavihek v ospredje">
+<!ENTITY context.label "Skladnostni meni">
+<!ENTITY context.caption.tabsmenu "Tabbar zavihki skladnostnega menija prikazuje naslednje elemente:">
+<!ENTITY context.caption.pagelink "Skladnostni meni skladnostnega področja prikazuje naslednje elemente:">
+<!ENTITY context.caption.bookmark "Skladnostni meni osebnih zaznamkov prikazuje naslednje elemente:">
+<!ENTITY context.embed "Vgnezdeni program">
+<!ENTITY context.extapp "Zunanji program">
+<!ENTITY context.icon "Ikona">
+<!ENTITY external.label "Zunanji program">
+<!ENTITY external.caption "Nastavitve zunanjega programa">
+<!ENTITY external.path.label "Pot:">
+<!ENTITY external.param.label "Parametri:">
+<!ENTITY external.button.browse "Brskaj">
+<!ENTITY external.ctrlclick "Uporabi Ctrl + klik na IE Tab gumbu za odpiranje URL-ja v zunanjem programu">
+<!ENTITY external.button.reset "Uporabi Internet Explorer">
+<!ENTITY apply.label "Omogoči">
+<!ENTITY settings.label "Nastavitve">
+<!ENTITY settings.default "Ponastavi">
+<!ENTITY settings.import "Uvozi nastavitve">
+<!ENTITY settings.export "Izvozi nastavitve">

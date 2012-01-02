@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab indstillinger">
+<!ENTITY toolsmenu.label "IE Tab indstillinger">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab knap">
+<!ENTITY toolbar.button.tooltip0 "Venstre-klik: Skift renderingsmotor for nuværende side.">
+<!ENTITY toolbar.button.tooltip1 "Midter-klik: Brug nyt faneblad til at skifte renderingsmotor.">
+<!ENTITY toolbar.button.tooltip2 "Højre-klik: Vis IE Tab Sites-filter.">
+<!ENTITY popup.viewpage "Vis side i IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Åbn link i IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Åbn i IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Skift renderingsmotor">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Vis side i ekstern applikation">
+<!ENTITY popup.viewpage.extapp.key "k">
+<!ENTITY popup.viewlink.extapp "Åbn link i ekstern applikation">
+<!ENTITY popup.viewlink.extapp.key "k">
+<!ENTITY popup.bookmark.extapp "Åbn i ekstern applikation">
+<!ENTITY popup.bookmark.extapp.key "k">
+<!ENTITY popup.tabbar.extapp "Åbn i ekstern applikation">
+<!ENTITY popup.tabbar.extapp.key "k">
+<!ENTITY filter.label "Sites filter">
+<!ENTITY filter.enabled "Sites på denne liste vil altid blive renderet via integreret IE">
+<!ENTITY filter.column.rule "Regel">
+<!ENTITY filter.column.enabled "Aktiveret">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Tilføj">
+<!ENTITY filter.button.delete "Slet">
+<!ENTITY general.label "Generelle indstillinger">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Vis i interface:">
+<!ENTITY interface.toolsmenu "Funktioner-menupunkt">
+<!ENTITY interface.toolsmenu.icon "Funktioner-menu ikon">
+<!ENTITY interface.statusbar "Statuslinje-ikon">
+<!ENTITY switch.caption "Når der skiftes renderingsmotor:">
+<!ENTITY switch.handleurl "Brug altid nuværende renderingsmotor til at åbne ny URL">
+<!ENTITY switch.alwaysnew "Brug altid et nyt faneblad ved skift af renderingsmotor">
+<!ENTITY switch.focustab "Fokus på nyt faneblad">
+<!ENTITY context.label "Kontekst-menu">
+<!ENTITY context.caption.tabsmenu "Fanebladslinje-faneblades kontekstmenu viser følgende elementer:">
+<!ENTITY context.caption.pagelink "Indholdsområde kontekstmenu indeholder følgende elementer:">
+<!ENTITY context.caption.bookmark "Personlige Bogmærker kontekstmenu indeholder følgende elementer:">
+<!ENTITY context.embed "Indeholdt motor">
+<!ENTITY context.extapp "Ekstern applikation">
+<!ENTITY context.icon "Ikon">
+<!ENTITY external.label "Ekstern applikation">
+<!ENTITY external.caption "Ekstern applikationsindstillinger">
+<!ENTITY external.path.label "Sti:">
+<!ENTITY external.param.label "Parametre:">
+<!ENTITY external.button.browse "Gennemse">
+<!ENTITY external.ctrlclick "Ctrl+klik på IE Tab-knappen for at åbne URL i ekstern applikation">
+<!ENTITY external.button.reset "Brug Internet Explorer">
+<!ENTITY apply.label "Anvend">
+<!ENTITY settings.label "Indstillinger">
+<!ENTITY settings.default "Genetablér standard">
+<!ENTITY settings.import "Importér indstillinger">
+<!ENTITY settings.export "Eksportér indstillinger">

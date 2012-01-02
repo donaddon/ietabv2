@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "Acuan IE Tab">
+<!ENTITY toolsmenu.label "Acuan IE Tab">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "Tombol IE Tab">
+<!ENTITY toolbar.button.tooltip0 "Klik-Kiri: Mengganti mesin penampil untuk halaman ini.">
+<!ENTITY toolbar.button.tooltip1 "Klik-Tengah: Menggunakan tab baru untuk mengganti mesin penampil.">
+<!ENTITY toolbar.button.tooltip2 "Klik-Kanan: Menampilkan Saringan Situs IE Tab.">
+<!ENTITY popup.viewpage "Tampikan Halaman dalam IE Tab">
+<!ENTITY popup.viewpage.key "T">
+<!ENTITY popup.viewlink "Buka Pintasan denganIE Tab">
+<!ENTITY popup.viewlink.key "B">
+<!ENTITY popup.bookmark "Buka dengan IE Tab">
+<!ENTITY popup.bookmark.key "B">
+<!ENTITY popup.tabbar.switch "Ganti mesin penampil">
+<!ENTITY popup.tabbar.switch.key "G">
+<!ENTITY popup.viewpage.extapp "Tampilkan Halaman dengan Aplikasi Eksternal">
+<!ENTITY popup.viewpage.extapp.key "T">
+<!ENTITY popup.viewlink.extapp "Buka Pintasan dengan Aplikasi Eksternal">
+<!ENTITY popup.viewlink.extapp.key "B">
+<!ENTITY popup.bookmark.extapp "Buka dengan Aplikasi Eksternal">
+<!ENTITY popup.bookmark.extapp.key "B">
+<!ENTITY popup.tabbar.extapp "Buka dengan Aplikasi Eksternal">
+<!ENTITY popup.tabbar.extapp.key "B">
+<!ENTITY filter.label "Saringan Situs">
+<!ENTITY filter.enabled "Situs yang ditampilkan di bawah ini akan selalu ditampilkan menggunakan IE terintegrasi">
+<!ENTITY filter.column.rule "Aturan">
+<!ENTITY filter.column.enabled "Aktif">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Tambah">
+<!ENTITY filter.button.delete "Hapus">
+<!ENTITY general.label "Acuan Umum">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Tampilkan dalam antarmuka:">
+<!ENTITY interface.toolsmenu "Butir pada menu Tools-Menu">
+<!ENTITY interface.toolsmenu.icon "Ikon pada menu Tools-Menu">
+<!ENTITY interface.statusbar "Ikon pada Bilah Status">
+<!ENTITY switch.caption "Ketika mengganti mesin penampil:">
+<!ENTITY switch.handleurl "Selalu menggunakan mesin penampil sekarang untuk membuka URL baru">
+<!ENTITY switch.alwaysnew "Selalu menggunakan tab baru untuk mengganti mesin penampil">
+<!ENTITY switch.focustab "Fokus ke tab baru">
+<!ENTITY context.label "Menu Konteks">
+<!ENTITY context.caption.tabsmenu "Menu konteks tab pada bilah tab menampilkan butir berikut ini:">
+<!ENTITY context.caption.pagelink "Menu konteks daerah isi menampilakn butir berikut ini:">
+<!ENTITY context.caption.bookmark "Pembatas-buku Pribadi dapat menampilkan butir berikut:">
+<!ENTITY context.embed "Mesin Terintegrasi">
+<!ENTITY context.extapp "Aplikasi Eksternal">
+<!ENTITY context.icon "Ikon">
+<!ENTITY external.label "Aplikasi Eksternal">
+<!ENTITY external.caption "Acuan Aplikasi Eksternal">
+<!ENTITY external.path.label "Lokasi:">
+<!ENTITY external.param.label "Paramter:">
+<!ENTITY external.button.browse "Cari">
+<!ENTITY external.ctrlclick "Ctrl+Klik pada tombol IE Tab untuk membuka URL dengan Aplikasi Eksternal">
+<!ENTITY external.button.reset "Gunakan Internet Explorer">
+<!ENTITY apply.label "Simpan">
+<!ENTITY settings.label "Acuan">
+<!ENTITY settings.default "Kembalikan Semula">
+<!ENTITY settings.import "Impor Acuan">
+<!ENTITY settings.export "Ekspor Acuan">

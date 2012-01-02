@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab Alternativ">
+<!ENTITY toolsmenu.label "IE Tab-alternativ">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab-knapp">
+<!ENTITY toolbar.button.tooltip0 "Vänsterklick: Byter webbläsarmotor för denna sida, i aktuellt fönster.">
+<!ENTITY toolbar.button.tooltip1 "Mittenklick: Byter webbläsarmotor för denna sida, i nytt fönster.">
+<!ENTITY toolbar.button.tooltip2 "Högerklick: Visar filter för IE Tab-hemsidor">
+<!ENTITY popup.viewpage "Visa sidan i en IE-flik">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Öppna länk i en IE-flik">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Öppna i en IE-flik">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Byt webbläsarmotor">
+<!ENTITY popup.tabbar.switch.key "B">
+<!ENTITY popup.viewpage.extapp "Visa sidan i Internet Explorer">
+<!ENTITY popup.viewpage.extapp.key "I">
+<!ENTITY popup.viewlink.extapp "Öppna länk i Internet Explorer">
+<!ENTITY popup.viewlink.extapp.key "I">
+<!ENTITY popup.bookmark.extapp "Öppna i Internet Explorer">
+<!ENTITY popup.bookmark.extapp.key "I">
+<!ENTITY popup.tabbar.extapp "Öppna i Internet Explorer">
+<!ENTITY popup.tabbar.extapp.key "I">
+<!ENTITY filter.label "Hemsidefilter">
+<!ENTITY filter.enabled "Hemsidor i denna lista öppnas alltid i en IE-flik">
+<!ENTITY filter.column.rule "Regel">
+<!ENTITY filter.column.enabled "På">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Lägg till">
+<!ENTITY filter.button.delete "Ta bort">
+<!ENTITY general.label "Allmänna inställningar">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Visa i webbläsare:">
+<!ENTITY interface.toolsmenu "Visa under Verktyg">
+<!ENTITY interface.toolsmenu.icon "Visa ikon">
+<!ENTITY interface.statusbar "Ikon i statusfält">
+<!ENTITY switch.caption "Vid byte av webbläsarmotor:">
+<!ENTITY switch.handleurl "Använd alltid nuvarande webbläsarmotor för att öppna ny URL">
+<!ENTITY switch.alwaysnew "Använd alltid ny flik vid byte av webbläsarmotor">
+<!ENTITY switch.focustab "Sätt fokus på ny flik">
+<!ENTITY context.label "Menyer">
+<!ENTITY context.caption.tabsmenu "Visa på meny för flikar:">
+<!ENTITY context.caption.pagelink "Visa på meny för innehåll:">
+<!ENTITY context.caption.bookmark "Visa på meny för bokmärken:">
+<!ENTITY context.embed "Inbyggd webbläsarmotor">
+<!ENTITY context.extapp "Extern applikation">
+<!ENTITY context.icon "Ikon">
+<!ENTITY external.label "Extern applikation">
+<!ENTITY external.caption "Inställningar för extern applikation">
+<!ENTITY external.path.label "Sökväg:">
+<!ENTITY external.param.label "Parametrar:">
+<!ENTITY external.button.browse "Bläddra">
+<!ENTITY external.ctrlclick "Ctrl+klick på IT Tab-knapp öppnar URL i Internet Explorer">
+<!ENTITY external.button.reset "Använd Internet Explorer">
+<!ENTITY apply.label "Verkställ">
+<!ENTITY settings.label "Inställningar">
+<!ENTITY settings.default "Återställ standard">
+<!ENTITY settings.import "Importera inställningar">
+<!ENTITY settings.export "Exportera inställningar">

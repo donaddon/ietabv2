@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><title></title><link rel="icon" href="chrome://ietab2/skin/ietab-favicon-iedoc.png">
+<script type="text/javascript">
+var gIETab = null;
+
+function init(){
+    gIETab = document.getElementById("IETab2");
+    if(!gIETab || !gIETab.navigate)
+    {
+		// Wait for it to show up
+    	window.setTimeout(function() { init(); }, 200);
+		return;
+	}
+
+    var m=/(\?url=)(\S+)$/.exec(document.location.href);
+    if(m) 
+    {
+        gIETab.navigate(decodeURI(m[2]));
+    }
+}
+
+var IETabCalls = {
+	goBack: function() {
+		gIETab.goBack();
+	},
+
+	goForward: function() {
+		gIETab.goForward();
+	},
+
+	navigate: function(url) {
+		gIETab.navigate(url);
+	},
+
+	refresh: function() {
+		gIETab.refresh();
+	},
+
+	stop: function() {
+		gIETab.stop();
+	},
+
+	saveAs: function() {
+		gIETab.saveAs();
+	},
+
+	print: function() {
+		gIETab.print();
+	},
+
+	printSetup: function() {
+		gIETab.printSetup();
+	},
+
+	printPreview: function() {
+		gIETab.printPreview();
+	},
+
+	viewSource: function() {
+		gIETab.viewSource();
+	},
+
+	find: function() {
+		gIETab.find();
+	},
+
+	cut: function() {
+		gIETab.cut();
+	},
+
+	copy: function() {
+		gIETab.copy();
+	},
+
+	paste: function() {
+		gIETab.paste();
+	},
+
+	selectAll: function() {
+		gIETab.selectAll();
+	},
+
+	focus: function() {
+		if (!gIETab) {
+			// It might not have loaded yet, wait for the control to fully initialize
+			window.setTimeout(function() { IETabCalls.focus(); }, 100);
+		}
+		else {
+			gIETab.focus();
+		}
+	}
+}
+
+window.onpageshow = function(e) { if (e.persisted) window.setTimeout(function() { init(); }, 0); }
+</script>
+</head>
+<body style="margin:0; padding:0;overflow:hidden" onload="window.setTimeout(function() { init(); },0);">
+<script>
+</script>
+<object id="IETab2" type="application/ietab2" style="width:100%; height:100%;"></object>
+</body>
+</html>

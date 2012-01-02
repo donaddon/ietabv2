@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE-Tab Opties">
+<!ENTITY toolsmenu.label "IE-Tab Opties">
+<!ENTITY toolbar.button.label "IE-Tab">
+<!ENTITY toolbar.button.display "IE-Tab knop">
+<!ENTITY toolbar.button.tooltip0 "Links-klikken: Render-engine huidige pagina omschakelen.">
+<!ENTITY toolbar.button.tooltip1 "Midden-klikken: Render-engine in nieuwe tab omschakelen.">
+<!ENTITY toolbar.button.tooltip2 "Rechts-klikken: IE-Tab site-filter tonen.">
+<!ENTITY popup.viewpage "Deze pagina in IE-Tab bekijken">
+<!ENTITY popup.viewpage.key "b">
+<!ENTITY popup.viewlink "Deze koppeling in IE-Tab openen">
+<!ENTITY popup.viewlink.key "k">
+<!ENTITY popup.bookmark "In IE-Tab openen">
+<!ENTITY popup.bookmark.key "o">
+<!ENTITY popup.tabbar.switch "Render-engine omschakelen">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Deze pagina in externe applicatie bekijken">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Koppeling in externe applicatie openen">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "In externe applicatie openen">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "In externe applicatie openen">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Site-filter">
+<!ENTITY filter.enabled "Onderstaande sites worden altijd in IE-Tab geladen">
+<!ENTITY filter.column.rule "Webadres">
+<!ENTITY filter.column.enabled "Ingeschakeld">
+<!ENTITY filter.url.label "Webadres:">
+<!ENTITY filter.button.add "Toevoegen">
+<!ENTITY filter.button.delete "Verwijderen">
+<!ENTITY general.label "Algemene instellingen">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Weergeven:">
+<!ENTITY interface.toolsmenu "&apos;IE-Tab Opties&apos; in Extra-menu">
+<!ENTITY interface.toolsmenu.icon "Extra-menu pictogram">
+<!ENTITY interface.statusbar "Pictogram op statusbalk">
+<!ENTITY switch.caption "Bij omschakelen render-engine:">
+<!ENTITY switch.handleurl "Altijd huidige render-engine gebruiken om nieuwe webadres te openen">
+<!ENTITY switch.alwaysnew "Altijd nieuwe tab gebruiken om render-engine om te schakelen">
+<!ENTITY switch.focustab "Nieuwe tab op de voorgrond laden">
+<!ENTITY context.label "Context-menu">
+<!ENTITY context.caption.tabsmenu "In het tabbalk tabs contextmenu de volgende items weergeven:">
+<!ENTITY context.caption.pagelink "In het pagina contextmenu de volgende items weergeven:">
+<!ENTITY context.caption.bookmark "In het bladwijzer contextmenu de volgende items weergeven:">
+<!ENTITY context.embed "Ingebouwde engine">
+<!ENTITY context.extapp "Externe applicatie">
+<!ENTITY context.icon "Pictogram">
+<!ENTITY external.label "Externe applicatie">
+<!ENTITY external.caption "Instellingen Externe applicatie">
+<!ENTITY external.path.label "Pad:">
+<!ENTITY external.param.label "Opties:">
+<!ENTITY external.button.browse "Bladeren">
+<!ENTITY external.ctrlclick "CTRL+linksklikken op IE-Tab knop om webadres in externe applicatie te openen">
+<!ENTITY external.button.reset "Internet Explorer gebruiken">
+<!ENTITY apply.label "Toepassen">
+<!ENTITY settings.label "Instellingen">
+<!ENTITY settings.default "Standaardinstellingen herstellen">
+<!ENTITY settings.import "Instellingen importeren">
+<!ENTITY settings.export "Instellingen exporteren">

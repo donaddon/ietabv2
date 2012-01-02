@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab Настройки">
+<!ENTITY toolsmenu.label "IE Tab Настройки">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab Бутон">
+<!ENTITY toolbar.button.tooltip0 "Ляв Бутон: Превключване рендерващ енджин на текущата страница.">
+<!ENTITY toolbar.button.tooltip1 "Среден Бутон: Използване на нов подпрозорец за промяна на рендерващия енджин.">
+<!ENTITY toolbar.button.tooltip2 "Десен Бутон: Показване на IE Tab Сайтов Филтър.">
+<!ENTITY popup.viewpage "Показване Страницата в IE Tab">
+<!ENTITY popup.viewpage.key "Е">
+<!ENTITY popup.viewlink "Отваряне връзката в IE Tab">
+<!ENTITY popup.viewlink.key "Е">
+<!ENTITY popup.bookmark "Отваряне в IE Tab">
+<!ENTITY popup.bookmark.key "Е">
+<!ENTITY popup.tabbar.switch "Превключване рендерващ енджин">
+<!ENTITY popup.tabbar.switch.key "Е">
+<!ENTITY popup.viewpage.extapp "Показване Страницата във Външно Приложение">
+<!ENTITY popup.viewpage.extapp.key "Ь">
+<!ENTITY popup.viewlink.extapp "Отваряне Връзката във Външно Приложение">
+<!ENTITY popup.viewlink.extapp.key "Ь">
+<!ENTITY popup.bookmark.extapp "Отваряне във Външно Приложение">
+<!ENTITY popup.bookmark.extapp.key "Ь">
+<!ENTITY popup.tabbar.extapp "Отваряне във Външно Приложение">
+<!ENTITY popup.tabbar.extapp.key "Ь">
+<!ENTITY filter.label "Сайтов Филтър">
+<!ENTITY filter.enabled "Сайтове изредени тук винаги ще се рендерват използвайки вградения IE">
+<!ENTITY filter.column.rule "Правило">
+<!ENTITY filter.column.enabled "Разрешена">
+<!ENTITY filter.url.label "Адрес:">
+<!ENTITY filter.button.add "Добавяне">
+<!ENTITY filter.button.delete "Изтриване">
+<!ENTITY general.label "Общи Настройки">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Показване на интерфейс:">
+<!ENTITY interface.toolsmenu "Инструментско Меню Артикул">
+<!ENTITY interface.toolsmenu.icon "Инструментско Меню Икона">
+<!ENTITY interface.statusbar "Статусбар Икона">
+<!ENTITY switch.caption "Когато стане превключване на редерващият енджин:">
+<!ENTITY switch.handleurl "Винаги да се използва текущият рендерващ енджин за да се отвори нов URL">
+<!ENTITY switch.alwaysnew "Винаги да се използва нов подпрозорец за превключване на рендерващия енджин">
+<!ENTITY switch.focustab "Фокусиране на новият подпрозорец">
+<!ENTITY context.label "Контекстно Меню">
+<!ENTITY context.caption.tabsmenu "Контекстно меню на Поле на Подпрозорците показва следните артикули:">
+<!ENTITY context.caption.pagelink "Конктекстно меню на Зона на Съдържание показва следните артикули:">
+<!ENTITY context.caption.bookmark "Контекстно меню на Лични Отметки показва следните артикули:">
+<!ENTITY context.embed "Вграден Енджин">
+<!ENTITY context.extapp "Външно Приложение">
+<!ENTITY context.icon "Икона">
+<!ENTITY external.label "Външно Приложение">
+<!ENTITY external.caption "Настойрки на Външно Приложение">
+<!ENTITY external.path.label "Път:">
+<!ENTITY external.param.label "Параметри:">
+<!ENTITY external.button.browse "Избери">
+<!ENTITY external.ctrlclick "Ctrl+Цък на IE Tab бутона за да бъде отворен URL във Външно Приложение">
+<!ENTITY external.button.reset "Използване на Internet Explorer">
+<!ENTITY apply.label "Прилагане">
+<!ENTITY settings.label "Настройки">
+<!ENTITY settings.default "Възстановяване по подразбиране">
+<!ENTITY settings.import "Внасяне на Настройки">
+<!ENTITY settings.export "Изнасяне на Настройки">

@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "Optiuni IE Tab">
+<!ENTITY toolsmenu.label "Optiuni IE Tab">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "Buton IE Tab">
+<!ENTITY toolbar.button.tooltip0 "Click stanga: Schimba motorul de randare pentru pagina curenta.">
+<!ENTITY toolbar.button.tooltip1 "Click mijloc: Foloseste un nou tab pentru a schimba motorul de randare.">
+<!ENTITY toolbar.button.tooltip2 "Click dreapta: Arata filtrul de site-uri pentru IE Tab.">
+<!ENTITY popup.viewpage "Vizualizeaza pagina in IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Deschide link-ul in IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Deschide in IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Schimba motorul de randare">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Vizualizeaza pagina in aplicatia externa">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Deschide link-ul in aplicatia externa">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Deschide in aplicatia externa">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Deschide in aplicatia externa">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Filtru pentru site-uri">
+<!ENTITY filter.enabled "Site-urile listate aici vor fi mereu randate folosind motorul IE incapsulat.">
+<!ENTITY filter.column.rule "Regula">
+<!ENTITY filter.column.enabled "Activat">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Adauga">
+<!ENTITY filter.button.delete "Sterge">
+<!ENTITY general.label "Setari generale">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Arata in interfata:">
+<!ENTITY interface.toolsmenu "Item-ul &quot;Meniu unelte&quot;">
+<!ENTITY interface.toolsmenu.icon "Pictograma &quot;Meniu unelte&quot;">
+<!ENTITY interface.statusbar "Pictograma barei de status">
+<!ENTITY switch.caption "La schimbarea motorului de randare:">
+<!ENTITY switch.handleurl "Foloseste intotdeauna motorul curent de randare pentru a deschide un nou URL">
+<!ENTITY switch.alwaysnew "Foloseste intotdeauna un nou tab pentru a schimba motorul de randare">
+<!ENTITY switch.focustab "Focus pe noul tab">
+<!ENTITY context.label "Meniu contextual">
+<!ENTITY context.caption.tabsmenu "Meniul contextual al &quot;Barei de taburi&quot; contine urmatoarele elemente:">
+<!ENTITY context.caption.pagelink "Meniul contextual al &quot;Zonei cu informatie&quot; contine urmatoarele elemente:">
+<!ENTITY context.caption.bookmark "Meniul contextual al &quot;Semnelor de carte personale&quot; contine urmatoarele elemente:">
+<!ENTITY context.embed "Motor incapsulat">
+<!ENTITY context.extapp "Aplicatia externa">
+<!ENTITY context.icon "Pictograma">
+<!ENTITY external.label "Aplicatie externa">
+<!ENTITY external.caption "Setarile aplicatiei externe">
+<!ENTITY external.path.label "Cale:">
+<!ENTITY external.param.label "Parametri:">
+<!ENTITY external.button.browse "Rasfoieste">
+<!ENTITY external.ctrlclick "Ctrl+Click pe butonul IE Tab pentru a deschide URL-ul in aplicatia externa">
+<!ENTITY external.button.reset "Foloseste Internet Explorer">
+<!ENTITY apply.label "Aplica">
+<!ENTITY settings.label "Setari">
+<!ENTITY settings.default "Restabileste modul implicit">
+<!ENTITY settings.import "Importa setari">
+<!ENTITY settings.export "Exporta setari">

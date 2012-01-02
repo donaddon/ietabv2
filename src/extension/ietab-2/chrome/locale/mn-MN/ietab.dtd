@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE хуудсын сонголтууд">
+<!ENTITY toolsmenu.label "IE хуудсын сонголтууд">
+<!ENTITY toolbar.button.label "IE хуудас">
+<!ENTITY toolbar.button.display "IE хуудсын товч">
+<!ENTITY toolbar.button.tooltip0 "Зүүн товч: Тухайн хуудасны үзүүлэх хөдөлгүүрийг солих">
+<!ENTITY toolbar.button.tooltip1 "Дунд товч: Үзүүлэх хөдөлгүүр уруу шилжихдээ шинэ хуудас хэрэглэх">
+<!ENTITY toolbar.button.tooltip2 "Баруун товч: IE хуудсын сайтуудын шүүлтүүр харуулах">
+<!ENTITY popup.viewpage "Хуудсыг IE хуудсанд харах">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Холбоосыг IE хуудсанд нээх">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "IE хуудсанд нээх">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Үзүүлэх хөдөлгүүрийг солих">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Ext.App-д хуудсыг харах">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Ext.App-д холбоосыг нээх">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Ext.App-д нээх">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Ext.App-д нээх">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Сайтуудын шүүлтүүр">
+<!ENTITY filter.enabled "Сайтуудын шүүлтүүр нээх">
+<!ENTITY filter.column.rule "Дүрэм">
+<!ENTITY filter.column.enabled "Нээлттэй">
+<!ENTITY filter.url.label "Хаяг:">
+<!ENTITY filter.button.add "Нэмэх">
+<!ENTITY filter.button.delete "Устгах">
+<!ENTITY general.label "Ерөнхий тохиргоо">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Харагдах хэсэгт харах.">
+<!ENTITY interface.toolsmenu "Хэрэгслийн цэсний зүйл">
+<!ENTITY interface.toolsmenu.icon "Хэрэгслийн цэсний шошго">
+<!ENTITY interface.statusbar "Төлвийн мөрийн шошго">
+<!ENTITY switch.caption "Үзүүлэх хөдөлгүүрийг солих үед:">
+<!ENTITY switch.handleurl "Шинэ хаягийг нээхдээ тухайн хөдөлгүүрийг ихэвчлэн хэрэглэх">
+<!ENTITY switch.alwaysnew "Хөдөлгүүрийг солих үед шинэ хуудсанд нээх">
+<!ENTITY switch.focustab "Хөдөлгүүрийг солих үед шинэ хууас руу очих">
+<!ENTITY context.label "Хам цэс">
+<!ENTITY context.caption.tabsmenu "Хуудаслагч хуудсын хам цэс нь дараах зүйлсийг харуулна:">
+<!ENTITY context.caption.pagelink "Агуулгын мужийн хам цэс нь дараах зүйлсийг харуулна:">
+<!ENTITY context.caption.bookmark "Хувийн тэмдэглэгээний хам цэс нь дараах зүйлсийг харуулна:">
+<!ENTITY context.embed "Нэгтгэгдсэн хөдөлгүүр">
+<!ENTITY context.extapp "Гадаад програм">
+<!ENTITY context.icon "Шошго">
+<!ENTITY external.label "Гадаад програм">
+<!ENTITY external.caption "Гадаад програмын тохиргоо">
+<!ENTITY external.path.label "Зам:">
+<!ENTITY external.param.label "Параметрүүд:">
+<!ENTITY external.button.browse "Хөтлөх">
+<!ENTITY external.ctrlclick "IE хуудсын товч Ctrl+Товшилт хийхэд хаягийг Гад.Про дээр нээх.">
+<!ENTITY external.button.reset "Internet Explorer хэрэглэх">
+<!ENTITY apply.label "Хэрэглэх">
+<!ENTITY settings.label "Тохиргоонууд">
+<!ENTITY settings.default "Анхдагчийг сэргээх">
+<!ENTITY settings.import "Тохиргоо оруулах">
+<!ENTITY settings.export "Тохиргоо гаргах">

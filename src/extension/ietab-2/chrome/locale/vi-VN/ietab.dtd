@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "Tùy chọn IE Tab">
+<!ENTITY toolsmenu.label "Tùy chọn IE Tab">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "Nút IE Tab">
+<!ENTITY toolbar.button.tooltip0 "Chuột trái: Hoán chuyển bộ máy tạo hình của trang hiện tại.">
+<!ENTITY toolbar.button.tooltip1 "Chuột giữa: Dùng thẻ mới để hoán chuyển bộ máy tạo hình.">
+<!ENTITY toolbar.button.tooltip2 "Chuột phải: Hiện Bộ lọc Trang của IE Tab.">
+<!ENTITY popup.viewpage "Xem Trang trong IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Mở Liên Kết trong IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Mở trong IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Hoán chuyển bộ máy tạo hình">
+<!ENTITY popup.tabbar.switch.key "y">
+<!ENTITY popup.viewpage.extapp "Xem Trang trong Chtrình Ngoài">
+<!ENTITY popup.viewpage.extapp.key "o">
+<!ENTITY popup.viewlink.extapp "Mở Liên Kết trong Chtrình Ngoài">
+<!ENTITY popup.viewlink.extapp.key "o">
+<!ENTITY popup.bookmark.extapp "Mở trong Chtrình Ngoài">
+<!ENTITY popup.bookmark.extapp.key "o">
+<!ENTITY popup.tabbar.extapp "Mở trong Chtrình Ngoài">
+<!ENTITY popup.tabbar.extapp.key "o">
+<!ENTITY filter.label "Bộ lọc Trang">
+<!ENTITY filter.enabled "Kích hoạt Bộ lọc Trang">
+<!ENTITY filter.column.rule "Quy tắc">
+<!ENTITY filter.column.enabled "Đã bật">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Thêm">
+<!ENTITY filter.button.delete "Xóa">
+<!ENTITY general.label "Thiết lập Tổng quát">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Hiện trên giao diện:">
+<!ENTITY interface.toolsmenu "Mục Trình đơn Công cụ">
+<!ENTITY interface.toolsmenu.icon "Biểu tượng Trình đơn Công cụ">
+<!ENTITY interface.statusbar "Biểu tượng Thanh Trạng Thái">
+<!ENTITY switch.caption "Khi hoán chuyển bộ máy tạo hình:">
+<!ENTITY switch.handleurl "Luôn dùng bộ máy hiện tại để mở một URL mới">
+<!ENTITY switch.alwaysnew "Mở trong thẻ mới khi hoán chuyển các bộ máy">
+<!ENTITY switch.focustab "Tập trung vào thẻ mới khi hoán chuyển các bộ máy">
+<!ENTITY context.label "Trình đơn Ngữ cảnh">
+<!ENTITY context.caption.tabsmenu "Trình đơn ngữ cảnh của Thanh Thẻ hiển thị các mục sau:">
+<!ENTITY context.caption.pagelink "Trình đơn ngữ cảnh Vùng Nội Dung hiển thị các mục sau:">
+<!ENTITY context.caption.bookmark "Trình đơn ngữ cảnh cho Trang Đánh Dấu Cá Nhân hiển thị các mục sau:">
+<!ENTITY context.embed "Bộ Máy Được Nhúng">
+<!ENTITY context.extapp "Chương Trình Ngoài">
+<!ENTITY context.icon "Biểu tượng">
+<!ENTITY external.label "Chương Trình Ngoài">
+<!ENTITY external.caption "Thiết lập Chương trình Ngoài">
+<!ENTITY external.path.label "Đường dẫn:">
+<!ENTITY external.param.label "Tham số:">
+<!ENTITY external.button.browse "Duyệt">
+<!ENTITY external.ctrlclick "Ctrl+Click trên nút IE Tab để mở URL trong Chtrình Ngoài.">
+<!ENTITY external.button.reset "Dùng Internet Explorer">
+<!ENTITY apply.label "Áp dụng">
+<!ENTITY settings.label "Thiết lập">
+<!ENTITY settings.default "Khôi phục Mặc định">
+<!ENTITY settings.import "Nhập thiết lập">
+<!ENTITY settings.export "Xuất thiết lập">

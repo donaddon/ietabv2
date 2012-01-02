@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab ជម្រើស">
+<!ENTITY toolsmenu.label "IE Tab ជម្រើស">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab ប៊ូតុង">
+<!ENTITY toolbar.button.tooltip0 "ចុចខាងឆ្វេង: ប្តូរម៉ាស៊ីនបង្ហាញនៃទំព័របច្ចុប្បន្ន">
+<!ENTITY toolbar.button.tooltip1 "ចុចកណ្តាល: ប្រើផ្ទាំងថ្មីដើម្បីប្តូរម៉ាស៊ីនបង្ហាញ">
+<!ENTITY toolbar.button.tooltip2 "ចុចខាងស្តាំ: បង្ហាញរាល់តម្រងតំបន់បណ្តាញ IE Tab">
+<!ENTITY popup.viewpage "ទិដ្ឋភាពទំព័រក្នុង IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "បើកបណ្តាញក្នុង IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "បើកក្នុង IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "ប្តូរម៉ាស៊ីនបង្ហាញ">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "ទិដ្ឋភាពទំព័រក្នុងកម្មវិធីផ្នែកខាងក្រៅ">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "បើកបណ្តាញក្នុងកម្មវិធីផ្នែកខាងក្រៅ">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "បើកក្នុងកម្មវិធីផ្នែកខាងក្រៅ">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "បើកក្នុងកម្មវិធីផ្នែកខាងក្រៅ">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "តម្រងតំបន់បណ្តាញ">
+<!ENTITY filter.enabled "រាល់តំបន់បណ្តាញដែលរាយនៅទីនេះ នឹងបង្ហាញការប្រើប្រាស់ដែលបង្កប់ IE ជារឿយៗ">
+<!ENTITY filter.column.rule "ច្បាប់">
+<!ENTITY filter.column.enabled "បានអនុញ្ញាត">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "បន្ថែម">
+<!ENTITY filter.button.delete "លុបចោល">
+<!ENTITY general.label "ការកំណត់ជាទូទៅ">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "បង្ហាញលើចំណុចប្រទាក់:">
+<!ENTITY interface.toolsmenu "ធាតុនៃម៊ឺនុយឧបករណ៍">
+<!ENTITY interface.toolsmenu.icon "រូបតំណាងនៃម៊ឺនុយឧបករណ៍">
+<!ENTITY interface.statusbar "រូបតំណាងស្ថានភាពរបារ">
+<!ENTITY switch.caption "ពេលប្តូរម៉ាស៊ីនបង្ហាញ:">
+<!ENTITY switch.handleurl "ប្រើម៉ាស៊ីនបង្ហាញបច្ចុប្បន្នជារឿយៗ ដើម្បីបើក URL ថ្មី">
+<!ENTITY switch.alwaysnew "ប្រើផ្ទាំងថ្មីជារឿយៗ ដើម្បីប្តូរម៉ាស៊ីនបង្ហាញ">
+<!ENTITY switch.focustab "ផ្តោតទៅលើផ្ទាំងថ្មី">
+<!ENTITY context.label "ម៊ឺនុយបរិបទ">
+<!ENTITY context.caption.tabsmenu "ម៉ឺនុយបរិបទរបារនៃផ្ទាំងរបារ បង្ហាញតាមធាតុនិមួយៗ:">
+<!ENTITY context.caption.pagelink "ម៉ឺនុយបរិបទនៃផ្ទៃមាតិកា បង្ហាញតាមធាតុនិមួយៗ:">
+<!ENTITY context.caption.bookmark "ម៉ឺនុយបរិបទចំណាំផ្ទាល់ខ្លួន បង្ហាញតាមធាតុនិមួយៗ:">
+<!ENTITY context.embed "ម៉ាស៊ីនបង្កប់">
+<!ENTITY context.extapp "កម្មវិធីផ្នែកខាងក្រៅ">
+<!ENTITY context.icon "រូបតំណាង">
+<!ENTITY external.label "កម្មវិធីផ្នែកខាងក្រៅ">
+<!ENTITY external.caption "ការកំណត់កម្មវិធីផ្នែកខាងក្រៅ">
+<!ENTITY external.path.label "ផ្លូវ:">
+<!ENTITY external.param.label "ប៉ារ៉ាម៉ែត្រ:">
+<!ENTITY external.button.browse "រកមើល">
+<!ENTITY external.ctrlclick "Ctrl+Click លើផ្ទាំងប៊ូតុង IE ដើម្បីបើក URL ក្នុងកម្មវិធីផ្នែកខាងក្រៅ">
+<!ENTITY external.button.reset "ប្រើ Internet Explorer">
+<!ENTITY apply.label "អនុវត្ត">
+<!ENTITY settings.label "ការកំណត់">
+<!ENTITY settings.default "ស្តារលំនាំដើម">
+<!ENTITY settings.import "កំណត់ការនាំចូល">
+<!ENTITY settings.export "កំណត់ការនាំចេញ">

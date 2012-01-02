@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tab 설정">
+<!ENTITY toolsmenu.label "IE Tab 설정">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab 버튼">
+<!ENTITY toolbar.button.tooltip0 "왼쪽 클릭: 현재 페이지의 렌더링 엔진을 전환합니다.">
+<!ENTITY toolbar.button.tooltip1 "가운데 클릭: 새 탭으로 렌더링 엔진을 전환합니다.">
+<!ENTITY toolbar.button.tooltip2 "오른쪽 클릭: IE Tab의 사이트 필터를 표시합니다.">
+<!ENTITY popup.viewpage "IE Tab으로 페이지 보기">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "IE Tab으로 링크 열기">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "IE Tab으로 열기">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "렌더링 엔진 전환">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "외부 응용 프로그램으로 페이지 보기">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "외부 응용 프로그램으로 링크 열기">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "외부 응용 프로그램으로 열기">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "외부 응용 프로그램으로 열기">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "사이트 필터">
+<!ENTITY filter.enabled "이 사이트들은 항상 내장된 IE 엔진을 사용합니다.">
+<!ENTITY filter.column.rule "규칙">
+<!ENTITY filter.column.enabled "사용 가능">
+<!ENTITY filter.url.label "주소 (URL):">
+<!ENTITY filter.button.add "추가">
+<!ENTITY filter.button.delete "삭제">
+<!ENTITY general.label "일반">
+<!ENTITY processmode.caption "프로세스 모드:">
+<!ENTITY processmode.runinprocess "플러그인을 인-프로세스로 실행 (재시작 필요)">
+<!ENTITY processmode.roboformtip "* 로보폼의 정상작동을 위해서는 이 옵션이 필요할 수도 있음">
+<!ENTITY interface.caption "표시하기:">
+<!ENTITY interface.toolsmenu "도구 메뉴 항목">
+<!ENTITY interface.toolsmenu.icon "도구 메뉴 아이콘">
+<!ENTITY interface.statusbar "상태 표시줄 아이콘">
+<!ENTITY switch.caption "렌더링 엔진을 전환할 때:">
+<!ENTITY switch.handleurl "항상 현재 렌더링 엔진을 사용하여 새 주소 열기">
+<!ENTITY switch.alwaysnew "항상 새 탭으로 렌더링 엔진 전환하기">
+<!ENTITY switch.focustab "새 탭 활성화하기">
+<!ENTITY context.label "컨텍스트 메뉴">
+<!ENTITY context.caption.tabsmenu "탭 도구 모음의 컨텍스트 메뉴에 표시할 항목:">
+<!ENTITY context.caption.pagelink "컨텐트 영역의 컨텍스트 메뉴에 표시할 항목:">
+<!ENTITY context.caption.bookmark "개인 북마크의 컨텍스트 메뉴에 표시할 항목:">
+<!ENTITY context.embed "내장된 엔진">
+<!ENTITY context.extapp "외부 응용 프로그램">
+<!ENTITY context.icon "아이콘">
+<!ENTITY external.label "외부 응용 프로그램">
+<!ENTITY external.caption "외부 응용 프로그램 설정">
+<!ENTITY external.path.label "경로:">
+<!ENTITY external.param.label "인수:">
+<!ENTITY external.button.browse "찾아보기">
+<!ENTITY external.ctrlclick "IE Tab에서 &apos;Ctrl+클릭&apos; 하면 외부 응용 프로그램으로 주소 열기">
+<!ENTITY external.button.reset "Internet Explorer 사용하기">
+<!ENTITY apply.label "적용">
+<!ENTITY settings.label "설정">
+<!ENTITY settings.default "기본 설정 복원">
+<!ENTITY settings.import "설정 가져오기">
+<!ENTITY settings.export "설정 내보내기">

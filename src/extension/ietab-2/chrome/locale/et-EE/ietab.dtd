@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE Tabi sätted">
+<!ENTITY toolsmenu.label "IE Tabi sätted">
+<!ENTITY toolbar.button.label "IE Tab">
+<!ENTITY toolbar.button.display "IE Tab nupp">
+<!ENTITY toolbar.button.tooltip0 "Vasak hiireklõps: vahetab aktiivse veebilehe mootorit">
+<!ENTITY toolbar.button.tooltip1 "Keskmine hiireklõps: veebileht avatakse uuel kaardil koos mootori vahetamisega">
+<!ENTITY toolbar.button.tooltip2 "Parem hiireklõps: näitab IE Tabi veebilehtede filtreid">
+<!ENTITY popup.viewpage "Vaata veebilehte IE Tabiga">
+<!ENTITY popup.viewpage.key "h">
+<!ENTITY popup.viewlink "Ava link IE Tabiga">
+<!ENTITY popup.viewlink.key "i">
+<!ENTITY popup.bookmark "Ava IE Tabiga">
+<!ENTITY popup.bookmark.key "i">
+<!ENTITY popup.tabbar.switch "Vaheta veebilehe mootorit">
+<!ENTITY popup.tabbar.switch.key "m">
+<!ENTITY popup.viewpage.extapp "Vaata veebilehte välise rakendusega">
+<!ENTITY popup.viewpage.extapp.key "v">
+<!ENTITY popup.viewlink.extapp "Ava link välise rakendusega">
+<!ENTITY popup.viewlink.extapp.key "v">
+<!ENTITY popup.bookmark.extapp "Ava välise rakendusega">
+<!ENTITY popup.bookmark.extapp.key "l">
+<!ENTITY popup.tabbar.extapp "Ava välise rakendusega">
+<!ENTITY popup.tabbar.extapp.key "v">
+<!ENTITY filter.label "Veebilehtede filtrid">
+<!ENTITY filter.enabled "Veebilehtede filtrid lubatakse">
+<!ENTITY filter.column.rule "Reegel">
+<!ENTITY filter.column.enabled "Lubatud">
+<!ENTITY filter.url.label "Aadress:">
+<!ENTITY filter.button.add "Lisa">
+<!ENTITY filter.button.delete "Kustuta">
+<!ENTITY general.label "Üldine">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Näita kasutajaliidesel:">
+<!ENTITY interface.toolsmenu "Tööriistade menüü loetelus">
+<!ENTITY interface.toolsmenu.icon "Tööriistade menüüs ikoonina">
+<!ENTITY interface.statusbar "Ikoonina olekuribal">
+<!ENTITY switch.caption "Vahetades veebilehtede mootorit">
+<!ENTITY switch.handleurl "Uue lingi avamisel kasutatakse alati aktiivset mootorit">
+<!ENTITY switch.alwaysnew "Veebilehe mootorit vahetades avab alati uuel kaardil">
+<!ENTITY switch.focustab "Veebilehe mootorit vahetades liigub fookus uuele kaardile">
+<!ENTITY context.label "Kontekstimenüü">
+<!ENTITY context.caption.tabsmenu "Kaartide kontekstimenüüs on näha järgmised elemendid:">
+<!ENTITY context.caption.pagelink "Veebilehe sisu kontekstimenüüs on näha järgmised elemendid:">
+<!ENTITY context.caption.bookmark "Järjehoidjariba kontekstimenüüs on näha järgmised elemendid:">
+<!ENTITY context.embed "Mootor">
+<!ENTITY context.extapp "Väline rakendus">
+<!ENTITY context.icon "Ikoon">
+<!ENTITY external.label "Väline rakendus">
+<!ENTITY external.caption "Välise rakenduse seadistus">
+<!ENTITY external.path.label "Asukoht">
+<!ENTITY external.param.label "Parameetrid">
+<!ENTITY external.button.browse "Lehitse">
+<!ENTITY external.ctrlclick "Ctrl+klõps IE Tab nupul avab lingi välise rakendusega">
+<!ENTITY external.button.reset "Kasuta Internet Explorerit">
+<!ENTITY apply.label "Rakenda">
+<!ENTITY settings.label "Tegevused">
+<!ENTITY settings.default "Taasta vaikeväärtused">
+<!ENTITY settings.import "Sätete import">
+<!ENTITY settings.export "Sätete eksport">

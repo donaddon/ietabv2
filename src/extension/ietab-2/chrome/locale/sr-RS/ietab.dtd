@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "Поставке ИЕ језичка">
+<!ENTITY toolsmenu.label "Поставке ИЕ језичка">
+<!ENTITY toolbar.button.label "ИЕ језичак">
+<!ENTITY toolbar.button.display "Дугме ИЕ језичка">
+<!ENTITY toolbar.button.tooltip0 "Леви клик: мења покретачки механизам на тренутној страни.">
+<!ENTITY toolbar.button.tooltip1 "Средњи клик: користи нови језичак за промену покретачког механизма.">
+<!ENTITY toolbar.button.tooltip2 "Десни клик: приказује филтер страна ИЕ језичка">
+<!ENTITY popup.viewpage "Погледај страну у ИЕ језичку">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Отвори везу у ИЕ језичку">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Отвори у ИЕ језичку">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Промени покретачки механизам">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Погледај страну у спољ. апл.">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Отвори везу у ИЕ језичку">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Отвори у спољ. апл.">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Отвори у спољ. апл.">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Филтер страна">
+<!ENTITY filter.enabled "Омогући филтер страна">
+<!ENTITY filter.column.rule "Правило">
+<!ENTITY filter.column.enabled "Омогућено">
+<!ENTITY filter.url.label "УРЛ:">
+<!ENTITY filter.button.add "Додај">
+<!ENTITY filter.button.delete "Избриши">
+<!ENTITY general.label "Опште поставке">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "Прикажи на сучељу">
+<!ENTITY interface.toolsmenu "Ставка у менију Алати">
+<!ENTITY interface.toolsmenu.icon "Икона у менију Алати">
+<!ENTITY interface.statusbar "Икона на статусној траци">
+<!ENTITY switch.caption "Када мењам покретачки механизам:">
+<!ENTITY switch.handleurl "Увек користи тренутни механизам">
+<!ENTITY switch.alwaysnew "Отвори у новом језичку када мењаш механизме">
+<!ENTITY switch.focustab "Фокусирај нови језичак када мењаш механизме">
+<!ENTITY context.label "Контекстни мени">
+<!ENTITY context.caption.tabsmenu "Контекстни мени траке са језичцима приказује следеће ставке:">
+<!ENTITY context.caption.pagelink "Контекстни мени подручја садржаја приказује следеће ставке:">
+<!ENTITY context.caption.bookmark "Контекстни мени личних забелешки приказује следеће ставке:">
+<!ENTITY context.embed "Уграђени механизам">
+<!ENTITY context.extapp "Спољна апликација">
+<!ENTITY context.icon "Икона">
+<!ENTITY external.label "Спољна апликација">
+<!ENTITY external.caption "Поставке спољне апликације">
+<!ENTITY external.path.label "Путања:">
+<!ENTITY external.param.label "Параметри:">
+<!ENTITY external.button.browse "Преглед">
+<!ENTITY external.ctrlclick "Ктрл + клик на дугме ИЕ језичка да отвориш у спољ. апл.">
+<!ENTITY external.button.reset "Користи Интернет Експлорер">
+<!ENTITY apply.label "Примени">
+<!ENTITY settings.label "Подешавања">
+<!ENTITY settings.default "Врати подразумевано">
+<!ENTITY settings.import "Увези подешавања">
+<!ENTITY settings.export "Извези подешавања">

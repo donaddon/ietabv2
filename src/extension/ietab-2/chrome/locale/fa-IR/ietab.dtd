@@ -1,0 +1,61 @@
+<!ENTITY dialog.title "IE تنظیمات برگه">
+<!ENTITY toolsmenu.label "IE تنظیمات برگه">
+<!ENTITY toolbar.button.label "برگه IE">
+<!ENTITY toolbar.button.display "دگمه برگه IE">
+<!ENTITY toolbar.button.tooltip0 "کلید چپ: برای تعویض موتور نمایش">
+<!ENTITY toolbar.button.tooltip1 "کلید میانی: استفاده از برگه برای تعویش موتور نمایش">
+<!ENTITY toolbar.button.tooltip2 "کلید راست: نمایش فیلتر سایتهای برگه IE">
+<!ENTITY popup.viewpage "نمایش صفحه در برگه IE">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "بازکردن مسیر در برگه IE">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "بازکردن در برگه IE">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "تعویض موتور نمایش">
+<!ENTITY popup.tabbar.switch.key "ش">
+<!ENTITY popup.viewpage.extapp "نمایش صفحه در برنامه بیرونی">
+<!ENTITY popup.viewpage.extapp.key "ن">
+<!ENTITY popup.viewlink.extapp "بازکردن مسیر در برنامه بیرونی">
+<!ENTITY popup.viewlink.extapp.key "س">
+<!ENTITY popup.bookmark.extapp "بازکردن در برنامه بیرونی">
+<!ENTITY popup.bookmark.extapp.key "ب">
+<!ENTITY popup.tabbar.extapp "بازکردن در برنامه بیرونی">
+<!ENTITY popup.tabbar.extapp.key "ب">
+<!ENTITY filter.label "فیلتر سایت">
+<!ENTITY filter.enabled "سایتهای زیز همیشه بوسیله IE نمایش داده می‌شوند">
+<!ENTITY filter.column.rule "دستور">
+<!ENTITY filter.column.enabled "فعال">
+<!ENTITY filter.url.label "نشانی:">
+<!ENTITY filter.button.add "افزودن">
+<!ENTITY filter.button.delete "حذف">
+<!ENTITY general.label "تنظیمات عمومی">
+<!ENTITY processmode.caption "Process Mode:">
+<!ENTITY processmode.runinprocess "Run the plugin in the firefox.exe process (requires restart)">
+<!ENTITY processmode.roboformtip "* This may be necessary to use Roboform">
+<!ENTITY interface.caption "نمایش در برنامه:">
+<!ENTITY interface.toolsmenu "منوی ابزار">
+<!ENTITY interface.toolsmenu.icon "شمایل در منوی ابزار">
+<!ENTITY interface.statusbar "شمایل در نواروضعیت">
+<!ENTITY switch.caption "زمان تعویض موتور نمایشی:">
+<!ENTITY switch.handleurl "موتور نمایشی جاری همیشه برای گشودن نشانی‌های جدید استفاده شود">
+<!ENTITY switch.alwaysnew "برگه نو همیشه برای تعویض موتور نمایشی استفاده شود">
+<!ENTITY switch.focustab "رفتن به برگه جدید">
+<!ENTITY context.label "منو">
+<!ENTITY context.caption.tabsmenu "منوی نواربرگه‌ها موارد زیر را نشان می‌دهد:">
+<!ENTITY context.caption.pagelink "منوی بخش متن موارد زیر را نشان می‌دهد:">
+<!ENTITY context.caption.bookmark "منوی موردعلاقه‌های شخصی موارد زیر را نشان می‌دهد:">
+<!ENTITY context.embed "موتور درونی">
+<!ENTITY context.extapp "برنامه بیرونی">
+<!ENTITY context.icon "شمایل">
+<!ENTITY external.label "برنامه بیرونی">
+<!ENTITY external.caption "تنظیمات برنامه بیرونی">
+<!ENTITY external.path.label "نشانی:">
+<!ENTITY external.param.label "پارامترها:">
+<!ENTITY external.button.browse "مرور">
+<!ENTITY external.ctrlclick "با استفاده از Ctrl+Click برروی برگه ٬IE نشانی مورد نظر را در برنامه بیرونی بازکنید.">
+<!ENTITY external.button.reset "استفاده از Internet Explorer">
+<!ENTITY apply.label "اعمال‌کردن">
+<!ENTITY settings.label "تنظیمات">
+<!ENTITY settings.default "بازگشت پیش‌فرض">
+<!ENTITY settings.import "واردکردن تنظیمات">
+<!ENTITY settings.export "خروجی تنظیمات">

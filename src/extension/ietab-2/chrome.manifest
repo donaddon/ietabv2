@@ -1,0 +1,54 @@
+content	ietab2 chrome/content/
+skin	ietab2 classic/1.0 chrome/skin/
+
+overlay	chrome://browser/content/browser.xul chrome://ietab2/content/ietabOverlay.xul
+style	chrome://global/content/customizeToolbar.xul chrome://ietab2/skin/ietab.css
+
+component {5666F981-6DC7-4270-9B7F-3E064ED7B6C7} components/nsIeTabWatchFactory.js
+contract @mozilla.org/ietab2watch;1 {5666F981-6DC7-4270-9B7F-3E064ED7B6C7}
+category content-policy IeTab2WatchFactoryClass @mozilla.org/ietab2watch;1
+
+locale	ietab2	af-ZA	chrome/locale/af-ZA/
+locale	ietab2	ar		chrome/locale/ar/
+locale	ietab2	be-BY	chrome/locale/be-BY/
+locale	ietab2	bg-BG	chrome/locale/bg-BG/
+locale	ietab2	ca-AD	chrome/locale/ca-AD/
+locale	ietab2	cs-CZ	chrome/locale/cs-CZ/
+locale	ietab2	da-DK	chrome/locale/da-DK/
+locale	ietab2	de-DE	chrome/locale/de-DE/
+locale	ietab2	en-US	chrome/locale/en-US/
+locale	ietab2	es-AR	chrome/locale/es-AR/
+locale	ietab2	es-ES	chrome/locale/es-ES/
+locale	ietab2	et-EE	chrome/locale/et-EE/
+locale	ietab2	eu-ES	chrome/locale/eu-ES/
+locale	ietab2	fa-IR	chrome/locale/fa-IR/
+locale	ietab2	fi-FI	chrome/locale/fi-FI/
+locale	ietab2	fr-FR	chrome/locale/fr-FR/
+locale	ietab2	fy-NL	chrome/locale/fy-NL/
+locale	ietab2	he-IL	chrome/locale/he-IL/
+locale	ietab2	hr-HR	chrome/locale/hr-HR/
+locale	ietab2	hu-HU	chrome/locale/hu-HU/
+locale	ietab2	id-ID	chrome/locale/id-ID/
+locale	ietab2	it-IT	chrome/locale/it-IT/
+locale	ietab2	ja-JP	chrome/locale/ja-JP/
+locale	ietab2	km-KH	chrome/locale/km-KH/
+locale	ietab2	ko-KR	chrome/locale/ko-KR/
+locale	ietab2	lt-LT	chrome/locale/lt-LT/
+locale	ietab2	mn-MN	chrome/locale/mn-MN/
+locale	ietab2	nb-NO	chrome/locale/nb-NO/
+locale	ietab2	nl-NL	chrome/locale/nl-NL/
+locale	ietab2	pl-PL	chrome/locale/pl-PL/
+locale	ietab2	pt-BR	chrome/locale/pt-BR/
+locale	ietab2	pt-PT	chrome/locale/pt-PT/
+locale	ietab2	ro-RO	chrome/locale/ro-RO/
+locale	ietab2	ru-RU	chrome/locale/ru-RU/
+locale	ietab2	sk-SK	chrome/locale/sk-SK/
+locale	ietab2	sl-SI	chrome/locale/sl-SI/
+locale	ietab2	sr-RS	chrome/locale/sr-RS/
+locale	ietab2	sv-SE	chrome/locale/sv-SE/
+locale	ietab2	th-TH	chrome/locale/th-TH/
+locale	ietab2	tr-TR	chrome/locale/tr-TR/
+locale	ietab2	uk-UA	chrome/locale/uk-UA/
+locale	ietab2	vi-VN	chrome/locale/vi-VN/
+locale	ietab2	zh-CN	chrome/locale/zh-CN/
+locale	ietab2	zh-TW	chrome/locale/zh-TW/

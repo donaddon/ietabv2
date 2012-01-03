@@ -30,7 +30,7 @@
 //        fix new OOP model hangs / crashes
 //
 const gIeTab2ChromeStr = "chrome://ietab2/content/reloaded.html?url=";
-const gIeTab2Version = "3.10.7.2";
+const gIeTab2Version = "4.1.3.1";
 
 IeTab2.prototype.QueryInterface = function(aIID) {
    if (aIID.equals(Components.interfaces.nsIIeTab) || aIID.equals(Components.interfaces.nsISupports))

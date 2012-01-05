@@ -195,11 +195,11 @@
    </hbox>
 
    <popupset>
-      <popup id="settings" position="before_start">
+      <menupopup id="settings" position="before_start">
          <menuitem id="default" label="&settings.default;" oncommand="gIeTab2.restoreDefault();"/>
          <menuitem id="import"  label="&settings.import;"  oncommand="gIeTab2.importSettings();"/>
          <menuitem id="export"  label="&settings.export;"  oncommand="gIeTab2.exportSettings();"/>
-      </popup>
+      </menupopup>
    </popupset>
 
 </dialog>

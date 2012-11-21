@@ -38,13 +38,23 @@ IeTab2.prototype.QueryInterface = function(aIID) {
    throw Components.results.NS_NOINTERFACE;
 }
 
+//
+// getIeTabURL
+//
+// Takes the provided URL and creates a chrome://ietab/reload/url= url out of it
+//
 IeTab2.prototype.getIeTabURL = function(url) {
    if (gIeTab2.startsWith(url, gIeTab2ChromeStr)) return url;
    if (/^file:\/\/.*/.test(url)) try { url = decodeURI(url).substring(8).replace(/\|/g,":").replace(/\//g,"\\"); }catch(e){}
    return gIeTab2ChromeStr + encodeURI(url);
 }
 
-IeTab2.prototype.getIeTabTrimURL = function(url) {
+//
+// getSubjectURLFromIeTabURL
+//
+// Given an ietab chrome:// URL, parses the actual URL that is loaded by that IE Tab instance
+//
+IeTab2.prototype.getLoadedURLFromIeTabURL = function(url) {
    if (url && url.length>0) {
       url = url.replace(/^\s+/g,"").replace(/\s+$/g,"");
       if (/^file:\/\/.*/.test(url)) url = url.replace(/\|/g,":");
@@ -90,9 +100,14 @@ IeTab2.prototype.getIeTabCmdElmt = function(aTab) {
    return null;
 }
 
+//
+// getIeTabElmtURL
+//
+// If the tab is using IE Tab then the URL returned is the URL that is currently loaded in IE Tab
+//
 IeTab2.prototype.getIeTabElmtURL = function(aTab) {
    var aBrowser = (aTab ? aTab.linkedBrowser : gBrowser);
-   var url = gIeTab2.getIeTabTrimURL(aBrowser.currentURI.spec);
+   var url = gIeTab2.getLoadedURLFromIeTabURL(aBrowser.currentURI.spec);
    var ietab = gIeTab2.getIeTabElmt(aTab);
    if (ietab && ietab.url && ietab.url != "") {
       url = (/^file:\/\/.*/.test(url) ? encodeURI(gIeTab2.convertToUTF8(ietab.url)) : ietab.url);
@@ -111,6 +126,11 @@ IeTab2.prototype.isIeForceable = function(url) {
          );
 }
 
+//
+// isIeEngine
+//
+// Returns true if the currently active tab is using IE Tab
+//
 IeTab2.prototype.isIeEngine = function() {
    return gIeTab2.getIeTabElmt();
 }
@@ -135,11 +155,11 @@ IeTab2.prototype.switchTabEngine = function(aTab, isOpenNewTab) {
         // 1. focus the tab.
         // 2. focus the XUL element.
         // 3. focus the control.
-        
+
         // TODO:  We are seeing cases where the element isn't active, we probably need to wait
         // for it to be active before doing this.  For now, we just check for null.
         gBrowser.selectedTab.focus();
-        
+
         var el = gBrowser.contentDocument.getElementById("IETab2");
         if(el)
             el.focus();
@@ -198,12 +218,12 @@ IeTab2.prototype.getContextLinkURL = function() {
 }
 
 IeTab2.prototype.loadIeTab = function(url) {
-   url = gIeTab2.getIeTabTrimURL(url);
+   url = gIeTab2.getLoadedURLFromIeTabURL(url);
    gBrowser.loadURI(gIeTab2.getIeTabURL(url));
 }
 
 IeTab2.prototype.addIeTab = function(url) {
-   url = gIeTab2.getIeTabTrimURL(url);
+   url = gIeTab2.getLoadedURLFromIeTabURL(url);
    var newTab = gBrowser.addTab(gIeTab2.getIeTabURL(url));
    var focustab = gIeTab2.getBoolPref("extensions.ietab2.focustab", true);
    if (focustab) {
@@ -248,14 +268,26 @@ IeTab2.prototype.ietabContextMenuPopup = function(e) {
    menuitem.setAttribute("class", (showicon?menuitem.getAttribute("iconic"):""));
 }
 
-IeTab2.prototype.getHandledURL = function(url, isModeIE) {
+//
+// getHandledURL
+//
+// Updates the URL to an IE Tab URL if the URL should be handled by IE Tab.
+// This is not what handles Auto URLs, it is used to determine how to behave if IE Tab
+// is the current engine, as follows:
+//
+// If IE Tab is the current engine, and
+//   The option to "use current engine" (i.e. always stay with the current engine) is on   - OR -
+//   The URL's domain matches the domain currently loaded in IE Tab.
+//
+// Then the URL is converted to use IE Tab, otherwise it is just trimmed
+//
+IeTab2.prototype.getHandledURL = function(url) {
    url = gIeTab2.trim(url);
-   if (isModeIE) return gIeTab2.getIeTabURL(url);
    if ( gIeTab2.isIeEngine()
       && (!gIeTab2.startsWith(url, "about:"))
       && (!gIeTab2.startsWith(url, "view-source:"))
       ) {
-      var isBlank = (gIeTab2.getIeTabTrimURL(gBrowser.currentURI.spec)=="about:blank");
+      var isBlank = (gIeTab2.getLoadedURLFromIeTabURL(gBrowser.currentURI.spec)=="about:blank");
       var handleUrlBar = gIeTab2.getBoolPref("extensions.ietab2.handleUrlBar", false);
       var isSimilar = (gIeTab2.getUrlDomain(gIeTab2.getIeTabElmtURL()) == gIeTab2.getUrlDomain(url));
       if (isBlank || handleUrlBar || isSimilar) return gIeTab2.getIeTabURL(url);
@@ -406,11 +438,11 @@ IeTab2.prototype.gotFocus = function() {
     // We need to do this because Firefox gets confused about
     // which element has the focus, preventing you from being able to re-activate an alement (like the URL bar)
     // because it thinks it already has the focus when it doesn't.
-    
+
     // Only do this for FF3.x
     if(!document.activeElement)
         return;
-    
+
     // Avoid looping if older FF versions end up recursing between the element and the Win32 focus
     var now = (new Date()).getTime();
     if(this.lastGotFocus)
@@ -465,10 +497,10 @@ IeTab2.prototype.goDoCommand = function(cmd) {
    try {
       if(gIeTab2.forceDefaultCmd)
          return false;
-   
+
       if(!gIeTab2.doesIeTabElmtExist())
          return false;
-        
+
       switch(cmd) {
           case "goBack":
           case "goForward":
@@ -500,7 +532,7 @@ IeTab2.prototype.delayedGoDoCommand = function(cmd) {
    try {
       var ietabProps = gIeTab2.getIeTabElmt();
       var ietab = gIeTab2.getIeTabCmdElmt();
-      
+
       switch (cmd) {
       case "goBack":
          if (!ietab || !ietabProps.canBack)
@@ -607,7 +639,7 @@ IeTab2.prototype.closeIeTab = function() {
    var mTabs = gBrowser.mTabContainer.childNodes;
    for(var i = mTabs.length-1 ; i>=0 ; i--) {
       if (mTabs[i].localName == "tab") {
-         
+
          var ietab = gIeTab2.getIeTabElmt(mTabs[i]);
          if (ietab && (ietab.canClose))
          {
@@ -848,55 +880,188 @@ IeTab2.prototype.safeMakeURI = function(uri, alternative) {
    return alternative;
 }
 
+/* ================================================
+// DEPRECATED / OBSOLETE HOOK CODE
+//
+// 11/20/12 - Moving away from the string-based function customization.
+//
+// From what I can tell the ones in this comment block have all either been broken for a long time and are probably not necessary
+// or they are no longer appropriate with current versions of Fx.  Keep these comments here for a few releases in case we find we overlooked some
+// functionality
+
+// FIRST, THE HOOK FUNCTION
+
+// IeTab2.prototype.hookCode = function(orgFunc, orgCode, myCode) {
+//    try{ if (eval(orgFunc).toString() == eval(orgFunc + "=" + eval(orgFunc).toString().replace(orgCode, myCode))) throw orgFunc; }
+//   catch(e){ Components.utils.reportError("Failed to hook function: "+orgFunc); }
+// }
+
+
+   // The following one disabled typeAhead when IE was installed, it's a questionable feature to begin with.
+   // gIeTab2.hookCode("gFindBar._onBrowserKeypress", "this._useTypeAheadFind &&", "$& !gIeTab2.isIeEngine() &&");
+
+   // The following converted chrome://ietab2/url=http%25... links to the final target link when a bookmark is created.  We _could_ do this
+   // using nsINavBookmarkObserver::onItemAdded and change the value on save.  But again, I don't think this functionality is really necessary, if the
+   // URL was opened in IE Tab wen it was bookmarked, what's wrong with bookmarking it to open in IE Tab again?
+   // gIeTab2.hookCode("PlacesCommandHook.bookmarkPage", "aBrowser.currentURI", "gIeTab2.safeMakeURI(gIeTab2.getLoadedURLFromIeTabURL($&.spec), getBrowser().currentURI)");
+
+   // This was commented out long ago, _apparently_ no longer needed
+   // gIeTab2.hookCode("gBrowser.updateTitlebar", 'docElement.getAttribute("titlemodifier")', 'gIeTab2.getTitleEnding($&)');
+
+   // Not sure what the following did, but URLBarSetURI has not used getWebNavigation() for a while, so it is effectively a NOP
+   // gIeTab2.hookCode("URLBarSetURI", "getWebNavigation()", "getBrowser()");
+
+   // 11/20/12:  The following hook is not working in Fx17.  It was trying to hook OnLocationChange, but nsIWebProgressListener now has an aFlags fourth parameter so the hook
+   //        wouldn't have worked.  According to the MDN docs, this was added in Gecko 11 / Fx 11, so this has been broken since 3/13/12.
+   //        Investigate / test whether there are auto URL scenarios that don't work due to this breakage.
+   // gIeTab2.hookCode('gBrowser.mTabProgressListener', "function (aWebProgress, aRequest, aLocation) {", "$& gIeTab2.checkFilter(this.mBrowser, aRequest, aLocation);");
+
+   // ================================================
+   // The following two have been broken since FX4
+       // This is the hook for the star button, if we decide to keep pretty-izing the URLs, then we may need to re-add this
+       // gIeTab2.hookCode("PlacesStarButton.updateState", "getBrowser().currentURI", "gIeTab2.safeMakeURI(gIeTab2.getLoadedURLFromIeTabURL($&.spec), getBrowser().currentURI)");
+
+       // This has been broken since Fx 4.  It was influencing OpenURI by making sure it was called with LOAD_FLAGS_NONE instead of
+       // LOAD_FLAGS_FROM_EXTERNAL.  The exact impact of that is not clear to me, it seems to impact userTypedClear, but I don't see that used in the
+       // source code.  So we're leaving this one out for now.'
+       // gIeTab2.hookCode("nsBrowserAccess.prototype.openURI", "var loadflags = isExternal ?", "var loadflags = false ?");
+   // ================================================
+// TODO:  I think the following functionality should be replaced with addTabsProgressListener.  I do not think we need to be doing the hook above OR the hook below
+//for(var i=0 ; i<gBrowser.mTabListeners.length ; i++)
+ //  gIeTab2.hookCode("gBrowser.mTabListeners["+i+"].onLocationChange", /{/, "$& gIeTab2.checkFilter(this.mBrowser, aRequest, aLocation);");
+
+// END DEPRECATED / OBSOLETE HOOKS
+// ================================================
+*/
+
+IeTab2.prototype.hookCommands = function() {
+   // General command functions that may be handled by IE Tab
+   function commandHook(oldFunction, ieTabCmd) {
+       if (typeof(oldFunction) === 'undefined') {
+           Components.utils.reportError("Failed to apply hook: " + ieTabCmd);
+           return null;
+       }
+
+       function newFunction() {
+           if (gIeTab2.goDoCommand(ieTabCmd))
+               return;
+           return oldFunction.apply(this, arguments);
+       }
+       return newFunction;
+   }
+
+   window.BrowserBack = commandHook(window.BrowserBack, 'goBack');
+   window.BrowserForward = commandHook(window.BrowserForward, 'goForward');
+   window.BrowserStop = commandHook(window.BrowserStop, 'stop');
+   window.BrowserReload = commandHook(window.BrowserReload, 'refresh');
+   window.BrowserReloadSkipCache = commandHook(window.BrowserReloadSkipCache, 'refresh');
+   window.saveDocument = commandHook(window.saveDocument, 'saveAs');
+   window.BrowserViewSourceOfDocument = commandHook(window.BrowserViewSourceOfDocument, 'viewSource');
+   window.displaySecurityInfo = commandHook(window.displaySecurityInfo, 'displaySecurityInfo');
+
+   if (window.PrintUtils) {
+       window.PrintUtils.print = commandHook(window.PrintUtils.print, 'print');
+       window.PrintUtils.showPageSetup = commandHook(window.PrintUtils.showPageSetup, 'printSetup');
+       window.PrintUtils.printPreview = commandHook(window.PrintUtils.printPreview, 'printPreview');
+   }
+}
+
 IeTab2.prototype.hookCodeAll = function() {
    //hook properties
    gIeTab2.hookBrowserGetter(gBrowser.mTabContainer.firstChild.linkedBrowser);
    gIeTab2.hookURLBarSetter(gURLBar);
 
-   //hook functions
-   gIeTab2.hookCode("gFindBar._onBrowserKeypress", "this._useTypeAheadFind &&", "$& !gIeTab2.isIeEngine() &&");
-   gIeTab2.hookCode("PlacesCommandHook.bookmarkPage", "aBrowser.currentURI", "gIeTab2.safeMakeURI(gIeTab2.getIeTabTrimURL($&.spec), getBrowser().currentURI)");
-   gIeTab2.hookCode("gBrowser.addTab", "return t;", "gIeTab2.hookBrowserGetter(t.linkedBrowser); $&");
-   // gIeTab2.hookCode("gBrowser.updateTitlebar", 'docElement.getAttribute("titlemodifier")', 'gIeTab2.getTitleEnding($&)');
-   gIeTab2.hookCode("gBrowser.setTabTitle", "if (browser.currentURI.spec) {", "$& if (browser.currentURI.spec.indexOf(gIeTab2ChromeStr) == 0) return;");
-   gIeTab2.hookCode("URLBarSetURI", "getWebNavigation()", "getBrowser()");
-   gIeTab2.hookCode("getShortcutOrURI", /return (\S+);/g, "return gIeTab2.getHandledURL($1);");
-   if (gURLBar.handleCommand) gIeTab2.hookCode("gURLBar.handleCommand", "this.value = url;", "url = gIeTab2.getHandledURL(url); $&"); //fx3.1
-   else gIeTab2.hookCode("BrowserLoadURL", "url = gURLBar.value;", "url = gIeTab2.getHandledURL(gURLBar.value);"); //fx3.0
-   gIeTab2.hookCode('gBrowser.mTabProgressListener', "function (aWebProgress, aRequest, aLocation) {", "$& gIeTab2.checkFilter(this.mBrowser, aRequest, aLocation);");
-   for(var i=0 ; i<gBrowser.mTabListeners.length ; i++)
-      gIeTab2.hookCode("gBrowser.mTabListeners["+i+"].onLocationChange", /{/, "$& gIeTab2.checkFilter(this.mBrowser, aRequest, aLocation);");
-
-   // TODO:  Find alternatives in the future
-   // Things not compatible with FF4
-   if(gIeTab2.ffversion < 4)
-   {
-       gIeTab2.hookCode("PlacesStarButton.updateState", "getBrowser().currentURI", "gIeTab2.safeMakeURI(gIeTab2.getIeTabTrimURL($&.spec), getBrowser().currentURI)");
-       gIeTab2.hookCode("nsBrowserAccess.prototype.openURI", "var loadflags = isExternal ?", "var loadflags = false ?");
+   // Old hook code followed by new hook code
+   // gIeTab2.hookCode("gBrowser.addTab", "return t;", "gIeTab2.hookBrowserGetter(t.linkedBrowser); $&");
+   if (gBrowser.addTab) {
+       var oldAddTab = gBrowser.addTab;
+       gBrowser.addTab = function() {
+           var tab = oldAddTab.apply(this, arguments);
+           // TODO:  Do we really need this?
+           gIeTab2.hookBrowserGetter(tab.linkedBrowser);
+           return tab;
+       }
+   } else {
+       Components.utils.reportError("Failed to apply addTab hook");
    }
 
-   //hook Interface Commands
-   gIeTab2.hookCode("BrowserBack", /{/, "$& if(gIeTab2.goDoCommand('goBack')) return;");
-   gIeTab2.hookCode("BrowserForward", /{/, "$& if(gIeTab2.goDoCommand('goForward')) return;");
-   gIeTab2.hookCode("BrowserStop", /{/, "$& if(gIeTab2.goDoCommand('stop')) return;");
-   gIeTab2.hookCode("BrowserReload", /{/, "$& if(gIeTab2.goDoCommand('refresh')) return;");
-   gIeTab2.hookCode("BrowserReloadSkipCache", /{/, "$& if(gIeTab2.goDoCommand('refresh')) return;");
+   // Old code for updating the title followed by new implementation that doesn't use toString substitution
+   // gIeTab2.hookCode("gBrowser.setTabTitle", "if (browser.currentURI.spec) {", "$& if (browser.currentURI.spec.indexOf(gIeTab2ChromeStr) == 0) return;");
+   if (gBrowser.setTabTitle) {
+       var oldSetTabTitle = gBrowser.setTabTitle;
+       gBrowser.setTabTitle = function(aTab) {
+           var browser = this.getBrowserForTab(aTab);
+           var title = browser.contentTitle;
+           if (!title) {
+               if (browser.currentURI.spec && browser.currentURI.spec.indexOf(gIeTab2ChromeStr) == 0)
+                   return false;
+           }
+           return oldSetTabTitle.apply(this, arguments);
+       }
+   } else {
+       Components.utils.reportError("Failed to apply setTabtitle hook");
+   }
 
-   gIeTab2.hookCode("saveDocument", /{/, "$& if(gIeTab2.goDoCommand('saveAs')) return;");
-   gIeTab2.hookCode("BrowserViewSourceOfDocument", /{/, "$& if(gIeTab2.goDoCommand('viewSource')) return;");
-   gIeTab2.hookCode("MailIntegration.sendMessage", /{/, "$& var ietab = gIeTab2.getIeTabElmt(); if(ietab){ arguments[0]=ietab.url; arguments[1]=ietab.title; }");
+   // This is invoked when the user hits the enter key in the address bar
+   // gIeTab2.hookCode("getShortcutOrURI", /return (\S+);/g, "return gIeTab2.getHandledURL($1);");
+   if (window.getShortcutOrURI) {
+       var oldGetShortcutOrURI = getShortcutOrURI;
+       getShortcutOrURI = function() {
+           var result = oldGetShortcutOrURI.apply(this, arguments);
+           return gIeTab2.getHandledURL(result);
+       }
+   } else {
+       Components.utils.reportError("Failed to apply getShortcutOrURI hook");
+   }
 
-   gIeTab2.hookCode("PrintUtils.print", /{/, "$& if(gIeTab2.goDoCommand('print')) return;");
-   gIeTab2.hookCode("PrintUtils.showPageSetup", /{/, "$& if(gIeTab2.goDoCommand('printSetup')) return;");
-   gIeTab2.hookCode("PrintUtils.printPreview", /{/, "$& if(gIeTab2.goDoCommand('printPreview')) return;");
+   // TODO:  Find out how handleCommand is invoked so we can test and document this
+   // The functionality below replaces this old hook:
+   //   if (gURLBar.handleCommand) gIeTab2.hookCode("gURLBar.handleCommand", "this.value = url;", "url = gIeTab2.getHandledURL(url); $&"); //fx3.1
+    if (gURLBar.handleCommand) {
+       var oldHandleCommand = gURLBar.handleCommand;
+       gURLBar.handleCommand = function() {
+           if (this.value) {
+               this.value = gIeTab2.getHandledURL(this.value);
+           }
+           return oldHandleCommand.apply(this, arguments);
+       }
+   }
+   else {
+        // The following was for Fx 3.0, and we are just going to ignore this functionality for FX versions that old
+        // gIeTab2.hookCode("BrowserLoadURL", "url = gURLBar.value;", "url = gIeTab2.getHandledURL(gURLBar.value);");//fx3.0
+   }
+// TODO:  Make sure to test downlevel browsers with these hooks
 
-   gIeTab2.hookCode("goDoCommand", /{/, "$& if(gIeTab2.goDoCommand(arguments[0])) return;");
+   if (window.MailIntegration && window.MailIntegration.sendMessage) {
+       var oldSendMessage = window.MailIntegration.sendMessage;
+       window.MailIntegration.sendMessage = function() {
+           var ietab = gIeTab2.getIeTabElmt();
+           if (ietab) {
+               arguments[0] = ietab.url;
+               arguments[1] = ietab.title;
+           }
+           oldSendMessage.apply(this, arguments);
+       }
+   } else {
+       Components.utils.reportError("Failed to apply sendMessage hook");
+   }
+
+   if (window.goDoCommand) {
+       var oldDoCommand = window.goDoCommand;
+       window.goDoCommand = function() {
+           if (gIeTab2.goDoCommand(arguments[0]))
+               return;
+           return oldDoCommand.apply(this, arguments);
+       }
+   } else {
+       Components.utils.reportError("Failed to apply goDoCommand hook");
+   }
+
+   gIeTab2.hookCommands();
 
    gIeTab2.hookAttr("cmd_find", "oncommand", "if(gIeTab2.goDoCommand('find')) return;");
    gIeTab2.hookAttr("cmd_findAgain", "oncommand", "if(gIeTab2.goDoCommand('find')) return;");
    gIeTab2.hookAttr("cmd_findPrevious", "oncommand", "if(gIeTab2.goDoCommand('find')) return;");
-
-   gIeTab2.hookCode("displaySecurityInfo", /{/, "$& if(gIeTab2.goDoCommand('displaySecurityInfo')) return;");
 }
 
 IeTab2.prototype.addEventAll = function() {
@@ -946,11 +1111,11 @@ IeTab2.prototype.checkShowIntro = function() {
         }
         return;
     }
-        
+
     this.setBoolPref("extensions.ietab2.hasRun", true);
     window.setTimeout(function() {
         gBrowser.selectedTab = gBrowser.addTab("http://www.ietab.net/thanks-installing-ie-tab-2-0");
-    }, 100);    
+    }, 100);
 }
 
 IeTab2.prototype.init = function() {
@@ -965,11 +1130,11 @@ IeTab2.prototype.init = function() {
    gIeTab2.addEventAll();
    gIeTab2.createTabbarMenu();
    gIeTab2.checkShowIntro();
-   
+
    // Set the plugin to run in the desired process mode
    var runInProcess = this.getBoolPref("extensions.ietab2.runinprocess", false);
    gIeTab2.setBoolPref("dom.ipc.plugins.enabled.npietab2.dll", !runInProcess);
-   
+
    // Workaround for the Firefox 6 glass / theme bug
    var elAppContent = document.getElementById("appcontent");
    if(elAppContent)
@@ -977,7 +1142,7 @@ IeTab2.prototype.init = function() {
 	   var style = elAppContent.getAttribute("style");
 	   if(!style)
 		   style = "";
-       
+
 	   if(style.indexOf("-moz-win-exclude-glass") == -1)
 		   elAppContent.setAttribute("style", style + ";-moz-appearance:-moz-win-exclude-glass");
    }
@@ -987,6 +1152,7 @@ IeTab2.prototype.destroy = function() {
    gIeTab2.removeEventAll();
    delete gIeTab2;
 }
+
 
 var gIeTab2 = new IeTab2();
 

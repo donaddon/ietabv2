@@ -37,11 +37,6 @@ IeTab2.prototype.removeEventListenerByTagName = function(tag, type, listener) {
 
 //-----------------------------------------------------------------------------
 
-IeTab2.prototype.hookCode = function(orgFunc, orgCode, myCode) {
-   try{ if (eval(orgFunc).toString() == eval(orgFunc + "=" + eval(orgFunc).toString().replace(orgCode, myCode))) throw orgFunc; }
-   catch(e){ Components.utils.reportError("Failed to hook function: "+orgFunc); }
-}
-
 IeTab2.prototype.hookAttr = function(parentNode, attrName, myFunc) {
    if (typeof(parentNode) == "string") parentNode = document.getElementById(parentNode);
    try { parentNode.setAttribute(attrName, myFunc + parentNode.getAttribute(attrName)); }catch(e){ Components.utils.reportError("Failed to hook attribute: "+attrName); }
@@ -289,7 +284,7 @@ IeTab2.prototype.migrateIETab2PrefSettings = function() {
     // Per AMO review, add "extensions." prefix to ietab2 settings
     if(this.getBoolPref("extensions.ietab2.ietab2PrefsMigrated", false))
         return;
-        
+
     var aList = this.getAllOldIETab2Settings();
     this.setAllSettings(aList);
     this.setBoolPref("extensions.ietab2.ietab2PrefsMigrated", true);

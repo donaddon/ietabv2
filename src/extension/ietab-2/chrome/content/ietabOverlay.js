@@ -966,8 +966,21 @@ IeTab2.prototype.hookCommands = function() {
    }
 }
 
+//
+// hookCodeAll
+//
+// Hooks into browser functionality.  The bulk of the hooks are simple redirect command hooks that
+// are set up by hookCommands function.
+//
+// The more complex ones are addTab, setTabTitle, and getShortcutOrURI, and their purpose is
+// to force the URL bar to display the loaded URL instead of the IE Tab container URL when IE Tab
+// is in use, and for other operations to use the loaded URL instead of the chrome:// IE Tab URL.
+//
+// NOTE:  These functions do NOT handle the use of auto urls / site filters.  That is all handled
+//        by content policy in the IE Tab Watcher component.
+//
 IeTab2.prototype.hookCodeAll = function() {
-   //hook properties
+    //hook properties
    gIeTab2.hookBrowserGetter(gBrowser.mTabContainer.firstChild.linkedBrowser);
    gIeTab2.hookURLBarSetter(gURLBar);
 
@@ -1002,7 +1015,7 @@ IeTab2.prototype.hookCodeAll = function() {
        Components.utils.reportError("Failed to apply setTabtitle hook");
    }
 
-   // This is invoked when the user hits the enter key in the address bar
+   // Intercept general URI requests
    // gIeTab2.hookCode("getShortcutOrURI", /return (\S+);/g, "return gIeTab2.getHandledURL($1);");
    if (window.getShortcutOrURI) {
        var oldGetShortcutOrURI = getShortcutOrURI;
@@ -1032,6 +1045,7 @@ IeTab2.prototype.hookCodeAll = function() {
    }
 // TODO:  Make sure to test downlevel browsers with these hooks
 
+   // TODO:  Test this mail customizationn
    if (window.MailIntegration && window.MailIntegration.sendMessage) {
        var oldSendMessage = window.MailIntegration.sendMessage;
        window.MailIntegration.sendMessage = function() {

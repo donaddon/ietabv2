@@ -36,7 +36,7 @@ var IeTab2Watcher = {
 
 		aConsoleService.logStringMessage(str);
    },
-   
+
    isIeTabURL: function(url) {
       if (!url) return false;
       return (url.indexOf(gIeTab2ChromeStr) == 0);
@@ -180,7 +180,7 @@ IeTab2WatchFactoryClass.prototype = {
          && IeTab2Watcher.isFilterEnabled()
          && IeTab2Watcher.isMatchFilterList(url);
   },
-  
+
   checkQueueReload: function(contentType, contentLocation, requestOrigin, requestingNode, mimeTypeGuess, extra) {
 	// In Firefox 4, when we are called from the content handler, we aren't able to
 	// load a chrome:// URL.  If we try again to filter it from a different context, then
@@ -208,7 +208,7 @@ IeTab2WatchFactoryClass.prototype = {
 		stack = stack.caller;
 	}
   },
-  
+
   // nsIContentPolicy interface implementation
   shouldLoad: function(contentType, contentLocation, requestOrigin, requestingNode, mimeTypeGuess, extra) {
     if (contentType == Components.interfaces.nsIContentPolicy.TYPE_DOCUMENT) {

@@ -132,6 +132,8 @@ var IeTab2Watcher = {
       var mBrowser = this.getTopWinBrowser();
       if (!(mBrowser && mBrowser.mIeTab2SwitchURL)) return;
       if (mBrowser.mIeTab2SwitchURL == url) {
+         // If they asked us to switch engines on a URL that matches a filter, then
+         // disable the filter (TODO:  In the future this should be an option)
          var isMatched = false;
          var aList = this.getPrefFilterList();
          var isIE = this.isIeTabURL(url);

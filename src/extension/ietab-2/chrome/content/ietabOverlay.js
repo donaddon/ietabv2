@@ -20,14 +20,9 @@
 //
 // Updates:
 //
-// 2/24/10 - 9/11/10: ietab.net
-//     Updated to npruntime.
-//     Converted to new ietab2 namespace.
-//     Changed copyright header to include maintenance info.
-//     Tons of changes to keep up with Firefox compatibility mode:
-//        New process mode functionality
-//        unpack support
-//        fix new OOP model hangs / crashes
+// Many updates have been made to this code, there is a public source code
+// repository that can be viewed to see the updates:  http://code.google.com/p/ietabv2/
+//
 //
 const gIeTab2ChromeStr = "chrome://ietab2/content/reloaded.html?url=";
 const gIeTab2Version = "4.1.3.1";
@@ -103,7 +98,8 @@ IeTab2.prototype.getIeTabCmdElmt = function(aTab) {
 //
 // getIeTabElmtURL
 //
-// If the tab is using IE Tab then the URL returned is the URL that is currently loaded in IE Tab
+// Get the currently loaded URL, regardless of whether it is loaded with IE Tab or not
+// e.g. If the tab is using IE Tab then the URL returned would be http://www.google.com, not chrome://ietab/...
 //
 IeTab2.prototype.getIeTabElmtURL = function(aTab) {
    var aBrowser = (aTab ? aTab.linkedBrowser : gBrowser);
@@ -137,9 +133,12 @@ IeTab2.prototype.isIeEngine = function() {
 
 IeTab2.prototype.switchTabEngine = function(aTab, isOpenNewTab) {
    if (aTab && aTab.localName == "tab") {
+      // If we have an ietab element then the url to open is the page url, not the ie url
       var url = gIeTab2.getIeTabElmtURL(aTab);
       var ietab = gIeTab2.getIeTabElmt(aTab);
-      if (!ietab) url = gIeTab2.getIeTabURL(url);
+      // IF we do not have an ietab element, then the url to open is the ietab url
+      if (!ietab)
+          url = gIeTab2.getIeTabURL(url);
       gBrowser.mIeTab2SwitchURL = url;
       if (isOpenNewTab) {
          var newTab = gBrowser.addTab(url);
@@ -156,8 +155,6 @@ IeTab2.prototype.switchTabEngine = function(aTab, isOpenNewTab) {
         // 2. focus the XUL element.
         // 3. focus the control.
 
-        // TODO:  We are seeing cases where the element isn't active, we probably need to wait
-        // for it to be active before doing this.  For now, we just check for null.
         gBrowser.selectedTab.focus();
 
         var el = gBrowser.contentDocument.getElementById("IETab2");
@@ -758,14 +755,6 @@ IeTab2.prototype.createTabbarMenu = function() {
    tabbarMenu.insertBefore(document.getElementById("ietab2-tabbar-sep"), separator);
    tabbarMenu.insertBefore(document.getElementById("ietab2-tabbar-switch"), separator);
    tabbarMenu.insertBefore(document.getElementById("ietab2-tabbar-extapp"), separator);
-
-   // TODO:  Find alternatives in the future
-   // Things not compatible with FF4
-   if(gIeTab2.ffversion < 4)
-   {
-       //disable toolbar menuitem tooltip
-       gIeTab2.hookAttr(gBrowser.mStrip.firstChild, "onpopupshowing", "if (document.tooltipNode.localName != 'tab') return false;");
-   }
 }
 
 IeTab2.prototype.getTitleEnding = function(oldModifier) {
@@ -926,7 +915,7 @@ IeTab2.prototype.safeMakeURI = function(uri, alternative) {
        // source code.  So we're leaving this one out for now.'
        // gIeTab2.hookCode("nsBrowserAccess.prototype.openURI", "var loadflags = isExternal ?", "var loadflags = false ?");
    // ================================================
-// TODO:  I think the following functionality should be replaced with addTabsProgressListener.  I do not think we need to be doing the hook above OR the hook below
+// The following functionality has been replaced by a content policy handler
 //for(var i=0 ; i<gBrowser.mTabListeners.length ; i++)
  //  gIeTab2.hookCode("gBrowser.mTabListeners["+i+"].onLocationChange", /{/, "$& gIeTab2.checkFilter(this.mBrowser, aRequest, aLocation);");
 
@@ -990,7 +979,6 @@ IeTab2.prototype.hookCodeAll = function() {
        var oldAddTab = gBrowser.addTab;
        gBrowser.addTab = function() {
            var tab = oldAddTab.apply(this, arguments);
-           // TODO:  Do we really need this?
            gIeTab2.hookBrowserGetter(tab.linkedBrowser);
            return tab;
        }
@@ -1027,7 +1015,6 @@ IeTab2.prototype.hookCodeAll = function() {
        Components.utils.reportError("Failed to apply getShortcutOrURI hook");
    }
 
-   // TODO:  Find out how handleCommand is invoked so we can test and document this
    // The functionality below replaces this old hook:
    //   if (gURLBar.handleCommand) gIeTab2.hookCode("gURLBar.handleCommand", "this.value = url;", "url = gIeTab2.getHandledURL(url); $&"); //fx3.1
     if (gURLBar.handleCommand) {
@@ -1043,9 +1030,8 @@ IeTab2.prototype.hookCodeAll = function() {
         // The following was for Fx 3.0, and we are just going to ignore this functionality for FX versions that old
         // gIeTab2.hookCode("BrowserLoadURL", "url = gURLBar.value;", "url = gIeTab2.getHandledURL(gURLBar.value);");//fx3.0
    }
-// TODO:  Make sure to test downlevel browsers with these hooks
 
-   // TODO:  Test this mail customizationn
+   // Modify the URL sent by the "EMail link" menu option
    if (window.MailIntegration && window.MailIntegration.sendMessage) {
        var oldSendMessage = window.MailIntegration.sendMessage;
        window.MailIntegration.sendMessage = function() {

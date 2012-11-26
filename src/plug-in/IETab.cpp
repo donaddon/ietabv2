@@ -30,6 +30,14 @@
 
 CList<CIEDlg*> CIETab::browserPool;
 
+#define GWL_WNDPROC         (-4)
+#define GWL_HINSTANCE       (-6)
+#define GWL_HWNDPARENT      (-8)
+#define GWL_STYLE           (-16)
+#define GWL_EXSTYLE         (-20)
+#define GWL_USERDATA        (-21)
+#define GWL_ID              (-12)
+
 LRESULT CALLBACK CIETab::WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 {
 	nsPluginInstance* pi = (nsPluginInstance*)GetWindowLong( hwnd, GWL_USERDATA );

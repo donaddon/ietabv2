@@ -1,10 +1,30 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head><title></title><link rel="icon" href="chrome://ietab2/skin/ietab-favicon-iedoc.png">
+</head>
+<body style="margin:0; padding:0;overflow:hidden" onload="window.setTimeout(function() { init(); },0);">
+<script>
+</script>
 <script type="text/javascript">
 var gIETab = null;
 
 function init(){
+    var obj = document.createElement("object");
+    obj.id = "IETab2";
+    obj.style.width = "100%";
+    obj.style.height = "100%";
+    // Waterfox/x64 example:
+    //   Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) Gecko/20121026 Firefox/16.0
+    // Firefox/x32 on Win64:
+    //   Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0
+    // Firefox/x32 on Win32
+    //   Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0
+    //
+    if (window.navigator.userAgent.indexOf("Win64; x64;") != -1)
+        obj.setAttribute("type", "application/ietab2_x64");
+    else
+        obj.setAttribute("type", "application/ietab2");
+    document.body.appendChild(obj);
     gIETab = document.getElementById("IETab2");
     if(!gIETab || !gIETab.navigate)
     {
@@ -14,7 +34,7 @@ function init(){
 	}
 
     var m=/(\?url=)(\S+)$/.exec(document.location.href);
-    if(m) 
+    if(m)
     {
         gIETab.navigate(decodeURI(m[2]));
     }
@@ -94,10 +114,5 @@ var IETabCalls = {
 
 window.onpageshow = function(e) { if (e.persisted) window.setTimeout(function() { init(); }, 0); }
 </script>
-</head>
-<body style="margin:0; padding:0;overflow:hidden" onload="window.setTimeout(function() { init(); },0);">
-<script>
-</script>
-<object id="IETab2" type="application/ietab2" style="width:100%; height:100%;"></object>
 </body>
 </html>

@@ -125,7 +125,7 @@ BEGIN
             VALUE "FileOpenName", "IE Tab 2 Plug-in"
             VALUE "FileVersion", "2, 2, 0, 1"
             VALUE "LegalCopyright", "Copyright (C) 2009 - 2010 Blackfish Software"
-            VALUE "MIMEType", "application/ietab2"
+            VALUE "MIMEType", IETAB2_MIME_TYPE
             VALUE "OriginalFilename", "ietab.dll"
             VALUE "PrivateBuild", "2.10.4.1"
             VALUE "ProductName", "IE Tab Plug-in"

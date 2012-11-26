@@ -402,7 +402,7 @@ void CIEDlg::OnWindowClosing(BOOL IsChildWindow, BOOL* Cancel)
 	*Cancel = TRUE;
 }
 
-void CIEDlg::OnTimer(UINT nIDEvent)
+void CIEDlg::OnTimer(UINT_PTR nIDEvent)
 {
 	stopAutoDestroy();
 	DestroyWindow();

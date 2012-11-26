@@ -96,7 +96,7 @@ public:
 			autoDestroyTimer = 0;
 		}
 	}
-	afx_msg void OnTimer(UINT nIDEvent);
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
 	void OnSetSecureLockIcon(long SecureLockIcon);
 	void OnWindowClosing(BOOL IsChildWindow, BOOL* Cancel);
 

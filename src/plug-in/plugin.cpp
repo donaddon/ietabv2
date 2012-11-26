@@ -163,6 +163,8 @@ CString GetDOMUrl(NPP instance)
 	return strUrl;
 }
 
+#define GWL_USERDATA        (-21)
+
 NPBool nsPluginInstance::init(NPWindow* aWindow)
 {
 	::OleInitialize(NULL);

@@ -19,3 +19,9 @@
 #define _APS_NEXT_SYMED_VALUE           1001
 #endif
 #endif
+
+#ifdef _AMD64_
+#define IETAB2_MIME_TYPE "application/ietab2_x64"
+#else
+#define IETAB2_MIME_TYPE "application/ietab2"
+#endif

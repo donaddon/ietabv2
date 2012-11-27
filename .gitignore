@@ -11,6 +11,7 @@
 *.vssscc
 *_i.c
 *_p.c
+*.dll
 *.ncb
 *.suo
 *.tlb

@@ -99,7 +99,7 @@
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">npietab2</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">npietab2_x64</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">npietab2</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">npietab2</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">npietab2_x64</TargetName>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">$(Configuration)\$(Platform)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">$(Configuration)\$(Platform)\</IntDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Template|x64'">$(Configuration)\$(Platform)\</OutDir>
@@ -164,6 +164,9 @@
       </DataExecutionPrevention>
       <ImportLibrary>.\Release\npietab.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
     </Link>
     <PostBuildEvent>
       <Command>copy $(TargetPath) $(ProjectDir)..\extension\ietab-2\plugins\</Command>
@@ -198,9 +201,9 @@
       </PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>.\Release/IETab.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
-      <ObjectFileName>.\Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <AssemblerListingLocation>$(Configuration)\$(Platform)\</AssemblerListingLocation>
+      <ObjectFileName>$(Configuration)\$(Platform)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(Configuration)\$(Platform)\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>
@@ -219,12 +222,15 @@
       <AdditionalLibraryDirectories>..\gecko-sdk\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ModuleDefinitionFile>.\IETab.def</ModuleDefinitionFile>
-      <ProgramDatabaseFile>.\Release/IETab.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(Configuration)\$(Platform)\IETab_x64.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ImportLibrary>.\Release\npietab.lib</ImportLibrary>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
     </Link>
     <PostBuildEvent>
       <Command>copy $(TargetPath) $(ProjectDir)..\extension\ietab-2\plugins\</Command>

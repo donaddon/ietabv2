@@ -9,22 +9,6 @@
 var gIETab = null;
 
 function init(){
-    var obj = document.createElement("object");
-    obj.id = "IETab2";
-    obj.style.width = "100%";
-    obj.style.height = "100%";
-    // Waterfox/x64 example:
-    //   Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) Gecko/20121026 Firefox/16.0
-    // Firefox/x32 on Win64:
-    //   Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0
-    // Firefox/x32 on Win32
-    //   Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0
-    //
-    if (window.navigator.userAgent.indexOf("Win64; x64;") != -1)
-        obj.setAttribute("type", "application/ietab2_x64");
-    else
-        obj.setAttribute("type", "application/ietab2");
-    document.body.appendChild(obj);
     gIETab = document.getElementById("IETab2");
     if(!gIETab || !gIETab.navigate)
     {
@@ -113,6 +97,27 @@ var IETabCalls = {
 }
 
 window.onpageshow = function(e) { if (e.persisted) window.setTimeout(function() { init(); }, 0); }
+
+function createIETab() {
+    var obj = document.createElement("object");
+    obj.id = "IETab2";
+    obj.style.width = "100%";
+    obj.style.height = "100%";
+    // Waterfox/x64 example:
+    //   Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) Gecko/20121026 Firefox/16.0
+    // Firefox/x32 on Win64:
+    //   Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0
+    // Firefox/x32 on Win32
+    //   Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0
+    //
+    if (window.navigator.userAgent.indexOf("Win64; x64;") != -1)
+        obj.setAttribute("type", "application/ietab2_x64");
+    else
+        obj.setAttribute("type", "application/ietab2");
+    document.body.appendChild(obj);
+}
+// Navigation happens later, but create the IE Tab object immediately
+createIETab();
 </script>
 </body>
 </html>

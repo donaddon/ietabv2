@@ -20,7 +20,10 @@ function init(){
     var m=/(\?url=)(\S+)$/.exec(document.location.href);
     if(m)
     {
-        gIETab.navigate(decodeURI(m[2]));
+        var url = decodeURI(m[2]);
+        if (url.indexOf("about:") == 0)
+            url = 'http://www.ietab.net/ie-tab-v2-documentation';
+        gIETab.navigate(url);
     }
 }
 

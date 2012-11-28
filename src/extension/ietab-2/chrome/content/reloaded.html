@@ -21,7 +21,7 @@ function init(){
     if(m)
     {
         var url = decodeURI(m[2]);
-        if (url.indexOf("about:") == 0)
+        if ((url.indexOf("about:") == 0) || (url.indexOf("chrome://") == 0))
             url = 'http://www.ietab.net/ie-tab-v2-documentation?from=' + url;
         gIETab.navigate(url);
     }

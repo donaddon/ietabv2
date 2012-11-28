@@ -772,7 +772,7 @@ IeTab2.prototype.focusIeTab = function() {
 }
 
 IeTab2.prototype.onTabSelected = function(e) {
-   if (e.originalTarget.localName == "tabs") {
+   if ((e.originalTarget.localName == "tabs") || (e.originalTarget.localName == "tabpanels")) {
       gIeTab2.updateAll();
       window.setTimeout(function() { gIeTab2.focusIeTab(); }, 0);
    }

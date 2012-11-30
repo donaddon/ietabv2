@@ -27,12 +27,13 @@ IeTab2.prototype.addFilterRule = function(rule, enabled) {
    row.appendChild(c2);
    item.appendChild(row);
    rules.appendChild(item);
+   this.updateApplyButton(true);
    return (rules.childNodes.length-1);
 }
 
 IeTab2.prototype.initDialog = function() {
    this.checkGetIETab1Settings();
-   
+
    //get iexplore.exe path
    this.IExploreExePath = IeTab2ExtApp.getIExploreExePath();
 
@@ -87,7 +88,7 @@ IeTab2.prototype.initDialog = function() {
    this.updateDialogPositions();
    this.updateDialogAllStatus();
    this.updateApplyButton(false);
-   
+
    //compatibility mode
    var mode = this.getStrPref("extensions.ietab2.compatMode");
    document.getElementById("iemode").selectedItem = document.getElementById(mode);
@@ -100,18 +101,18 @@ IeTab2.prototype.updateApplyButton = function(e) {
 IeTab2.prototype.init = function() {
    this.initDialog();
    this.addEventListenerByTagName("checkbox", "command", this.updateApplyButton);
-   this.addEventListener("filterChilds", "DOMAttrModified", this.updateApplyButton);
-   this.addEventListener("filterChilds", "DOMNodeInserted", this.updateApplyButton);
-   this.addEventListener("filterChilds", "DOMNodeRemoved", this.updateApplyButton);
    this.addEventListener("parambox", "input", this.updateApplyButton);
    this.addEventListener("toolsmenu", "command", this.updateToolsMenuStatus);
+
+   var self = this;
+   var filterList = document.getElementById("filterList");
+   filterList.addEventListener("click", function(e) {
+       self.onSingleClickFilterList(e);
+   }, false);
 }
 
 IeTab2.prototype.destory = function() {
    this.removeEventListenerByTagName("checkbox", "command", this.updateApplyButton);
-   this.removeEventListener("filterChilds", "DOMAttrModified", this.updateApplyButton);
-   this.removeEventListener("filterChilds", "DOMNodeInserted", this.updateApplyButton);
-   this.removeEventListener("filterChilds", "DOMNodeRemoved", this.updateApplyButton);
    this.removeEventListener("parambox", "input", this.updateApplyButton);
    this.removeEventListener("toolsmenu", "command", this.updateToolsMenuStatus);
 }
@@ -124,7 +125,7 @@ IeTab2.prototype.updateInterface = function() {
 
 IeTab2.prototype.setOptions = function() {
    var requiresRestart = false;
-   
+
    //filter
    var filter = document.getElementById('filtercbx').checked;
    this.setBoolPref("extensions.ietab2.filter", filter);
@@ -178,7 +179,7 @@ IeTab2.prototype.setOptions = function() {
    //update UI
    this.updateApplyButton(false);
    this.updateInterface();
-   
+
    // Deal with compatibility mode
    var newMode = "ie7mode";
    var item = document.getElementById("iemode").selectedItem;
@@ -190,7 +191,7 @@ IeTab2.prototype.setOptions = function() {
        this.setStrPref("extensions.ietab2.compatMode", newMode);
        this.updateIEMode();
    }
-   
+
    //notify of restart requirement
    if(requiresRestart)
 	  alert("Firefox must be restarted for all changes to take effect.");
@@ -203,7 +204,7 @@ IeTab2.prototype.updateIEMode = function() {
    wrk.create(wrk.ROOT_KEY_CURRENT_USER,
 	    "SOFTWARE\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_BROWSER_EMULATION",
 	    wrk.ACCESS_ALL);
-	
+
    var value = 7000;
    if(mode == "ie8mode")
       value = 8000;
@@ -311,31 +312,54 @@ IeTab2.prototype.addNewURL = function() {
       filter.boxObject.ensureRowIsVisible(idx);
    }
    filter.focus();
+   this.updateApplyButton(true);
    this.updateAddButtonStatus();
 }
 
 IeTab2.prototype.delSelected = function() {
    var filter = document.getElementById('filterList');
    var rules = document.getElementById('filterChilds');
+   var found = false;
    if (filter.view.selection.count > 0) {
       for (var i=rules.childNodes.length-1 ; i>=0 ; i--) {
-         if (filter.view.selection.isSelected(i))
+         if (filter.view.selection.isSelected(i)) {
+            found = true;
             rules.removeChild(rules.childNodes[i]);
+         }
       }
    }
    this.updateDelButtonStatus();
+
+   if (found)
+       this.updateApplyButton(true);
+}
+
+IeTab2.prototype.onSingleClickFilterList = function(e) {
+    var filter = document.getElementById('filterList');
+    var tbo = filter.treeBoxObject;
+
+    // get the row, col and child element at the point
+    var row = { }, col = { }, child = { };
+    tbo.getCellAt(e.clientX, e.clientY, row, col, child);
+
+    // If they clicked on the enable/disable column, then update the apply button
+    if (col.value && (typeof col.value != "string") && (col.value.id == "columnEnabled")) {
+        this.updateApplyButton(true);
+    }
 }
 
 IeTab2.prototype.onClickFilterList = function(e) {
-   var filter = document.getElementById('filterList');
-   if (!filter.disabled && e.button == 0 && e.detail >= 2) {
-      if (filter.view.selection.count == 1) {
-         var urlbox = document.getElementById('urlbox');
-         urlbox.value = filter.view.getCellText(filter.currentIndex, filter.columns['columnRule']);
-         urlbox.select();
-         this.updateAddButtonStatus();
-      }
-   }
+    var filter = document.getElementById('filterList');
+
+    if (!filter.disabled && e.button == 0 && e.detail >= 2) {
+        if (filter.view.selection.count == 1) {
+            var urlbox = document.getElementById('urlbox');
+            urlbox.value = filter.view.getCellText(filter.currentIndex, filter.columns['columnRule']);
+            urlbox.select();
+            this.updateAddButtonStatus();
+            this.updateApplyButton(true);
+        }
+    }
 }
 
 IeTab2.prototype.modifyTextBoxValue = function(textboxId, newValue) {

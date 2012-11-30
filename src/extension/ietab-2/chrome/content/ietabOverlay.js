@@ -791,6 +791,10 @@ IeTab2.prototype.assignJSObject = function(aDoc) {
 }
 
 /**
+ * Reviewer Note: Many users are unfamiliar with toolbar customization, so we provide a
+ *          one click opt-in solution for installing the button on a toolbar, using
+ *          the technique documented at developers.mozilla.org
+ *
  * Installs the toolbar button with the given ID into the given
  * toolbar, if it is not already present in the document.
  *

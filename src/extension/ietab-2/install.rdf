@@ -5,7 +5,7 @@
 
    <em:id>{1BC9BA34-1EED-42ca-A505-6D2F1A935BBB}</em:id>
    <em:name>IE Tab 2 (FF 3.6+)</em:name>
-   <em:version>4.1.3.1</em:version>
+   <em:version>4.11.30.1</em:version>
    <em:description>Enhanced version of the classic IE Tab that includes support for FireFox 3.6 and beyond.</em:description>
    <em:creator>Hong Jen Yee (PCMan)</em:creator>
    <em:developer>ietab.net</em:developer>
@@ -14,7 +14,7 @@
    <em:optionsURL>chrome://ietab2/content/ietabSetting.xul</em:optionsURL>
    <em:iconURL>chrome://ietab2/skin/ietab-icon.png</em:iconURL>
    <em:unpack>true</em:unpack>
-   
+
    <!-- Firefox -->
    <em:targetApplication>
      <Description>

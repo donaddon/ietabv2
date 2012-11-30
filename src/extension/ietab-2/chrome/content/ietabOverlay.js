@@ -25,7 +25,7 @@
 //
 //
 const gIeTab2ChromeStr = "chrome://ietab2/content/reloaded.html?url=";
-const gIeTab2Version = "4.1.3.1";
+const gIeTab2Version = "4.11.30.1";
 
 IeTab2.prototype.QueryInterface = function(aIID) {
    if (aIID.equals(Components.interfaces.nsIIeTab) || aIID.equals(Components.interfaces.nsISupports))
@@ -40,7 +40,7 @@ IeTab2.prototype.QueryInterface = function(aIID) {
 //
 IeTab2.prototype.getIeTabURL = function(url) {
    if (gIeTab2.startsWith(url, gIeTab2ChromeStr)) return url;
-   if (/^file:\/\/.*/.test(url)) try { url = decodeURI(url).substring(8).replace(/\|/g,":").replace(/\//g,"\\"); }catch(e){}
+   if (/^file:\/\/.*/.test(url)) try {url = decodeURI(url).substring(8).replace(/\|/g,":").replace(/\//g,"\\");}catch(e){}
    return gIeTab2ChromeStr + encodeURI(url);
 }
 
@@ -178,7 +178,7 @@ IeTab2.prototype.openPrefDialog = function(url) {
 }
 
 IeTab2.prototype.loadInExtApp = function(url) {
-   if (/^file:\/\/.*/.test(url)) try { url = decodeURI(url).substring(8).replace(/\//g, "\\"); }catch(e){}
+   if (/^file:\/\/.*/.test(url)) try {url = decodeURI(url).substring(8).replace(/\//g, "\\");}catch(e){}
    url = gIeTab2.convertToASCII(url);
    var param = gIeTab2.getStrPref("extensions.ietab2.extAppParam", "%1").replace(/%1/g, url);
    var path = gIeTab2.getStrPref("extensions.ietab2.extAppPath", "");
@@ -226,7 +226,7 @@ IeTab2.prototype.addIeTab = function(url) {
    if (focustab) {
       gBrowser.selectedTab = newTab;
       if (gURLBar && (url == 'about:blank'))
-         window.setTimeout(function(){ gURLBar.focus(); }, 0);
+         window.setTimeout(function(){gURLBar.focus();}, 0);
    }
 }
 
@@ -296,7 +296,7 @@ IeTab2.prototype.updateUrlBar = function() {
    if (!gURLBar || !gIeTab2.isIeEngine()) return;
    if (gBrowser.userTypedValue) {
       if (gURLBar.selectionEnd != gURLBar.selectionStart)
-         window.setTimeout(function(){ gURLBar.focus(); }, 0);
+         window.setTimeout(function(){gURLBar.focus();}, 0);
    } else {
       var url = gIeTab2.getIeTabElmtURL();
       if (url == "about:blank") url = "";
@@ -629,7 +629,7 @@ IeTab2.prototype.addBookmarkMenuitem = function(e) {
 }
 
 function removeTab(tab) {
-    window.setTimeout(function() { gBrowser.removeTab(tab) }, 0);
+    window.setTimeout(function() {gBrowser.removeTab(tab)}, 0);
 }
 
 IeTab2.prototype.closeIeTab = function() {
@@ -750,7 +750,7 @@ IeTab2.prototype.createTabbarMenu = function() {
    var separator = null;
    for(var i=0, c=0 ; i < menuitems.length-1 ; i++) {
       if (menuitems[i].localName=="menuseparator")
-         if (++c==2) { separator=menuitems[i]; break; }
+         if (++c==2) {separator=menuitems[i];break;}
    }
    tabbarMenu.insertBefore(document.getElementById("ietab2-tabbar-sep"), separator);
    tabbarMenu.insertBefore(document.getElementById("ietab2-tabbar-switch"), separator);
@@ -790,8 +790,40 @@ IeTab2.prototype.assignJSObject = function(aDoc) {
    }
 }
 
+/**
+ * Installs the toolbar button with the given ID into the given
+ * toolbar, if it is not already present in the document.
+ *
+ * @param {string} toolbarId The ID of the toolbar to install to.
+ * @param {string} id The ID of the button to install.
+ * @param {string} afterId The ID of the element to insert after. @optional
+ */
+IeTab2.prototype.installButton = function(toolbarId, id, afterId) {
+    if (!document.getElementById(id)) {
+        var toolbar = document.getElementById(toolbarId);
+        // Can't do anything if the toolbar doesn't exist
+        if (!toolbarId)
+            return;
+
+        // If no afterId is given, then append the item to the toolbar
+        var before = null;
+        if (afterId) {
+            var elem = document.getElementById(afterId);
+            if (elem && elem.parentNode == toolbar)
+                before = elem.nextElementSibling;
+        }
+
+        toolbar.insertItem(id, before);
+        toolbar.setAttribute("currentset", toolbar.currentSet);
+        document.persist(toolbar.id, "currentset");
+
+        if (toolbarId == "addon-bar")
+            toolbar.collapsed = false;
+    }
+}
+
 IeTab2.prototype.onPageShowOrLoad = function(e) {
-   window.setTimeout(function() { gIeTab2.assignJSObject(e.target); }, 0);
+   window.setTimeout(function() {gIeTab2.assignJSObject(e.target);}, 0);
    gIeTab2.updateAll();
 }
 

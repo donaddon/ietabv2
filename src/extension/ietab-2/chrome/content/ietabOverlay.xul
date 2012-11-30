@@ -22,6 +22,7 @@
 <script type="application/x-javascript" src="chrome://ietab2/content/ietabDrag.js"/>
 <script type="application/x-javascript" src="chrome://ietab2/content/ietabExtApp.js"/>
 <script type="application/x-javascript" src="chrome://ietab2/content/ietabOverlay.js"/>
+<script type="application/x-javascript" src="chrome://ietab2/content/extensionApi.js"/>
 
 <!-- contentArea context menu -->
 <popup id="contentAreaContextMenu">

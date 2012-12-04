@@ -619,12 +619,16 @@ IeTab2.prototype.addBookmarkMenuitem = function(e) {
    miInt.hidden = !isBookmark || !gIeTab2.getBoolPref("extensions.ietab2.bookmark", true);
    miExt.hidden = !isBookmark || !gIeTab2.getBoolPref("extensions.ietab2.bookmark.extapp", true);
    if (!miInt.hidden) {
-      miInt.setAttribute("oncommand", "gIeTab2.addIeTab(\'"+bmNode.uri+"\');");
-      miInt.setAttribute("class", (isShowIcon?miInt.getAttribute("iconic"):""));
+       miInt.addEventListener('command', function() {
+           gIeTab2.addIeTab(bmNode.uri);
+       }, false);
+       miInt.setAttribute("class", (isShowIcon?miInt.getAttribute("iconic"):""));
    }
    if (!miExt.hidden) {
-      miExt.setAttribute("oncommand", "gIeTab2.loadInExtApp(\'"+bmNode.uri+"\');");
-      miExt.setAttribute("class", (isShowIcon?miExt.getAttribute("iconic"):""));
+       miExt.addEventListener('command', function() {
+           gIeTab2.loadInExtApp(bmNode.uri);
+       }, false);
+       miExt.setAttribute("class", (isShowIcon?miExt.getAttribute("iconic"):""));
    }
 }
 

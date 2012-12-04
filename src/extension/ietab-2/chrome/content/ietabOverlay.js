@@ -853,12 +853,15 @@ IeTab2.prototype.getCurrentIeTabURI = function(aBrowser) {
 IeTab2.prototype.hookBrowserGetter = function(aBrowser) {
    if (aBrowser.localName != "browser") aBrowser = aBrowser.getElementsByTagNameNS(kXULNS, "browser")[0];
    // hook aBrowser.currentURI
-   gIeTab2.hookProp(aBrowser, "currentURI", function() {
+   gIeTab2.hookProp(aBrowser, "currentURI", function(oldGetter) {
       var uri = gIeTab2.getCurrentIeTabURI(this);
-      if (uri) return uri;
+      if (uri)
+          return uri;
+      else
+          return oldGetter.call(this);
    });
    // hook aBrowser.sessionHistory
-   gIeTab2.hookProp(aBrowser, "sessionHistory", function() {
+   gIeTab2.hookProp(aBrowser, "sessionHistory", function(oldGetter) {
       var history = this.webNavigation.sessionHistory;
       var uri = gIeTab2.getCurrentIeTabURI(this);
       if (uri) {
@@ -868,18 +871,21 @@ IeTab2.prototype.hookBrowserGetter = function(aBrowser) {
             if (this.parentNode.__SS_data) delete this.parentNode.__SS_data;
          }
       }
+      return oldGetter.call(this);
    });
 }
 
 IeTab2.prototype.hookURLBarSetter = function(aURLBar) {
    if (!aURLBar) aURLBar = document.getElementById("urlbar");
    if (!aURLBar) return;
-   gIeTab2.hookProp(aURLBar, "value", null, function() {
-      this.isModeIE = arguments[0] && (arguments[0].indexOf(gIeTab2ChromeStr) == 0);
+
+   gIeTab2.hookProp(aURLBar, "value", null, function(oldSetter, value) {
+      this.isModeIE = value && (value.indexOf(gIeTab2ChromeStr) == 0);
       if (this.isModeIE) {
-         arguments[0] = decodeURI(arguments[0].substring(gIeTab2ChromeStr.length));
-         if (arguments[0] == "about:blank") arguments[0] = "";
+         value = decodeURI(value.substring(gIeTab2ChromeStr.length));
+         if (value == "about:blank") value = "";
       }
+      oldSetter.call(this, value);
    });
 }
 

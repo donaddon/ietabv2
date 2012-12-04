@@ -42,15 +42,43 @@ IeTab2.prototype.hookAttr = function(parentNode, attrName, myFunc) {
    try { parentNode.setAttribute(attrName, myFunc + parentNode.getAttribute(attrName)); }catch(e){ Components.utils.reportError("Failed to hook attribute: "+attrName); }
 }
 
+/*
+ *  Hook/replace property getters and/or setters
+ */
 IeTab2.prototype.hookProp = function(parentNode, propName, myGetter, mySetter) {
-   var oGetter = parentNode.__lookupGetter__(propName);
-   var oSetter = parentNode.__lookupSetter__(propName);
-   if (oGetter && myGetter) myGetter = oGetter.toString().replace(/{/, "{"+myGetter.toString().replace(/^.*{/,"").replace(/.*}$/,""));
-   if (oSetter && mySetter) mySetter = oSetter.toString().replace(/{/, "{"+mySetter.toString().replace(/^.*{/,"").replace(/.*}$/,""));
-   if (!myGetter) myGetter = oGetter;
-   if (!mySetter) mySetter = oSetter;
-   if (myGetter) try { eval('parentNode.__defineGetter__(propName, '+ myGetter.toString() +');'); }catch(e){ Components.utils.reportError("Failed to hook property Getter: "+propName); }
-   if (mySetter) try { eval('parentNode.__defineSetter__(propName, '+ mySetter.toString() +');'); }catch(e){ Components.utils.reportError("Failed to hook property Setter: "+propName); }
+    // Get them both before setting either one, because the process of setting
+    // one may hide the other
+    var oGetter = parentNode.__lookupGetter__(propName);
+    var oSetter = parentNode.__lookupSetter__(propName);
+
+    // IMPORTANT:  If you set either the getter or the setter, you have to set them both,
+    //  otherwise the non-set getter or setter in the parent / prototype object can be
+    //  hidden.
+    var newGetter = oGetter;
+    if (myGetter) {
+        newGetter = function() {
+            return myGetter.call(this, oGetter);
+        }
+    }
+    try {
+        if (newGetter)
+            parentNode.__defineGetter__(propName, newGetter);
+    } catch(e) {
+        Components.utils.reportError("Failed to hook property Getter: " + propName);
+    }
+
+    var newSetter = oSetter;
+    if (mySetter) {
+        newSetter = function(value) {
+            return mySetter.call(this, oSetter, value);
+        }
+    }
+    try {
+        if (newSetter)
+            parentNode.__defineSetter__(propName, newSetter);
+    } catch(e) {
+        Components.utils.reportError("Failed to hook property Setter: " + propName);
+    }
 }
 
 //-----------------------------------------------------------------------------

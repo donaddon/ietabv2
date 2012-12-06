@@ -26,11 +26,11 @@ IeTab2.prototype.extensionApi = {
     },
 
     addIeTabButtonToNavbar: function() {
-        installButton("nav-bar", "ietab2-button", "urlbar-container");
+        gIeTab2.installButton("nav-bar", "ietab2-button", "urlbar-container");
     },
 
     addIeTabButtonToAddonbar: function() {
-        installButton("addon-bar", "ietab2-button", null);
+        gIeTab2.installButton("addon-bar", "ietab2-button", null);
     }
 }
 
@@ -50,7 +50,7 @@ IeTab2.prototype.attachExtensionApi = function(doc) {
 }
 
 IeTab2.initExtensionApiSupport = function() {
-	var regex = /^https?:\/\/(www\.)?ietab\.net\//;
+    var regex = /^https?:\/\/(www\.)?(dev\.)?ietab\.net\//;
     window.addEventListener("DOMContentLoaded", function(e) {
         if (!gIeTab2)
             return;

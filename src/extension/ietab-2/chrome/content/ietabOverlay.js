@@ -981,6 +981,8 @@ IeTab2.prototype.hookCommands = function() {
                return;
            return oldFunction.apply(this, arguments);
        }
+       // Set a pointer to the old function so function hackers can find it
+       newFunction.parentFunction = oldFunction;
        return newFunction;
    }
 
@@ -1027,6 +1029,8 @@ IeTab2.prototype.hookCodeAll = function() {
            gIeTab2.hookBrowserGetter(tab.linkedBrowser);
            return tab;
        }
+       // Set a pointer to the old function so function hackers can find it
+       gBrowser.addTab.parentFunction = oldAddTab;
    } else {
        Components.utils.reportError("Failed to apply addTab hook");
    }
@@ -1044,6 +1048,8 @@ IeTab2.prototype.hookCodeAll = function() {
            }
            return oldSetTabTitle.apply(this, arguments);
        }
+       // Set a pointer to the old function so function hackers can find it
+       gBrowser.setTabTitle.parentFunction = oldSetTabTitle;
    } else {
        Components.utils.reportError("Failed to apply setTabtitle hook");
    }
@@ -1056,6 +1062,7 @@ IeTab2.prototype.hookCodeAll = function() {
            var result = oldGetShortcutOrURI.apply(this, arguments);
            return gIeTab2.getHandledURL(result);
        }
+       getShortcutOrURI.parentFunction = oldGetShortcutOrURI;
    } else {
        Components.utils.reportError("Failed to apply getShortcutOrURI hook");
    }
@@ -1070,6 +1077,7 @@ IeTab2.prototype.hookCodeAll = function() {
            }
            return oldHandleCommand.apply(this, arguments);
        }
+       gURLBar.handleCommand.parentFunction = oldHandleCommand;
    }
    else {
         // The following was for Fx 3.0, and we are just going to ignore this functionality for FX versions that old
@@ -1087,6 +1095,7 @@ IeTab2.prototype.hookCodeAll = function() {
            }
            oldSendMessage.apply(this, arguments);
        }
+       window.MailIntegration.sendMessage.parentFunction = oldSendMessage;
    } else {
        Components.utils.reportError("Failed to apply sendMessage hook");
    }
@@ -1098,6 +1107,7 @@ IeTab2.prototype.hookCodeAll = function() {
                return;
            return oldDoCommand.apply(this, arguments);
        }
+       window.goDoCommand.parentFunction = oldDoCommand;
    } else {
        Components.utils.reportError("Failed to apply goDoCommand hook");
    }
@@ -1166,25 +1176,21 @@ IeTab2.prototype.checkShowIntro = function() {
     }, 100);
 }
 
-IeTab2.prototype.init = function(initRetryCount) {
-    // Initialize after Tab Mix Plus because it hacks on browser functions that we replace, so
-    // we initialize after it to ensure it hacks on the original browser functions, not ours.
-    if (window.tablib && tablib.version == 'tabmixplus' && !window.tablib._inited) {
-        if (typeof(initRetryCount) == 'undefined')
-            initRetryCount = 0;
-        else
-            initRetryCount++;
+IeTab2.prototype.init = function() {
+    // Initialize asynchronously because we can.  Additionally we want to initialize after other extensions
+    // like Tab Mix Plus because several of them do string hacking on browser functions that we replace, so
+    // we initialize after them to avoid them incorrectly hacking on our version of the functions.
 
-        // I expect all of the initialization to happen synchronously, so this should only be
-        // retried once, but provide a break-out just in case some other add-on changes this behavior
-        if (initRetryCount < 3) {
-            var self = this;
-            window.setTimeout(function() {
-                self.init(initRetryCount);
-            }, 0);
-            return;
-        }
-    }
+    // TODO:  This means we will not have hooked some of the browser functionality at first start-up,
+    //        so we may not provide the "pretty-ized" URL if an IE Tab-based URL is opened at first start.
+    //        Minor issue that we can address later.
+    var self = this;
+    window.setTimeout(function() {
+        self.init2();
+    }, 0);
+}
+
+IeTab2.prototype.init2 = function() {
     gIeTab2.ffversion = 3.0;
     if (/Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent))
     {

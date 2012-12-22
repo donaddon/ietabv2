@@ -25,7 +25,7 @@
 //
 //
 const gIeTab2ChromeStr = "chrome://ietab2/content/reloaded.html?url=";
-const gIeTab2Version = "4.12.6.1";
+const gIeTab2Version = "4.12.22.1";
 
 IeTab2.prototype.QueryInterface = function(aIID) {
    if (aIID.equals(Components.interfaces.nsIIeTab) || aIID.equals(Components.interfaces.nsISupports))
@@ -632,11 +632,11 @@ IeTab2.prototype.addBookmarkMenuitem = function(e) {
    }
 }
 
-function removeTab(tab) {
-    window.setTimeout(function() {gBrowser.removeTab(tab)}, 0);
-}
-
 IeTab2.prototype.closeIeTab = function() {
+   function removeTab(tab) {
+       window.setTimeout(function() {gBrowser.removeTab(tab)}, 0);
+   }
+
    var mTabs = gBrowser.mTabContainer.childNodes;
    for(var i = mTabs.length-1 ; i>=0 ; i--) {
       if (mTabs[i].localName == "tab") {
@@ -1014,7 +1014,7 @@ IeTab2.prototype.hookCommands = function() {
 //        by content policy in the IE Tab Watcher component.
 //
 IeTab2.prototype.hookCodeAll = function() {
-    //hook properties
+   // Hook properties
    gIeTab2.hookBrowserGetter(gBrowser.mTabContainer.firstChild.linkedBrowser);
    gIeTab2.hookURLBarSetter(gURLBar);
 
@@ -1147,12 +1147,15 @@ IeTab2.prototype.checkShowIntro = function() {
         this.setStrPref("extensions.ietab2.version", gIeTab2Version);
         if(version != gIeTab2Version)
         {
-            window.setTimeout(function() {
-                var url = "http://www.ietab.net/ie-tab-2-updated-whats-new?";
-                url += "oldver=" + encodeURIComponent(version);
-                url += "&newVer=" + encodeURIComponent(gIeTab2Version);
-                gBrowser.selectedTab = gBrowser.addTab(url);
-            }, 100);
+            // Don't show update message for 4.12.6.1 since we quickly released a new update after it
+            if (version != '4.12.6.1') {
+                window.setTimeout(function() {
+                    var url = "http://www.ietab.net/ie-tab-2-updated-whats-new?";
+                    url += "oldver=" + encodeURIComponent(version);
+                    url += "&newVer=" + encodeURIComponent(gIeTab2Version);
+                    gBrowser.selectedTab = gBrowser.addTab(url);
+                }, 100);
+            }
         }
         return;
     }
@@ -1163,7 +1166,25 @@ IeTab2.prototype.checkShowIntro = function() {
     }, 100);
 }
 
-IeTab2.prototype.init = function() {
+IeTab2.prototype.init = function(initRetryCount) {
+    // Initialize after Tab Mix Plus because it hacks on browser functions that we replace, so
+    // we initialize after it to ensure it hacks on the original browser functions, not ours.
+    if (window.tablib && tablib.version == 'tabmixplus' && !window.tablib._inited) {
+        if (typeof(initRetryCount) == 'undefined')
+            initRetryCount = 0;
+        else
+            initRetryCount++;
+
+        // I expect all of the initialization to happen synchronously, so this should only be
+        // retried once, but provide a break-out just in case some other add-on changes this behavior
+        if (initRetryCount < 3) {
+            var self = this;
+            window.setTimeout(function() {
+                self.init(initRetryCount);
+            }, 0);
+            return;
+        }
+    }
     gIeTab2.ffversion = 3.0;
     if (/Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent))
     {
@@ -1201,8 +1222,8 @@ IeTab2.prototype.destroy = function() {
 
 var gIeTab2 = new IeTab2();
 
-gIeTab2.addEventListener(window, "load", gIeTab2.init);
-gIeTab2.addEventListener(window, "unload", gIeTab2.destroy);
+gIeTab2.addEventListener(window, "load", function() { gIeTab2.init(); });
+gIeTab2.addEventListener(window, "unload", function() { gIeTab2.destroy(); });
 
 /*
 function watchAllCalls() {

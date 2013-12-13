@@ -25,7 +25,7 @@
 //
 //
 const gIeTab2ChromeStr = "chrome://ietab2/content/reloaded.html?url=";
-const gIeTab2Version = "4.12.22.2";
+const gIeTab2Version = "5.12.12.1";
 
 IeTab2.prototype.QueryInterface = function(aIID) {
    if (aIID.equals(Components.interfaces.nsIIeTab) || aIID.equals(Components.interfaces.nsISupports))

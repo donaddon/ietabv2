@@ -1179,7 +1179,7 @@ IeTab2.prototype.checkShowIntro = function() {
 
     this.setBoolPref("extensions.ietab2.hasRun", true);
     window.setTimeout(function() {
-        gBrowser.selectedTab = gBrowser.addTab("http://www.ietab.net/thanks-installing-ie-tab-2-0");
+        gBrowser.selectedTab = gBrowser.addTab("http://www.ietab.net/ie-tab-2-introduction");
     }, 100);
 }
 

@@ -50,7 +50,7 @@ IeTab2.prototype.attachExtensionApi = function(doc) {
 }
 
 IeTab2.initExtensionApiSupport = function() {
-    var regex = /^https?:\/\/(www\.)?(dev\.)?ietab\.net\//;
+    var regex = /^https?:\/\/(www\.)?(dev2?\.)?ietab\.net\//;
     window.addEventListener("DOMContentLoaded", function(e) {
         if (!gIeTab2)
             return;

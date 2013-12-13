@@ -3,13 +3,19 @@
 <head><title></title><link rel="icon" href="chrome://ietab2/skin/ietab-favicon-iedoc.png">
 </head>
 <body style="margin:0; padding:0;overflow:hidden" onload="window.setTimeout(function() { init(); },0);">
-<script>
-</script>
+
 <script type="text/javascript">
 var gIETab = null;
 
 function init(){
     gIETab = document.getElementById("IETab2");
+    try {
+        // This is needed to avoid an "Activate Plugin" prompt in Fx 27+.
+        // It's not documented, thus the try/catch for back-compat
+        gIETab.QueryInterface(Components.interfaces.nsIObjectLoadingContent).playPlugin();
+    } catch(ex) {
+    }
+
     if(!gIETab || !gIETab.navigate)
     {
 		// Wait for it to show up

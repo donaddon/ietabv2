@@ -619,15 +619,23 @@ IeTab2.prototype.addBookmarkMenuitem = function(e) {
    miInt.hidden = !isBookmark || !gIeTab2.getBoolPref("extensions.ietab2.bookmark", true);
    miExt.hidden = !isBookmark || !gIeTab2.getBoolPref("extensions.ietab2.bookmark.extapp", true);
    if (!miInt.hidden) {
-       miInt.addEventListener('command', function() {
+       if (miInt.listener) {
+           miInt.removeEventListener('command', miInt.listener);
+       }
+       miInt.listener = function() {
            gIeTab2.addIeTab(bmNode.uri);
-       }, false);
+       }
+       miInt.addEventListener('command', miInt.listener, false);
        miInt.setAttribute("class", (isShowIcon?miInt.getAttribute("iconic"):""));
    }
    if (!miExt.hidden) {
-       miExt.addEventListener('command', function() {
+       if (miExt.listener) {
+           miExt.removeListener('command', miExt.listener);
+       }
+       miExt.listener = function() {
            gIeTab2.loadInExtApp(bmNode.uri);
-       }, false);
+       }
+       miExt.addEventListener('command', miExt.listener, false);
        miExt.setAttribute("class", (isShowIcon?miExt.getAttribute("iconic"):""));
    }
 }
@@ -872,7 +880,6 @@ IeTab2.prototype.hookBrowserGetter = function(aBrowser) {
          var entry = history.getEntryAtIndex(history.index, false);
          if (entry.URI.spec != uri.spec) {
             entry.QueryInterface(Components.interfaces.nsISHEntry).setURI(uri);
-            if (this.parentNode.__SS_data) delete this.parentNode.__SS_data;
          }
       }
       return oldGetter.call(this);

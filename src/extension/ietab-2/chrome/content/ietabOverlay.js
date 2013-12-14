@@ -1015,7 +1015,7 @@ IeTab2.prototype.hookCommands = function() {
 // Hooks into browser functionality.  The bulk of the hooks are simple redirect command hooks that
 // are set up by hookCommands function.
 //
-// The more complex ones are addTab, setTabTitle, and getShortcutOrURI, and their purpose is
+// The more complex ones are addTab, setTabTitle, and getShortcutOrUR-I, and their purpose is
 // to force the URL bar to display the loaded URL instead of the IE Tab container URL when IE Tab
 // is in use, and for other operations to use the loaded URL instead of the chrome:// IE Tab URL.
 //
@@ -1062,16 +1062,31 @@ IeTab2.prototype.hookCodeAll = function() {
    }
 
    // Intercept general URI requests
-   // gIeTab2.hookCode("getShortcutOrURI", /return (\S+);/g, "return gIeTab2.getHandledURL($1);");
+   // Old hook:  gIeTab2.hookCode("getShortcutOrUR-I", /return (\S+);/g, "return gIeTab2.getHandledURL($1);");
    if (window.getShortcutOrURI) {
        var oldGetShortcutOrURI = getShortcutOrURI;
-       getShortcutOrURI = function() {
+       window.getShortcutOrURI = function() {
            var result = oldGetShortcutOrURI.apply(this, arguments);
            return gIeTab2.getHandledURL(result);
        }
-       getShortcutOrURI.parentFunction = oldGetShortcutOrURI;
+       window.getShortcutOrURI.parentFunction = oldGetShortcutOrURI;
    } else {
-       Components.utils.reportError("Failed to apply getShortcutOrURI hook");
+        // getShortcutOrURI has been replaced with getShortcutOrURIAndPostData
+        if (window.getShortcutOrURIAndPostData) {
+            var oldGetShortcutOrURIAndPostData = window.getShortcutOrURIAndPostData;
+            window.getShortcutOrURIAndPostData = function() {
+                var self = this;
+                var theArgs = arguments;
+                return Task.spawn(function() {
+                    var data = yield oldGetShortcutOrURIAndPostData.apply(self, theArgs);
+                    data.url = gIeTab2.getHandledURL(data.url);
+                    throw new Task.Result(data);
+                });
+            }
+            window.getShortcutOrURIAndPostData.parentFunction = oldGetShortcutOrURIAndPostData;
+        } else {
+            Components.utils.reportError("Failed to apply getShortcutOrURIAndPostData hook");
+        }
    }
 
    // The functionality below replaces this old hook:

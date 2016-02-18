@@ -25,7 +25,7 @@
 //
 //
 const gIeTab2ChromeStr = "chrome://ietab2/content/reloaded.html?url=";
-const gIeTab2Version = "5.12.12.1";
+const gIeTab2Version = "6.2.18.1";
 
 IeTab2.prototype.QueryInterface = function(aIID) {
    if (aIID.equals(Components.interfaces.nsIIeTab) || aIID.equals(Components.interfaces.nsISupports))
@@ -1228,6 +1228,9 @@ IeTab2.prototype.init2 = function() {
    // Set the plugin to run in the desired process mode
    var runInProcess = this.getBoolPref("extensions.ietab2.runinprocess", false);
    gIeTab2.setBoolPref("dom.ipc.plugins.enabled.npietab2.dll", !runInProcess);
+
+   // For E10s make sure we load in the parent process
+   gIeTab2.setBoolPref("plugin.load_in_parent_process.application/ietab2", true);
 
    // Workaround for the Firefox 6 glass / theme bug
    var elAppContent = document.getElementById("appcontent");
